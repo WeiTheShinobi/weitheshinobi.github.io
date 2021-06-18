@@ -186,17 +186,17 @@ footer p{
 }
 
 /*旅遊景點圖*/
-/*緯度 / 854441*/
-/*經度 / 663567*/
 
 .tourist {
     color: red;
     background: transparent;
     font-size: large;
-    position:absolute;
+    position: absolute;
     z-index:2;
     border-color: transparent;
     cursor: pointer;
+    width:10px;
+    height:10px;
 }
 
 #臺灣鹽博物館 {
@@ -205,108 +205,108 @@ footer p{
 }
 
 #七股鹽山 {
-    left: 100px;
-    top: 100px;
+    left: 170px;
+    top: 280px;
 }
 
 #北門遊客中心 {
-    left: 2px;
-    top: 2px;
+    left: 197px;
+    top: 160px;
 }
 
 #井仔腳瓦盤鹽田 {
-    left: 3px;
-    top: 3px;
+    left: 180px;
+    top: 170px;
 }
 
 #尖山埤江南渡假村 {
-    left: 4px;
-    top: 4px;
+    left: 423px;
+    top: 183px;
 }
 
 #烏山頭水庫風景區 {
-    left: 5px;
-    top: 5px;
+    left: 409px;
+    top: 218px;
 }
 
 #曾文水庫 {
-    left: 6px;
-    top: 6px;
+    left: 570px;
+    top: 175px;
 }
 
 #關子嶺溫泉區 {
-    left: 7px;
-    top: 7px;
+    left: 530px;
+    top: 85px;
 }
 
 #虎頭埤風景區 {
-    left: 8px;
-    top: 8px;
+    left: 386px;
+    top: 391px;
 }
 
 #南元休閒農場 {
-    left: 9px;
-    top: 9px;
+    left: 435px;
+    top: 170px;
 }
 
 #走馬瀨農場 {
-    left: 10px;
-    top: 10px;
+    left: 465px;
+    top: 285px;
 }
 
 #烏樹林休閒園區 {
-    left: 11px;
-    top: 11px;
+    left: 420px;
+    top: 100px;
 }
 
 #頑皮世界 {
-    left: 12px;
-    top: 12px;
+    left: 273px;
+    top: 150px;
 }
 
 #南鯤鯓代天府 {
-    left: 13px;
-    top: 13px;
+    left: 216px;
+    top: 140px;
 }
 
 #麻豆代天府 {
-    left: 14px;
-    top: 14px;
+    left: 323px;
+    top: 233px;
 }
 
 #馬沙溝濱海遊憩區 {
-    left: 15px;
-    top: 15px;
+    left: 163px;
+    top: 208px;
 }
 
 #國立臺灣歷史博物館 {
-    left: 16px;
-    top: 16px;
+    left: 297px;
+    top: 360px;
 }
 
 #奇美博物館 {
-    left: 17px;
-    top: 17px;
+    left: 291px;
+    top: 478px;
 }
 
 #延平郡王祠 {
-    left: 18px;
-    top: 18px;
+    left: 280px;
+    top: 430px;
 }
 
 #赤崁樓 {
-    left: 19px;
-    top: 19px;
+    left: 270px;
+    top: 420px;
 }
 
 #臺南孔子廟 {
-    left: 20px;
-    top: 20px;
+    left: 270px;
+    top: 400px;
 }
 
 #祀典武廟 {
-    left: 21px;
-    top: 21px;
+    left: 255px;
+    top: 405px;
 }
 
 #五妃廟 {
@@ -315,11 +315,11 @@ footer p{
 }
 
 #大天后宮 {
-    left: 23px;
-    top: 23px;
+    left: 250px;
+    top: 420px;
 }
 
 #安平小鎮 {
-    left: 24px;
-    top: 24px;
+    left: 230px;
+    top: 418px;
 }
