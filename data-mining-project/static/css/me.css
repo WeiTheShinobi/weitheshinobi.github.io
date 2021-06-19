@@ -188,7 +188,7 @@ footer p{
 /*旅遊景點圖*/
 
 .tourist {
-    color: red;
+    color: darkred;
     background: transparent;
     font-size: large;
     position: absolute;
@@ -199,127 +199,129 @@ footer p{
     height:10px;
 }
 
+/*181 271*/
+/*8.38 5.64*/
 #臺灣鹽博物館 {
-    left: 181px;
-    top: 271px;
+    left: 21.6%;
+    top: 48%;
 }
 
 #七股鹽山 {
-    left: 170px;
-    top: 280px;
+    left: 20.29%;
+    top: 49.65%;
 }
 
 #北門遊客中心 {
-    left: 197px;
-    top: 160px;
+    left: 23.51%;
+    top: 28.37%;
 }
 
 #井仔腳瓦盤鹽田 {
-    left: 180px;
-    top: 170px;
+    left: 21.48%;
+    top: 30.14%;
 }
 
 #尖山埤江南渡假村 {
-    left: 423px;
-    top: 183px;
+    left: 50.48%;
+    top: 32.45%;
 }
 
 #烏山頭水庫風景區 {
-    left: 409px;
-    top: 218px;
+    left: 48.81%;
+    top: 38.65%;
 }
 
 #曾文水庫 {
-    left: 570px;
-    top: 175px;
+    left: 68.02%;
+    top: 31.03%;
 }
 
 #關子嶺溫泉區 {
-    left: 530px;
-    top: 85px;
+    left: 63.25%;
+    top: 15.07%;
 }
 
 #虎頭埤風景區 {
-    left: 386px;
-    top: 391px;
+    left: 46.06%;
+    top: 69.33%;
 }
 
 #南元休閒農場 {
-    left: 435px;
-    top: 170px;
+    left: 51.91%;
+    top: 30.14%;
 }
 
 #走馬瀨農場 {
-    left: 465px;
-    top: 285px;
+    left: 55.49%;
+    top: 50.53%;
 }
 
 #烏樹林休閒園區 {
-    left: 420px;
-    top: 100px;
+    left: 50.12%;
+    top: 17.73%;
 }
 
 #頑皮世界 {
-    left: 273px;
-    top: 150px;
+    left: 32.58%;
+    top: 26.6%;
 }
 
 #南鯤鯓代天府 {
-    left: 216px;
-    top: 140px;
+    left: 25.78%;
+    top: 24.82%;
 }
 
 #麻豆代天府 {
-    left: 323px;
-    top: 233px;
+    left: 38.54%;
+    top: 41.31%;
 }
 
 #馬沙溝濱海遊憩區 {
-    left: 163px;
-    top: 208px;
+    left: 19.45%;
+    top: 36.88%;
 }
 
 #國立臺灣歷史博物館 {
-    left: 297px;
-    top: 360px;
+    left: 35.44%;
+    top: 63.83%;
 }
 
 #奇美博物館 {
-    left: 291px;
-    top: 478px;
+    left: 34.73%;
+    top: 84.75%;
 }
 
 #延平郡王祠 {
-    left: 280px;
-    top: 430px;
+    left: 33.41%;
+    top: 76.24%;
 }
 
 #赤崁樓 {
-    left: 270px;
-    top: 420px;
+    left: 32.22%;
+    top: 74.47%;
 }
 
 #臺南孔子廟 {
-    left: 270px;
-    top: 400px;
+    left: 32.22%;
+    top: 70.92%;
 }
 
 #祀典武廟 {
-    left: 255px;
-    top: 405px;
+    left: 30.43%;
+    top: 71.81%;
 }
 
 #五妃廟 {
-    left: 268px;
-    top: 438px;
+    left: 31.98%;
+    top: 77.66%;
 }
 
 #大天后宮 {
-    left: 250px;
-    top: 420px;
+    left: 29.83%;
+    top: 74.47%;
 }
 
 #安平小鎮 {
-    left: 230px;
-    top: 418px;
+    left: 51.31%;
+    top: 38.65%;
 }
