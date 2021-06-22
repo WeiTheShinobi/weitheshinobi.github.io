@@ -187,6 +187,28 @@ footer p{
 
 /*旅遊景點圖*/
 
+.m-image {cursor: pointer;}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.max{
+    width:100%;
+}
+
+.min{
+    width:200px;
+}
+
+.data p {
+    display: inline;
+}
+
 .tourist {
     color: darkred;
     background: transparent;

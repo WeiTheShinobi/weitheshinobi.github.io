@@ -11,127 +11,217 @@
 </head>
 <body>
 
-    <!--導航-->
-    <nav class="ui inverted attached segment m-padded-tb-mini">
-        <div class="ui container">
-            <div class="ui inverted secondary stackable menu">
-                <h2 class="ui teal header item">資料探勘</h2>
-                <a href="index.html" class="m-item item m-mobile-hide"><i class="map icon"></i>地圖</a>
-                <div class="m-item item m-mobile-hide"><i class="idea icon"></i>論述</div>
-            </div>
-        </div>
-        <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
-            <i class="sidebar icon"></i>
-        </a>
-    </nav>
-
-    <!--內容-->
-    <div class="m-container-small m-padded-tb-big">
-
-        <div class="ui container">
-
-<!--            頭部-->
-            <div class="ui top attached segment">
-                <div class="ui horizontal link list">
-                    <h2>台南旅遊景點</h2>
-                </div>
-            </div>
-
-<!--            內容-->
-            <div class="ui js-toc-content attached padded segment">
-
-                <h2 class="ui center aligned header">胖胖鴨鴨</h2>
-
-                <br>
-
-
-<!--            文章內容-->
-                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
-
-                   <p>想要研究氣象與遊客人數的關係，所以我們從「政府資料開放平台」和「觀測資料查詢 CODiS」下載了遊客、景點、氣象觀測站的資料，
-                   要知道景點的氣象資料，就要透過氣象站，所以我們決定尋找離景點最近的氣象站，透過Python操作，計算出結果，
-                   就可以得出每個景點的氣象，取得並整理好資料就可以開始進行分析。</p>
-
-                </div>
-
-                <br>
-
-
-<!--                圖示-->
-                <div class="ui flowing payQR popup top left transition hidden">
-                    <div class="ui orange basic label">
-                        <div class="ui images">
-                            <div class="image">
-                                <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
-                            </div>
-                            <div class="image">
-                                <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <!--            資料來源-->
-            <div class="ui attached positive message">
-                <div class="ui middle aligned grid">
-                    <div class="eleven wide column">
-                        <h3>資料來源</h3>
-                        <ui class="list">
-                            <li>台南旅遊網</li>
-                            <li>政府資料開放平台</li>
-                            <li>觀測資料查詢 CODiS</li>
-                        </ui>
-                    </div>
-
-                    <div class="five wide column">
-
-                    </div>
-                </div>
-            </div>
-
+<!--導航-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">資料探勘</h2>
+            <a href="index.html" class="m-item item m-mobile-hide"><i class="map icon"></i>地圖</a>
+            <div class="m-item item m-mobile-hide"><i class="idea icon"></i>論述</div>
         </div>
     </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--內容-->
+<div class="m-container-small m-padded-tb-big">
+
+    <div class="ui container">
+
+        <!--            頭部-->
+        <div class="ui top attached segment">
+            <div class="ui horizontal link list">
+                <h2>台南旅遊景點</h2>
+            </div>
+        </div>
+
+        <!--            內容-->
+        <div class="ui js-toc-content attached padded segment">
+
+            <!--            文章內容-->
+            <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+
+                <img src="static/images/article/data1.jpg" alt="" class="ui rounded bordered image">
+
+                <br>
+                <br>
+
+                <br>
+
+                <h2 class="ui center aligned header">收集、整理、製造</h2>
+
+                <br>
 
 
-    <br>
-    <br>
-    <br>
+                <p>我們想要研究台南的天氣與當地遊客數量的關係，所以我們從「政府資料開放平台」和「觀測資料查詢 CODiS」下載了遊客、景點、氣象觀測站的資料。</p>
 
-    <!--footer-->
-    <footer class="ui inverted vertical segment">
-        <div class="ui center aligned container">
-            <div class="ui inverted divided stackable grid">
-                <div class="three wide column">
-                    <div class="ui inverted link list">
-                        <div class="item">
+                <br>
+
+                <img src="static/images/article/data2.jpg" alt="" class="ui rounded bordered image">
+
+                <br>
+                <br>
+
+                <p>我們之所以下載觀測站的資料，是因為想要知道景點的天氣，但我們不知道每個景點最接近的觀測站是哪個，所以我們可以自己動手計算。</p>
+
+                <br>
+
+                <p>我們可以透過景點和觀測站的經緯度來計算距離，距離最短即是我們所需，我們透過python計算，算出每個景點對應的氣象站，匯出一個表，
+                這個表讓我們知道了景點的溫度資料。</p>
+
+                <br>
+
+                <img src="static/images/article/data3.jpg" alt="" class="ui rounded bordered image">
+
+                <br>
+
+                <p>這個表寫下了每個景點對應的觀測站，我們把需要的資料整理。</p>
+
+                <p>這裡簡單示範我們的其中一個方法，當然要整理的資料很多，能讓機器去做就讓機器做，</p>
+
+                <p>我們製作了你在地圖頁中看到的很多圖表，整理了景點的資訊，讓機器做很多重複性的工作使我們們的地圖頁得以完成。</p>
+
+                <p>接下來將展示我們的迴歸模型。</p>
 
 
+                <br>
+                <br>
+                <br>
+
+                <h2 class="ui center aligned header">模型假設</h2>
+
+                <p>固定效果模型：</p>
+
+                <img src="static/images/article/f1.jpg" alt="" class="ui rounded bordered image">
+
+                <p>我們利用固定效果來解釋每一年及每個月份對遊客人數的影響， Table1為式(1)模型（圖附於文末）</p>
+
+
+                <br>
+
+                <img src="static/images/article/f2.jpg" alt="" class="ui rounded bordered image">
+
+                <p>Table2為式(2)模型（圖附於文末）</p>
+
+                <br>
+                <br>
+
+
+                <img src="static/images/article/Figure1.jpeg" alt="" class="ui rounded bordered image">
+                <p>Figure 1 :以2018年為基準固定效果</p>
+                <img src="static/images/article/Figure2.jpeg" alt="" class="ui rounded bordered image">
+                <p>Figure 2 :以1月為基準固定效果</p>
+                <img src="static/images/article/Figure3.jpeg" alt="" class="ui rounded bordered image">
+                <p>Figure 3 :以2018年和1月為基準固定效果</p>
+
+                <br>
+
+                <p>
+                    我們藉由圖可知，Figure1我們單純以年作為類別變數，Figure2是以月份作為類別變數，最後Figure3則是將年以及月份作為類別變數，這時候發現原Figure2的七月為正，在Figure3發現七月變為負的，因此我們推測加入兩個變數會彼此分掉效果。
+                </p>
+
+                <p>
+                    因此我們選擇使用加入年及月份的Figure3，可看出以2018年為基礎，2019至2021年的人數都相比2018年下降了，特別是在疫情爆發的2020年，而月份是以1月為基礎，2、10、11、12月是大家相較喜歡去台南遊玩的時候。
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h2 class="ui center aligned header">迴歸結果</h2>
+
+                <p>table 1</p>
+                <img src="static/images/article/s1.jpg" alt="" class="ui rounded bordered image">
+
+                <br>
+
+                <p>table 2</p>
+                <img src="static/images/article/s2.jpg" alt="" class="ui rounded bordered image">
+
+
+            </div>
+
+            <br>
+
+
+            <!--                圖示-->
+            <div class="ui flowing payQR popup top left transition hidden">
+                <div class="ui orange basic label">
+                    <div class="ui images">
+                        <div class="image">
+                            <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
+                        </div>
+                        <div class="image">
+                            <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ui inverted section divider"></div>
+
+
         </div>
-    </footer>
+        <!--            資料來源-->
+        <div class="ui attached positive message">
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <h3>資料來源</h3>
+                    <ui class="list">
+                        <li>台南旅遊網</li>
+                        <li>政府資料開放平台</li>
+                        <li>觀測資料查詢 CODiS</li>
+                    </ui>
+                </div>
+
+                <div class="five wide column">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<!--footer-->
+<footer class="ui inverted vertical segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-    <script>
-        $('.menu.toggle').click(function () {
-            $('.m-item').toggleClass('m-mobile-hide');
-        });
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
 
-        $(' #payButton').popup({
-            popup : $('.payQR.popup'),
-            on : 'click',
-            position: 'bottom center'
-        });
+    $(' #payButton').popup({
+        popup: $('.payQR.popup'),
+        on: 'click',
+        position: 'bottom center'
+    });
 
 
-    </script>
+</script>
 </body>
 </html>
