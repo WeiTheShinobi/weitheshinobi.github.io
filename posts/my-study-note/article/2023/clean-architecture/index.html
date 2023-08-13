@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Clean Architecture 替我解決的痛點 | WeiTheShinobi</title>
+<meta property="og:title" content="Clean Architecture 替我解決的痛點 | WeiTheShinobi" />
+<meta name="twitter:title" content="Clean Architecture 替我解決的痛點 | WeiTheShinobi" />
+<meta itemprop="name" content="Clean Architecture 替我解決的痛點 | WeiTheShinobi" />
+<meta name="application-name" content="Clean Architecture 替我解決的痛點 | WeiTheShinobi" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Clean Architecture 替我解決的痛點">
+<meta itemprop="description" content="Clean Architecture 替我解決的痛點" />
+<meta property="og:description" content="Clean Architecture 替我解決的痛點" />
+<meta name="twitter:description" content="Clean Architecture 替我解決的痛點" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:src" content="" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2023-01-07T00:00:00Z />
+    <meta property="article:published_time" content=2023-01-07T00:00:00Z />
+
+    
+    <meta property="og:article:author" content="Wei the shinobi" />
+    <meta property="article:author" content="Wei the shinobi" />
+    <meta name="author" content="Wei the shinobi" />
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Clean Architecture 替我解決的痛點",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2023-01-07",
+        "description": "Clean Architecture 替我解決的痛點",
+        "wordCount":  47 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2023-01-07",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "WeiTheShinobi"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="/posts/my-study-note/article/2023/clean-architecture/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Clean Architecture 替我解決的痛點</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2023-01-07T00:00:00&#43;00:00" itemprop="datePublished"> 7 Jan 2023 </time>
+                </div>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#被資料庫綁架">被資料庫綁架</a></li>
+    <li><a href="#以領域為主">以領域為主</a></li>
+    <li><a href="#所謂依賴">所謂依賴</a></li>
+    <li><a href="#簡單點">簡單點</a></li>
+    <li><a href="#測試程式碼">測試程式碼</a></li>
+    <li><a href="#聊聊框架">聊聊框架</a></li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="clean-architecture-替我解決的痛點">Clean Architecture 替我解決的痛點</h1>
+<p>WeiTheShinobi</p>
+<p>Clean Architecture 是我讀的一本書，這本書講了架構、SOLID、作者的自傳等等，我來分享一些我得到的新東西，也許這比較像是讀書心得或是我對自己的碎碎念。</p>
+<img src="03.png">
+<h2 id="被資料庫綁架">被資料庫綁架</h2>
+<p>我想這是出發點問題，很多人應該看過以下這種依賴關係：</p>
+ <img src="02.png">
+<p>這是你常常會看到的做法，甚至是網路上很多的範例也是這樣，程式可以跑、可以正確執行，我不知道你有沒有這樣想過，但我總是覺得這種做法卡卡的，不管是開發中或是日後維護，總是有種說不出的怪，為什麼改起來怪怪的？接手起來好痛苦啊！需求改動總是像大地震一樣，最終變成一團義大利麵。商業邏輯依賴於資料庫表、直接使用資料庫表的 model 輸出，語意不明確又容易出錯。</p>
+<h2 id="以領域為主">以領域為主</h2>
+<p>以主要的商業邏輯做出發點，寫出邏輯與資料結構，你不需要知道你的資料是從 MySQL 還是 Redis 來的，你只需要知道有個東西會給你資料。你也不需要知道你的資料會送到瀏覽器、桌面應用還是 RPC，你只知道把資料交出去就對了。把主要的邏輯與 IO 的部分解耦，讓外部依賴領域邏輯，也不要讓外部插手領域邏輯，這樣你才能在日後改變的更少，為何？這與依賴關係有關。</p>
+<h2 id="所謂依賴">所謂依賴</h2>
+<img src="01.png">
+<p>並不是把程式分開來寫就真的解耦了，重點在於依賴關係，這與你用微服務或是單體無關，上游改動下游就會受到影響，所以管理依賴很重要，如果把常常變動的元件當作核心會很痛苦的，在 Go 語言中你的迴圈依賴是過不了編譯器的。</p>
+<h2 id="簡單點">簡單點</h2>
+<p>我覺得寫 code 還是要取捨，功能就只是簡單的讀取資料就簡單寫，不要過度設計，在動態中逐步成長，一開始就弄一堆有的沒的也許之後也用不到了，還讓接手的人覺得困擾，一堆不必要的 interface 在 trace 的時候是挺困擾的，記得那句話：「你現在不需要」，我覺得其實寫程式還是很自由的，但不代表做什麼都可以，遵守基礎的原則然後發揮創意，就像畫畫一樣。</p>
+<h2 id="測試程式碼">測試程式碼</h2>
+<p>我基本上是那種會「一邊寫測試一邊開發」的人，所以測試的痛我有感觸，我常常覺得測試寫起來難以維護，測試依賴於產品程式碼，所以測試維護寫得不好維護成本超高，維護超累就懶得弄，懶得弄測試就沒意義了，寫測試也是需要思考與練習的。別讓測試特定化，這也是我常犯的錯，太過訂製的測試會一改就廢，測試需要 mock 、輸入輸出都需要想想，我現在寫測試都會思考如何讓測試更好維護。</p>
+<h2 id="聊聊框架">聊聊框架</h2>
+<p>以前用 Java Spring Boot 框架，那時就覺得這根本是魔法，怎麼可以這麼方便啊！加上一個註解就幫我做好多事，依賴注入還有開箱即用真的很舒服，後來我開始寫 Go，我動手實作以前那些所謂的「魔法」，注入物件、初始化，不知道為什麼心裡反而有種踏實的感覺哈哈哈哈，畢竟以前都是讓框架來替我管理，大概是因為自己從頭寫到尾真的理解了吧，回到正題，我想說少即是多，也許是時候開始思考你到底需要什麼，就像家裡面有一堆放很久沒用到的東西，之後大概也用不到，可以丟掉了。</p>
+<img src="04.png">
+<p>推薦大家都可以看看這本書</p>
+<p>參考資料：《Clean Architecture》</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/WeiTheShinobi" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 WeiTheShinobi.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

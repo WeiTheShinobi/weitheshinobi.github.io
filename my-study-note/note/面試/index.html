@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/my-study-note/note/%E9%9D%A2%E8%A9%A6/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#我的優勢">我的優勢</a></li>
+        <li><a href="#自我介紹希望的環境待遇">自我介紹（希望的環境、待遇）</a></li>
+        <li><a href="#自我推薦">自我推薦</a></li>
+      </ul>
+    </li>
+    <li><a href="#side-project">side project</a>
+      <ul>
+        <li><a href="#信">信</a></li>
+      </ul>
+    </li>
+    <li><a href="#技巧">技巧</a></li>
+    <li><a href="#模擬問題回答區">模擬問題回答區</a>
+      <ul>
+        <li><a href="#行為問題">行為問題</a></li>
+      </ul>
+    </li>
+    <li><a href="#街口">街口</a></li>
+    <li><a href="#greenhash">greenhash</a></li>
+    <li><a href="#----">&mdash;-</a>
+      <ul>
+        <li><a href="#自介">自介</a></li>
+      </ul>
+    </li>
+    <li><a href="#問題">問題</a></li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <p>串接金流</p>
+<p>制定coding style</p>
+<p>研討會</p>
+<p>使用nosql 存取log</p>
+<p>架構 加強</p>
+<p>多對多關聯</p>
+<p>資料庫的事務邏輯</p>
+<p>資料庫索引、使用explain</p>
+<p>研究開源框架：gin, groupcache, gorm</p>
+<p>學習編譯原理, rust</p>
+<h3 id="我的優勢">我的優勢</h3>
+<p>LeetCode、Medium 文章、看過工作描述都符合、認為自己有能力</p>
+<h3 id="自我介紹希望的環境待遇">自我介紹（希望的環境、待遇）</h3>
+<p>你好！我叫葉高緯，應徵工程師，如同在medium寫的自我介紹，我是一個好相處的人，我認為這對一個團隊是很重要的，是一個幽默的人，希望有一個輕鬆的環境，不想要去勾心鬥角，喜歡思考</p>
+<p>Clean Code, Clean Architecture, unit-test</p>
+<p>研究開源框架：gin, groupcache</p>
+<p>學習編譯原理, rust</p>
+<h3 id="自我推薦">自我推薦</h3>
+<p>我覺得剛剛的問題可能無法足夠瞭解我，因為有些問題讓求職者被迫選擇最佳解，就是面試常見的那些，這就變成大家都在背奇奇怪怪的解答，我想說我是個好相處的人，</p>
+<h2 id="side-project">side project</h2>
+<p>Leedcode：讓我學習離散數學</p>
+<h3 id="信">信</h3>
+<p>您好！我是一個幽默且隨和的工程師，目前任職於一家區塊鏈公司擔任後端工程師，主要使用 Go, Java，擁有強悍的程式能力：在 LeetCode 練習六百多題，在工作中使用測試驅動開發（TDD）來產出高品質的程式碼，有一台 Linux 筆電用於日常和開發。我渴望與聰明的人共事，希望有幸與各位暢談。</p>
+<p>您好！</p>
+<p>我是一名擅長使用 Go 和 Java 等程式語言的後端工程師，目前在一家區塊鏈公司任職，主要內容是使用 Go 語言開發 NFT 電商。我擁有豐厚的程式能力，在 LeetCode 上練習了 600 多題的算法題目。在工作中我使用測試驅動開發（TDD），以產出高品質的程式碼。我有一台 Linux 筆電用於日常使用和開發。</p>
+<p>除了技術能力，我也是一個幽默且隨和的人，因為渴望與聰明的人共事，希望有幸與各位暢談。</p>
+<p>Have a good day!</p>
+<h2 id="技巧">技巧</h2>
+<ul>
+<li>導向自己有把握的</li>
+<li>知道公司想要什麼樣的人，面試不是考試</li>
+<li>履歷朝著公司想要的方向寫</li>
+<li>履歷設計上，公司想要的要特別突出在空白（第一眼注意）</li>
+<li>寫下未來會完成的事，預測一年、二年的目標</li>
+<li>好的婉拒</li>
+<li>面試問題回答：回答情境，而不是背答案；遇到問題不是背答案，而是融入自己的想法輸出。</li>
+<li>需要有個總結</li>
+<li>超連結一律放在第一頁</li>
+<li>版面大會吸引人</li>
+<li>最好的面試策略就是，讓別人沒機會問太多題目：講話時偷渡自己知道的。</li>
+<li>面試要帶東西，可以準備資料</li>
+<li>面試要反問，然後偷渡並推銷自己</li>
+</ul>
+<p>問題背後的問題：問題就在答案之中、以 what, how回答、個人擔當而不是責怪</p>
+<h2 id="模擬問題回答區">模擬問題回答區</h2>
+<ul>
+<li>物件導向是什麼</li>
+</ul>
+<p>雖然說三大特色，但我認為是消去函式指標，因為 C 也能做到物件導向，</p>
+<ul>
+<li>OSI 網路七層模型</li>
+<li>Gin 在做什麼</li>
+</ul>
+<p>封裝 http 方便使用，動態路由使用字典樹，加入 context</p>
+<ul>
+<li>GroupCache 在做什麼</li>
+</ul>
+<p>淘汰策略，一致性 hash，防止快取擊穿（被調用時上鎖，短時間同時大量請求只會做一次），http, protobuf 協議</p>
+<ul>
+<li>如何寫出好code的?</li>
+</ul>
+<p>依賴注入</p>
+<ul>
+<li>工作在做什麼？</li>
+</ul>
+<p>主要開發電商網站的伺服器，我們後端有三人。工作的內容有開發API、串接金流等等，還有一些其他像是：之前會分享leetcode教學給前後端的同事，我希望導入unit test, log，不過unit test無果。使用explain調整資料庫、加上index等等。維護舊有程式碼是常做的，有幾個問題，像是缺少抽象與複用，沒有模組化，一個api就從頭寫到尾。一個請求沒有被整合成一筆tranction，這會有隱患，如果出錯可能沒有回朔到。</p>
+<p>花了很多時間在重構</p>
+<p>我需要往系統設計、資料庫、Docker 多加強</p>
+<hr>
+<h3 id="行為問題">行為問題</h3>
+<ul>
+<li>自己未來的規劃</li>
+</ul>
+<p>想要成長多久？要待多久？</p>
+<ul>
+<li>為什麼離開上一家公司？</li>
+</ul>
+<p>團隊沒有一起變強</p>
+<ul>
+<li>要問好問題 到新創想要什麼 公司的文化</li>
+</ul>
+<p>如何學習 公司怎麼樣</p>
+<ul>
+<li>回答技術上的最大問題，排除人，因為最大問題會是人</li>
+</ul>
+<p>金流時間很短，我需要留下技術債來加速</p>
+<ul>
+<li>別當刷題仔、面試最重要的是溝通</li>
+</ul>
+<p>最重要的是去聽面試官的話</p>
+<ol>
+<li>**集思廣益演算法。**繪製示例輸入並在大聲交談和思考時玩弄它們。在你和面試官對你的演算法感到滿意之前，不要開始寫代碼。</li>
+<li>**在代碼中剔除您的演算法。**專注於先把它全部記下來，然後在你想回去的事情旁邊記下筆記，稍後再仔細檢查。</li>
+<li>**調試代碼。**使用範例輸入演練代碼，查找逐個錯誤和其他錯誤。</li>
+</ol>
+<ul>
+<li>講述自己的成長、講述自己的故事</li>
+</ul>
+<p>講故事的時候要講具體的細節，要跟真的講故事一樣而不是面試</p>
+<p>講述生活中的故事</p>
+<p>我如何開始深入的去學習的？我在網路上看到文章</p>
+<p>測距儀的故事，講到了三角形和數學</p>
+<p>這讓我瞭解了底層知識的重要，我想如果我的目標就是要成為專家</p>
+<p>那我必須更努力學習那些「看起來沒用的東西」，看到 Linux 核心</p>
+<p>很多公司會有開源版本跟商業版本同時運作</p>
+<ul>
+<li>講述與同事相處</li>
+</ul>
+<p>你怎麼教33 跟一齊聊天</p>
+<p>教學時，英文問題，很多人其實是不想看英文，</p>
+<ul>
+<li>講述自己的 medium 風格</li>
+</ul>
+<p>自己的插圖、為什麼要選擇如此淺白？我覺得不用去跟專業競爭，我的目標受眾應該是普羅大眾</p>
+<ul>
+<li>把自己帶入進入公司來問問題，這樣才能問出好問題</li>
+<li>Ipfs 連線器</li>
+<li>Erc721, erc1155</li>
+</ul>
+<h2 id="街口">街口</h2>
+<p>為什麼找我來面試？從我的履歷看中什麼地方？</p>
+<p>加班、薪水</p>
+<h2 id="greenhash">greenhash</h2>
+<p>面試重點在於：準備的題目</p>
+<p>自己的成長</p>
+<p>問題：最大的技術上的問題：把傳送email改用go</p>
+<ul>
+<li>為什麼想來新創？</li>
+</ul>
+<p>講述自己挑公司的規則：不選接案公司、希望公司的主力就是軟體</p>
+<p>從履歷講到：法拉利與toyota的行銷策略 超商的食物和外面賣的</p>
+<p>自我介紹：</p>
+<p>一面：</p>
+<p>區塊鏈：</p>
+<p>先形容是什麼東西，主要產品，前年開始的公司：碳權</p>
+<p>交易所、錢包、AMM</p>
+<p>我覺得弄這些基礎建設很有發展性</p>
+<p>希望可以貢獻這些基礎建設</p>
+<p>分散式網路、</p>
+<p>區塊鏈就像是git，git透過sha1，共識機制：fork後大家會去維護人多的專案</p>
+<p>可以在區塊鏈上跑 不代表應該在區塊鏈上跑</p>
+<p>新創：新創公司的文化 是執行長決定的</p>
+<p>&ndash; 對於台灣新創公司/我們公司的了解
+&ndash; 對於區塊鏈目前的了解</p>
+<p>一個公鑰一個私鑰 加密解密</p>
+<p>比特幣雙重支付：</p>
+<p>拜占庭將軍問題：口頭協議 問每個人 看收到哪種命令多 就像在玩誰是臥底。PBFT算法。算力證明</p>
+<p>要問的問題：</p>
+<p>為什麼找我來面試？我的履歷中有什麼吸引你們的地方？</p>
+<p>為什麼選擇奇亞鏈？藍海？其他特性？UTXO account？以太鏈修改了共識算法 有沒有影響？換句話說，你們覺得奇亞鏈的使用者想要解決什麼</p>
+<p>你們有算過公司的資金可以用多久嗎</p>
+<p>工程團隊有多少人？</p>
+<p>進去後我會做什麼？會有人帶我嗎？</p>
+<p>因為我看你們是遠端，辦公室很多人在用嗎</p>
+<p>分股票，創辦人股權的分配</p>
+<p>公司的商業模型是什麼，你們要如何盈利？</p>
+<ul>
+<li>奇亞</li>
+</ul>
+<p>UTXO模型：專注於貨幣的狀態，貨幣生成一次、消耗一次，具有可並行性，貨幣是一等公民，而不只是一個映射中的狀態，因為交易狀態可以沒有順序，所以受到攻擊會大幅減少，而且礦工不會再得到MEV。</p>
+<p>對於用戶來說，如果我有 2xch，我轉帳給別人 0.1 ，2會被銷毀，產生 0.1 給朋友、1.9 返回給我</p>
+<p>對於開發者來說，因為錢只能消耗一次，所以建構高級的程序會更複雜</p>
+<p>AMM 流動性</p>
+<p>Craigslist，DEX</p>
+<p>DEX 解決了什麼？</p>
+<p>用戶競爭：在人多的情況下，用戶會發生競爭，DEX 替我們搓合報價</p>
+<p>規模化：要有做市商、交易者，需要提供好的 API</p>
+<p>可擴展性：</p>
+<p>互操作性：AMM造市商</p>
+<p>操作可提取價值：</p>
+<p>開發流程</p>
+<p>i18n, api, 確定了 utxo的amm模型</p>
+<p>與其他專案開發者開發空投工具，開發 chialisp 函式庫來 AMM，後端 幣資料庫，只接收報價然後搓合</p>
+<p>修正因為有人提交錯誤的訂單而污染數據，實現功能：可以花點小錢加速，整合Goby</p>
+<p>用戶可以一次上傳多筆訂單</p>
+<p>集成 goby 錢包</p>
+<p>coin set 在奇亞鏈上的錢，是由許多小硬幣結合起來，因為硬幣是一級公民，二十塊可能是各種不同硬幣組成</p>
+<p>使用 user id 遷移交易紀錄</p>
+<p>AMM特色：可持續分配的token、公平，沒有MEV、設定可以容忍的波動</p>
+<p>奇亞NFT：DID證明，創作者可以創造id來連結nft、不需要第三方的交易，避免受騙、版稅</p>
+<p>Order book vs swap</p>
+<p>開發 AMM</p>
+<h2 id="----">&mdash;-</h2>
+<ul>
+<li>
+<p>使用 Go 語言開發 NFT 電商伺服器</p>
+</li>
+<li>
+<p>串接金流</p>
+</li>
+</ul>
+<p>著重在 transaction 的部分</p>
+<ul>
+<li>
+<p>測試驅動開發(TDD)</p>
+</li>
+<li>
+<p>主講每週一場的技術分享會</p>
+</li>
+</ul>
+<p>我以 LeetCode 為題材，跟同事講解資料結構與演算法，我會不斷改變教學的方式，讓同事做然後適時給予提示，講解各種解法與複雜度。</p>
+<ul>
+<li>重構</li>
+</ul>
+<p>原先的 api 非常之亂，我在開發時還蠻痛苦的，所以我在開發時會順便重構，確保 transation，增加抽象，我以領域為主，重新劃分依賴關係，多多重複使用 code。</p>
+<ul>
+<li>使用 SQL explain 最佳化關聯資料庫</li>
+</ul>
+<p>投資價值：</p>
+<h3 id="自介">自介</h3>
+<p>各位好，我叫葉高緯，目前24歲，興趣是待在家用電腦，我就是肥宅，目前有約一年工作經驗，主要是使用 Go，我覺得自己算是幽默隨和，以前在學校有用Python，商學院喜歡教 Python。我覺得我的學習能力也不錯，我基本上都是每天會花一段時間學習，然後做做筆記，持之以恆很久了。這也是我之後開始寫medium的原因，就希望用淺顯的文字分享</p>
+<p>自學使用 sql explain, go pprof</p>
+<p>我從大學開始寫程式，一開始是選修一些資工系的課程，我還記得我修的第一堂是物件導向，然後就開始不斷精進。</p>
+<p>我有用 Java 做過 android app，我是蠻喜歡 Java 的，因為生態系很成熟，內建的函式庫又很強大，</p>
+<p>後來我覺得可以學以致用，覺得可以做些專案，那時候就產生了一個想法，我來弄一些有趣的小東西好了，大四的時候，我就看到google有一個免費的線上課程，我就去學習，碰了一點kotlin，就是那個程式語言，有點像是加強版Java，稍微知道一些android的系統，課程有習題，把題目做完還送一件衣服，就寄到我住的地方，最後我就在play商店上架了一個app，還拿到了一件上衣。</p>
+<p>我本來就是個對區塊鏈有興趣的人，我在目前工作中使用 go 開發伺服器，每天早上會有一個晨會說明一下自己做了什麼、要做什麼，然後開發、CICD，後來我覺得公司的業務其實蠻傳統的，其實還是在做一個傳統電商，希望能到一個更web3的地方，我把你們的medium都看完ㄌ，我覺得自己更加嚮往貴公司的業務，簡單的說我覺得你們做基礎建設很酷，</p>
+<p>Ipfs</p>
+<p>學習筆記，一開始會寫medium 的原因是希望那些剛入門或是初學者，可以以更輕鬆更簡單的方式去學習。</p>
+<p>測距儀的故事，講到了三角形和數學</p>
+<p>這讓我瞭解了底層知識的重要，我想如果我的目標就是要成為專家</p>
+<p>那我必須更努力學習那些「看起來沒用的東西」</p>
+<h2 id="問題">問題</h2>
+<ul>
+<li>有想過公司之後的願景嗎？</li>
+<li>產品的roadmap是什麼？</li>
+<li>為什麼要創立分公司？</li>
+<li>可以介紹一下公司的文化嗎？</li>
+<li>為什麼想來台灣找工程師？</li>
+<li>公司的客戶？未來的版圖有多大？</li>
+<li>怎麼會覺得 GameFi 能賺錢？</li>
+<li>這個新部門會有多少人？</li>
+<li>設計的產品會是什麼樣子？公司打算投入多少？有想過多久能賺錢嗎？</li>
+<li>你們希望找到什麼樣的人？</li>
+<li>這個產品會使用怎樣的技術？預計使用人數會有多少？</li>
+<li>為什麼 medium 沒在更新了？</li>
+<li>你們公司開發流程</li>
+</ul>
+<p>未來的想法、關於產品、溝通方面</p>
+<hr>
+<p>公司文化？我想要怎麼樣的戰場</p>
+<p>3.該部門所負責的產品或服務是成本單位還是獲利單位</p>
+<p>4.該部門負責的產品或服務的目標是什麼，未來是否可能變動</p>
+<p>5.未來1-2年預計的部門走向</p>
+<p>6.同事們目前的分工模式為何 (PM &amp; SA &amp; SD &amp; DBA 或其他職稱) ，  由誰主導，技術上層次如何切分，可以想像未來大概工作流程如何。</p>
+<p>7.決策鍊目前是否有決策反覆的情況          (這題可用若碰到市場變化，可能會如何因應來測)</p>
+<ul>
+<li>小精靈</li>
+<li>應援公式</li>
+<li>重構</li>
+<li>資料庫優化</li>
+<li>幫我們專案加入了缺少的東西 log</li>
+<li>實體商品配送</li>
+<li>用戶生日地址</li>
+</ul>
+<p>24歲，幽默隨和，我每天會很多的時間再碰這些程式的東西，學習也好、練習也好，基本功力不錯，擅長使用 Go, Java 開發，前份工作約做一年，使用 Gin + gorm 開發，我替我們系統補充了很多不足，log, style，懂一點系統設計，算是有點研究。經濟學系畢業，我覺得我從實驗經濟學上學到的某些經驗可以幫助產品。我每天碰這些算是很熟練，而且基本功不錯，我有很強的速度可以學習，就像你們求賢若渴，我渴望找到一個能發揮的戰場，對我來說薪水不是首要的考量，我希望能找到一家能互相成就的公司。</p>
+<p>解決某些問題 像是訂單記錄 不會一次送出所有 分頁，改善 transition</p>
+<p>code review 時怎麼解決尷尬？意見不同？</p>
+<p>怎麼管理複雜的系統？你們有畫圖嗎？文件？</p>
+<p>你們的商業模型是怎麼樣？羊毛出在誰身上？</p>
+<p>你們希望找到什麼樣的人？你們怎麼請不適合的人離開？</p>
+<p>我有研究過gin</p>
+<p>單元測試分成三部分 利用迴圈 測試的可維護性</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

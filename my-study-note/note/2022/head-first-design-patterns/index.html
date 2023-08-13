@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/my-study-note/note/2022/head-first-design-patterns/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#把變動部分封裝起來">把變動部分封裝起來</a></li>
+    <li><a href="#針對介面寫程式不是針對實踐寫程式">針對介面寫程式，不是針對實踐寫程式</a></li>
+    <li><a href="#多用合成少用繼承">多用合成，少用繼承</a></li>
+    <li><a href="#策略模式">策略模式</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#設計時盡量讓需要互動的物件之間關係鬆綁">設計時，盡量讓需要互動的物件之間關係鬆綁</a></li>
+    <li><a href="#通知變更">通知變更</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#缺點">缺點</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#簡單工廠">簡單工廠</a></li>
+    <li><a href="#工廠模式-1">工廠模式</a></li>
+    <li><a href="#依賴反轉守則">依賴反轉守則</a>
+      <ul>
+        <li><a href="#指導方針">指導方針</a></li>
+      </ul>
+    </li>
+    <li><a href="#抽象工廠">抽象工廠</a>
+      <ul>
+        <li><a href="#比較抽象工廠與工廠方法">比較抽象工廠與工廠方法</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#基本">基本</a></li>
+    <li><a href="#多執行緒的問題">多執行緒的問題</a>
+      <ul>
+        <li><a href="#解決辦法">解決辦法</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#轉接器模式">轉接器模式</a>
+      <ul>
+        <li><a href="#物件轉接">物件轉接</a></li>
+        <li><a href="#類別轉接">類別轉接</a></li>
+      </ul>
+    </li>
+    <li><a href="#facade-表象模式">Facade 表象模式</a>
+      <ul>
+        <li><a href="#極少化守則">極少化守則</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#好萊塢守則">好萊塢守則</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#反覆器模式">反覆器模式</a></li>
+    <li><a href="#單一責任">單一責任</a></li>
+    <li><a href="#合成模式">合成模式</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#類別">類別</a></li>
+    <li><a href="#虛擬代理人">虛擬代理人</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#model-view-controller">Model-View-Controller</a></li>
+    <li><a href="#mvc-與-web">MVC 與 Web</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#定義設計模式">定義設計模式</a></li>
+    <li><a href="#分類">分類</a></li>
+    <li><a href="#用模式思考">用模式思考</a></li>
+    <li><a href="#反模式">反模式</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#橋梁模式bridge-pattern">橋梁模式(Bridge Pattern)</a></li>
+    <li><a href="#建立者builder-pattern">建立者(Builder Pattern)</a></li>
+    <li><a href="#責任鍊模式chain-of-responsibility-pattern">責任鍊模式(Chain of Responsibility Pattern)</a></li>
+    <li><a href="#蠅量級模式flyweight-pattern">蠅量級模式(Flyweight Pattern)</a></li>
+    <li><a href="#翻譯者模式interpreter-pattern">翻譯者模式(Interpreter Pattern)</a></li>
+    <li><a href="#中介者模式mediator-pattern">中介者模式(Mediator Pattern)</a></li>
+    <li><a href="#備忘錄模式memento-pattern">備忘錄模式(Memento Pattern)</a></li>
+    <li><a href="#原型模式prototype-pattern">原型模式(Prototype Pattern)</a></li>
+    <li><a href="#參觀者模式visitor-pattern">參觀者模式(Visitor Pattern)</a></li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="head-first-design-patterns">Head First Design Patterns</h1>
+<blockquote>
+<p>書名：《<em>Head First Design Patterns</em>》</p>
+<p>筆記作者：葉高緯 Wei the Shinobi</p>
+</blockquote>
+<p>之前看了《<em>Head First Java</em>》，我覺得Head First系列都很讚。</p>
+<h1 id="介紹設計模式">介紹設計模式</h1>
+<p>設計模式讓我們與其他人討論時更方便，</p>
+<p>現在有一個鴨子父類，</p>
+<p>有很多不同的鴨子子類會繼承，</p>
+<p>但是不同的鴨子有不同的行為，</p>
+<p>像是呱呱叫和飛翔，</p>
+<p>個別修改不同的行為對於日後維護困難。</p>
+<h2 id="把變動部分封裝起來">把變動部分封裝起來</h2>
+<p>我們可以把呱呱叫和飛翔從鴨子中取出，</p>
+<p>建立一個新的類別。</p>
+<blockquote>
+<p>封裝呱呱叫和飛翔的行為。</p>
+</blockquote>
+<h2 id="針對介面寫程式不是針對實踐寫程式">針對介面寫程式，不是針對實踐寫程式</h2>
+<p>在鴨子class中，</p>
+<p>選擇行為的介面。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">FlyBehavior</span> <span class="n">fly</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FlyNoWay</span><span class="o">;</span>
+</span></span></code></pre></div><p>從介面呼叫方法易於維護與擴充。</p>
+<h2 id="多用合成少用繼承">多用合成，少用繼承</h2>
+<p>我們把行為的介面和鴨子組合起來，</p>
+<p>而不是把繼承行為，</p>
+<p>組合更加靈活，</p>
+<p>還可以動態指定不同的行為。</p>
+<blockquote>
+<p>「有一個」比「是一個」更好。</p>
+</blockquote>
+<h2 id="策略模式">策略模式</h2>
+<p>定義了演算法家族，個別封裝，讓它們可以替換，演算法的變動不會影響使用演算法的程式。</p>
+<p>舉例：</p>
+<p>一個角色有一個武器行為，</p>
+<p>做出一個武器行為介面，</p>
+<p>可以實作出不同武器的武器行為，</p>
+<p>還可以使用角色的<code>setWeapon</code>方法來替換武器。</p>
+<h1 id="觀察者模式">觀察者模式</h1>
+<p>定義了物件之間的一對多關係，當一個物件改變狀態，其他相依者都會收到通知並更新。</p>
+<p>就像是報社和訂閱者，</p>
+<p>訂閱可以收到報紙，</p>
+<p>也可以取消訂閱就不再收到報紙。</p>
+<p>設計主題介面與觀察者介面。</p>
+<h2 id="設計時盡量讓需要互動的物件之間關係鬆綁">設計時，盡量讓需要互動的物件之間關係鬆綁</h2>
+<p>當兩個物件被鬆綁，</p>
+<p>依然可以互動，</p>
+<p>但是不太清楚彼此的細節。</p>
+<h2 id="通知變更">通知變更</h2>
+<p>有時候資訊頻繁改動，</p>
+<p>可以設定<code>setChange</code>方法，</p>
+<p>自訂改動的幅度才通知觀察者。</p>
+<h1 id="裝飾者模式">裝飾者模式</h1>
+<p>動態地將責任加諸於物件上。若要擴充功能，裝飾者提供比繼承更有彈性的選擇。</p>
+<p>讓裝飾者與被裝飾者能使用多型，</p>
+<p>繼承同一個類，</p>
+<p>再建構式中實例化父類。</p>
+<p>範例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Drink</span> <span class="n">drink</span> <span class="o">=</span> <span class="k">new</span> <span class="n">coffee</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">drink</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mocha</span><span class="o">(</span><span class="n">drink</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">drink</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Whip</span><span class="o">(</span><span class="n">drink</span><span class="o">);</span>
+</span></span></code></pre></div><p>這看起來有沒有像什麼？</p>
+<p>就是Java的IO流</p>
+<p><code>FileInputStream</code>是被裝飾者</p>
+<p>像是<code>BufferedInputStream</code>之類的裝飾者都繼承了<code>FilterInputStream</code></p>
+<p>可以裝飾<code>FileInputStream</code></p>
+<p>而且他們全都繼承自同一個抽象類</p>
+<p>了解了這些你甚至可以繼承<code>FilterInputStream</code>來撰寫自己的裝飾者</p>
+<h2 id="缺點">缺點</h2>
+<ul>
+<li>大量的小類別不容易被理解設計方式</li>
+</ul>
+<p>如同第一次接觸IO庫，</p>
+<p>無法輕易地知道用法。</p>
+<ul>
+<li>裝飾者實體化元件時，將增加程式的複雜度</li>
+</ul>
+<p>要一直包包包</p>
+<h1 id="工廠模式">工廠模式</h1>
+<p>工廠模式將建立物件的程式碼集中在一個物件或行為中，</p>
+<p>在進行物件實體化時只會用到介面，</p>
+<p>不再依賴實踐類，</p>
+<p>讓程式更有彈性方便修改。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Duck</span> <span class="n">dukc</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">duck</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RubberDuck</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">duck</span> <span class="o">=</span> <span class="k">new</span> <span class="n">NormalDuck</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>我們針對介面寫程式，</p>
+<p>介面透過多型來實例化不同的實現類，</p>
+<p>但如果已有大量的實現類，</p>
+<p>要加入新的實現類就要<strong>修改舊的程式碼</strong>，</p>
+<p>而這正是我們不樂見的，</p>
+<p>所以<strong>我們找出會改變的地方，然後將這部分抽離出來，</strong></p>
+<p>所以工廠誕生了。</p>
+<h2 id="簡單工廠">簡單工廠</h2>
+<p>單純的把剛剛那段示範程式碼抽取出來，</p>
+<p>寫進一個新的類中，</p>
+<p>在需要用到工廠的時候呼叫。</p>
+<p>簡單工廠其實不是設計模式，反而比較像是一種編程習慣。</p>
+<h2 id="工廠模式-1">工廠模式</h2>
+<p>定義一個建立物件的介面，但由子類別<strong>決定</strong>要實體化的類別為何。工廠方法讓類別把實體化的動作，交由子類別進行。</p>
+<p>所謂的「決定」，並不是指模式允許子類別在執行期作決定，</p>
+<p>而是指：在撰寫創建者類別（工廠）時，不需要知道實際建立的產品為何，</p>
+<p>選擇哪個子類別（工廠），自然就決定了實際建立的產品為何。</p>
+<h2 id="依賴反轉守則">依賴反轉守則</h2>
+<p><strong>依賴抽象類別，不要依賴實現類別。</strong></p>
+<p>舉例來說：</p>
+<p>披薩店依賴於一堆不同口味的特色披薩，</p>
+<p>不如依賴於披薩抽象，</p>
+<p>讓特色披薩實作披薩抽象。</p>
+<p>那反轉在哪？</p>
+<p>本來披薩店直接依賴一堆特色披薩（低階元件），</p>
+<p>現在披薩店依賴披薩抽象，</p>
+<p>而特色披薩依賴披薩抽象，</p>
+<p>相依被顛倒了。</p>
+<h3 id="指導方針">指導方針</h3>
+<ul>
+<li>
+<p>變數不可以持有實現類的參考</p>
+<p>​	這就是為什麼我們不使用<code>new</code>，改用工廠迴避。</p>
+</li>
+<li>
+<p>不要讓類別繼承自實現類</p>
+</li>
+<li>
+<p>不要讓子類<code>override</code>父類的方法</p>
+<p>​	如果這樣，說明這不適合繼承。</p>
+</li>
+</ul>
+<p>當然不可能完全遵守這些守則，</p>
+<p>否則你什麼都寫不出來。</p>
+<h2 id="抽象工廠">抽象工廠</h2>
+<p>工廠的工廠，抽象工廠定義了我們該怎麼蓋工廠。</p>
+<p>抽象工廠提供介面，</p>
+<p>以實踐各式各樣的工廠，</p>
+<p>工廠方法就潛伏在抽象工廠中。</p>
+<h3 id="比較抽象工廠與工廠方法">比較抽象工廠與工廠方法</h3>
+<ul>
+<li>工廠提供介面建立出產品<code>createPizza()</code></li>
+<li>抽象工廠提供介面建立一個產品家族，像是披薩的原物料，原物料又會有工廠。</li>
+</ul>
+<h1 id="單例模式">單例模式</h1>
+<p>確保一個類別只有一個實體，並給它一個存取的global point。</p>
+<p>有些物件只需要一個，如果有多個實體，就會出事。</p>
+<h2 id="基本">基本</h2>
+<p>私有建構式</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">MyClass</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="nf">MyClass</span><span class="o">(){}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="nf">getInstance</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h2 id="多執行緒的問題">多執行緒的問題</h2>
+<p><strong>Lazy Instantiaze</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="n">myClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="nf">getInstance</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">(</span><span class="n">myClass</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">myClass</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">myClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>多執行緒處理最基本的單例模式有機會出問題，</p>
+<p>例如<code>getInstance()</code>產生多個實體，</p>
+<p>我們可以在方法加上<code>synchronized</code>關鍵字。</p>
+<p>雖然這個方法簡單又有效，</p>
+<p>但是加上這個關鍵字會拖垮效能，</p>
+<p>因為我們只需要在第一次產生實體時排隊就好，</p>
+<p>不需要每一次。</p>
+<h3 id="解決辦法">解決辦法</h3>
+<ul>
+<li>使用<code>synchronized</code>關鍵字不管效能</li>
+</ul>
+<p>如果效能對你來說沒那麼重的話。</p>
+<ul>
+<li>不用拖延實體化的作法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 直接建立一個
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">private</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="n">myClass</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="nf">getInstance</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">myClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><ul>
+<li>雙重鎖</li>
+</ul>
+<p>原理：先檢查是否實體化，如果還沒，才會同步化，這樣就只會進行一次同步化。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 加上volatile關鍵字確保可見性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">private</span> <span class="kd">volatile</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="n">myClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">MyClass</span> <span class="nf">getInstance</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 檢查是否實體化，如果不存在才會進入同步化區塊。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span> <span class="o">(</span><span class="n">myClass</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">synchronized</span> <span class="o">(</span><span class="n">Singleton</span><span class="o">.</span><span class="na">class</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">myClass</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">myClass</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">myClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h1 id="命令模式">命令模式</h1>
+<p>將請求封裝成物件。</p>
+<p>像是一間餐廳，</p>
+<p>你把菜單給服務生，</p>
+<p>服務生把菜單給廚師，</p>
+<p>而服務生不會知道菜單是什麼。</p>
+<p>或者說是遙控器和家電，</p>
+<p>你按下遙控器，</p>
+<p>遙控器調用封裝好的命令介面給電器，</p>
+<p>電器執行它該做的，</p>
+<p>所以我們要寫一個命令介面，</p>
+<p>還需要調用者，</p>
+<p>然後把命令介面傳進調用者中，</p>
+<p>調用者負責執行。</p>
+<h1 id="轉接器模式與表象模式">轉接器模式與表象模式</h1>
+<h2 id="轉接器模式">轉接器模式</h2>
+<p>將一個類別的介面，轉換成另一個介面。</p>
+<p>轉接器不難理解，</p>
+<p>插頭和插座的形狀不一樣，</p>
+<p>就需要轉接器，</p>
+<p>讓我們不用改寫插頭或插座。</p>
+<h3 id="物件轉接">物件轉接</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">c</span><span class="o">.</span><span class="na">lass</span> <span class="n">TurkeyAdapter</span> <span class="kd">implements</span> <span class="n">Duck</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">quack</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">turkey</span><span class="o">.</span><span class="na">gobble</span><span class="o">();</span> <span class="c1">// 呼叫火雞的方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>這段程式碼中，</p>
+<p>我們把火雞透過轉接器，</p>
+<p>轉換成鴨子。</p>
+<h3 id="類別轉接">類別轉接</h3>
+<p>不使用合成改變被轉接者，</p>
+<p>而是<strong>多重繼承</strong>被轉接者和目標類別，</p>
+<p>設計出類別轉接器。</p>
+<p>不過關鍵就在<strong>多重繼承</strong>，</p>
+<p>Java是無法多重繼承的，</p>
+<p>但也許有天寫C++的時候可以用到。</p>
+<hr>
+<p>不論哪種方法，</p>
+<p>客戶都會認為他在跟鴨子溝通，</p>
+<p>但其實是轉接過的火雞。</p>
+<h2 id="facade-表象模式">Facade 表象模式</h2>
+<p>提供一個統一的介面，存取次系統中的一群介面。</p>
+<p>表象用於簡化介面，</p>
+<p>本來你要調用一堆次系統的介面，</p>
+<p>但表象把它們集中起來管理，</p>
+<p>就可以讓你只要調用表象，</p>
+<p>其實非常好懂。</p>
+<h3 id="極少化守則">極少化守則</h3>
+<p><strong>只和你的密友談話。</strong></p>
+<p>這個守則希望我們不要讓太多類別綑綁在一起，</p>
+<p>要減少物件之間的互動。</p>
+<p><strong>把極少化守則與表象模式配合，</strong></p>
+<p>透過表象模式讓你的系統不用依賴一堆次系統，</p>
+<p>實現極少化守則。</p>
+<h1 id="樣板方法模式">樣板方法模式</h1>
+<p>將一個演算法的骨架定義在一個方法中，而演算法本身會用到的一些方法定義在子類別中。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AbstractClass</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">final</span> <span class="kt">void</span> <span class="nf">templateMethod</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">opera1</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">opera2</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">opera3</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">opera1</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">opera2</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">opera3</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// implementation here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">hook</span><span class="o">()</span> <span class="o">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 鉤子方法，子類別可以視情況決定要不要override鉤子
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>這段程式碼簡單的示範了模板方法模式。</p>
+<h2 id="好萊塢守則">好萊塢守則</h2>
+<p>高階元件：別呼叫我們，我們會呼叫你。</p>
+<p>好萊塢守則是一個防止<strong>依賴腐敗</strong>的方法。</p>
+<p>起源：</p>
+<p>演員投出履歷給好萊塢的製作人，</p>
+<p>但製作人要看上百封履歷，</p>
+<p>如果每個人都要回覆就沒時間了，</p>
+<p>所以只讓製作人呼叫演員。</p>
+<hr>
+<p><strong>只讓高階元件呼叫低階元件，</strong></p>
+<p><strong>低階不能直接呼叫高階。</strong></p>
+<h1 id="反覆器iterator與合成模式">反覆器(Iterator)與合成模式</h1>
+<p><code>Iterator</code>：反覆器，或譯作迭代器。</p>
+<p>我們從兩個不同物件的<code>get()</code>方法取得資料，</p>
+<p>但其中一個得到<code>ArrayList</code>，</p>
+<p>另一個得到陣列，</p>
+<p>不同的資料類型處理起來不方便。</p>
+<h2 id="反覆器模式">反覆器模式</h2>
+<p>讓我們能夠取得一個聚集(collection)內的每一個元素，不用將實作暴露。</p>
+<p>依賴於反覆器介面，</p>
+<p>有<code>hasNext()</code>、<code>next()</code>和<code>remove()</code>。</p>
+<p>只要讓你依賴的物件實現<code>Iterator</code>，</p>
+<p>就不用寫一堆迴圈了，</p>
+<p>而且還可以隱藏實作。</p>
+<blockquote>
+<p>如果你不想實作<code>remove()</code>，可以拋出異常<code>UnsupportedOperationException</code>。</p>
+</blockquote>
+<h2 id="單一責任">單一責任</h2>
+<p>一個類別應該只具有一個改變的理由。</p>
+<h2 id="合成模式">合成模式</h2>
+<p>現在我們可以用反覆器來印出所有菜單的項目，</p>
+<p>但是如果菜單下還有子菜單呢？</p>
+<p>合成模式允許你將物件合成樹狀結構，</p>
+<p>採用一致的方法處理個別的物件以及合成的物件。</p>
+<p>合成包含兩種元件：</p>
+<ul>
+<li>合成</li>
+<li>樹葉</li>
+</ul>
+<p>配合反覆器，</p>
+<p>我們只要在根合成呼叫。</p>
+<h1 id="狀態模式">狀態模式</h1>
+<p>允許物件隨著內在的狀態改變而改變行為。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">state1</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">state2</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">state3</span> <span class="o">=</span> <span class="n">2</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">state</span> <span class="o">=</span> <span class="n">state1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>簡單的狀態，</p>
+<p>配合不同的方法，</p>
+<p>在不同狀態有不同做法。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">test</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">test2</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>但如果真的這樣寫，</p>
+<p>未來的自己一定會很想殺了你。</p>
+<p>因為程式碼難以維護、修改。</p>
+<p>我們應該使用介面合成，</p>
+<p>一個<code>State</code>介面，</p>
+<p>然後實作不同的狀態，</p>
+<p>類似於策略模式，</p>
+<p>使用這個作法，</p>
+<p>日後想新增狀態更容易，</p>
+<p>不用修改已經完成的程式碼。</p>
+<h1 id="代理人模式">代理人模式</h1>
+<p>讓某個物件具有一個替身，藉以控制外界對此物件的接觸。</p>
+<p><code>客戶物件--&gt;客戶輔助物件stub---------&gt;服務輔助物件skeleton--&gt;服務物件</code></p>
+<p>使用<code>java.rmi.*</code>包</p>
+<p>遠端代理人替我們控制存取，處理網路上的細節。</p>
+<h2 id="類別">類別</h2>
+<img src="../image/Head-First-Design-Patterns/dp01.png">
+<p><code>RealSubject</code>、<code>Proxy</code>、<code>Subject</code></p>
+<p><code>RealSubject</code>和<code>Proxy</code>都實現了<code>Subject</code>介面，</p>
+<p>任何客戶都可以將<code>proxy</code>視為<code>RealSubhect</code>處理。</p>
+<h2 id="虛擬代理人">虛擬代理人</h2>
+<p>在建立很耗費資源的物件時，</p>
+<p>物件建立完成前，虛擬代理人會先代替角色，</p>
+<p>物件建立完成後，代理人就會將請求轉給物件。</p>
+<p>例如圖片載入。</p>
+<p><code>Icon</code>、<code>ImageIcon</code>、<code>ImageProxy</code></p>
+<p><code>ImageIcon</code>和<code>ImageProxy</code>都實現<code>Icon</code>介面。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">ImageProxy</span> <span class="kd">implements</span> <span class="n">Icon</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 省略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="o">(</span><span class="n">imageIcon</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 如果圖片加載好 就圖片做
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 不然代理做
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h1 id="複合模式">複合模式</h1>
+<p>一群模式被結合起來使用，以解決一般性問題，並不是一堆模式一起用就是複合模式。</p>
+<p>讓一群鴨子實作<code>Quackable</code>介面，</p>
+<ul>
+<li>現在有鵝出現，但它不會呱</li>
+</ul>
+<p>使用<strong>轉接器模式</strong>，讓轉接器實作<code>Quackable</code>介面並在建構式放入鵝。</p>
+<ul>
+<li>我們想統計呱呱叫的次數</li>
+</ul>
+<p>使用<strong>裝飾者模式</strong>，讓裝飾者實作<code>Quackable</code>介面並在建構式放入鴨。</p>
+<ul>
+<li>要裝飾才有該行為，那我們是不是把建立和裝飾包裝起來比較好？</li>
+</ul>
+<p>用工廠生產鴨子！</p>
+<p>因為產品是各種不同型態的鴨子，</p>
+<p>所以使用<strong>抽象工廠模式</strong>。</p>
+<p>先建立抽象工廠物件，</p>
+<p>然後讓實現類繼承並實作，</p>
+<p>在生產時直接包裝好。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 直接回傳被裝飾的鴨子
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">return</span> <span class="k">new</span> <span class="n">QuackCounter</span><span class="o">(</span><span class="k">new</span> <span class="n">FatDuck</span><span class="o">));</span>
+</span></span></code></pre></div><ul>
+<li>一次管理一隻鴨太累了，我們想要一次一群</li>
+</ul>
+<p>使用<strong>合成模式</strong>，讓合成類實作<code>Quackable</code>介面，</p>
+<p>還可以在呱呱叫方法中使用<strong>反覆器模式</strong>，</p>
+<p>一次全呱呱。</p>
+<ul>
+<li>如果我們又想讓鴨子呱呱叫時，通知管理員</li>
+</ul>
+<p>使用觀察者模式</p>
+<hr>
+<p>這就是複合模式嗎？</p>
+<p>不是，但以上示範了設計模式，</p>
+<p>雖然有點殺雞焉用牛刀。</p>
+<p>等等將探討複合模式之王 – MVC</p>
+<h2 id="model-view-controller">Model-View-Controller</h2>
+<ul>
+<li>Model：提供介面供人取得資料與狀態</li>
+<li>View：從Model取得狀態與資料</li>
+<li>Controller：取得使用者輸入後，將此輸入解讀對Model的意思</li>
+</ul>
+<ol>
+<li>使用者和View互動，View告訴Controller</li>
+<li>Controller要求Model改變狀態</li>
+<li>Controller也可能要求View改變狀態</li>
+<li>當Model改變時，Model通知View</li>
+<li>View向Model詢問狀態</li>
+</ol>
+<p>觀察者：model</p>
+<p>策略：view和controller，想要改變行為，只要換掉controller就好了</p>
+<p>合成：view</p>
+<h2 id="mvc-與-web">MVC 與 Web</h2>
+<p>Model 2：使用Servlet和JSP技術，達到MVC分隔效果</p>
+<p>Model 2 是MVC模式在Web上的版本，</p>
+<p>他雖然不像是教科書那樣，但是模式都還在，</p>
+<p>只是多了網頁瀏覽器與伺服器的概念。</p>
+<p>view不再是model的觀察者，</p>
+<p>但狀態改變時還是會間皆從controlller收到通知。</p>
+<h1 id="與設計模式相處">與設計模式相處</h1>
+<h2 id="定義設計模式">定義設計模式</h2>
+<blockquote>
+<p>模式是在某情境下，針對某問題的某種解決方案。</p>
+</blockquote>
+<ul>
+<li><strong>情境</strong>就是狀況，應該是一個不斷出現的狀況。</li>
+<li><strong>問題</strong>就是目標。</li>
+<li><strong>解決方案</strong>是一個一般性的設計。</li>
+</ul>
+<p>每個模式也該有一個名稱，這樣才能和人溝通。</p>
+<h2 id="分類">分類</h2>
+<p>設計模式根據目標能分成三類</p>
+<ul>
+<li>生成模式：涉及實體化物件</li>
+<li>行為模式：重點都在類別和物件如何互動</li>
+<li>結構模式：讓你合成類別或物件到大型的結構</li>
+</ul>
+<p><strong>為什麼裝飾者被歸類到結構而不是行為？</strong></p>
+<p>四人幫之所以這麼分類是因為，</p>
+<p>裝飾者將物件合成以獲得某功能，</p>
+<p>而不是在物件之間溝通與聯繫。</p>
+<h2 id="用模式思考">用模式思考</h2>
+<ul>
+<li>保持簡單</li>
+</ul>
+<p>盡量簡單，而不是「如何在這問題用設計模式」</p>
+<ul>
+<li>了解何時使用</li>
+</ul>
+<p>了解設計模式的使用後的優缺點，</p>
+<p>以及程式的目的。</p>
+<ul>
+<li>重構的時間，就是模式的時間</li>
+</ul>
+<p>重構要改善程式碼的結構，而不是行為，</p>
+<p>這次可以檢視是否能用設計模式讓它有更好的結構。</p>
+<p>大量使用設計模式並不是我們的目標，</p>
+<p>要讓模式讓程式中自然地出現。</p>
+<p><strong>初學者</strong>為了用而用，</p>
+<p><strong>悟道者</strong>致力於簡單的解決方法。</p>
+<h2 id="反模式">反模式</h2>
+<blockquote>
+<p>告訴你如何採用一個不好的解決方案解決問題。</p>
+</blockquote>
+<p>反模式告訴我們為什麼不好的解決方案有吸引力，</p>
+<p>學習反模式來避開使用反模式。</p>
+<h1 id="附錄剩下的模式">附錄：剩下的模式</h1>
+<p>剩下的模式比較少被使用，</p>
+<p>畢竟不是每個人都廣受歡迎，</p>
+<p>但我們還是需要了解它。</p>
+<h2 id="橋梁模式bridge-pattern">橋梁模式(Bridge Pattern)</h2>
+<blockquote>
+<p>不只改變你的實踐方式，也能改變你的抽象。</p>
+</blockquote>
+<p>將抽象和實踐放在兩個不同的類別階層中，</p>
+<p>有了橋梁的存在，可以獨立地改變，各自擴充。</p>
+<h2 id="建立者builder-pattern">建立者(Builder Pattern)</h2>
+<blockquote>
+<p>封裝一個產品的建構過程，並允許可依照步驟建構。</p>
+</blockquote>
+<p>就像是自助餐，</p>
+<p>你可以選擇自己想要什麼，</p>
+<p>最後<code>build()</code>出來。</p>
+<h2 id="責任鍊模式chain-of-responsibility-pattern">責任鍊模式(Chain of Responsibility Pattern)</h2>
+<blockquote>
+<p>當你想要讓一個以上的物件，有機會能夠處理某個請求的時候，就使用責任鏈模式。</p>
+</blockquote>
+<p>請求會被送入一個責任鏈，</p>
+<p>經過每個物件，</p>
+<p>如果物件可以處理就處理，</p>
+<p>如果不能就傳給下一個物件。</p>
+<p>可以動態的新增或刪除責任鏈內的某個程式。</p>
+<h2 id="蠅量級模式flyweight-pattern">蠅量級模式(Flyweight Pattern)</h2>
+<blockquote>
+<p>想讓某個類別的一個實體，能夠提供許多的虛擬實體，使用蠅量級模式。</p>
+</blockquote>
+<p>例如需要很多樹木的情況，</p>
+<p>只需要一個樹木實體，</p>
+<p>與一個客戶物件，</p>
+<p>就能維護所有的樹木。</p>
+<p>大幅縮減執行期物件的個數。</p>
+<h2 id="翻譯者模式interpreter-pattern">翻譯者模式(Interpreter Pattern)</h2>
+<blockquote>
+<p>為語言建立翻譯者。</p>
+</blockquote>
+<p>當你需要實踐一個簡單的語言時，</p>
+<p>使用翻譯者模式。</p>
+<p>將每一個文法設計成一個類別，</p>
+<p>方便於實踐語言。</p>
+<h2 id="中介者模式mediator-pattern">中介者模式(Mediator Pattern)</h2>
+<blockquote>
+<p>將相關物件的複雜依賴予以簡化</p>
+</blockquote>
+<p>本來大量的物件之間需要大量相互依賴，</p>
+<p>但是透過中介者，</p>
+<p>物件透過中介者，</p>
+<p>而不依賴其他物件來實現鬆綁。</p>
+<p>缺點是設計不當的話中介者可能過於複雜。</p>
+<h2 id="備忘錄模式memento-pattern">備忘錄模式(Memento Pattern)</h2>
+<blockquote>
+<p>當你需要讓物件返回之前的狀態時，使用備忘錄。</p>
+</blockquote>
+<h2 id="原型模式prototype-pattern">原型模式(Prototype Pattern)</h2>
+<blockquote>
+<p>當建立物件實體的過程很昂貴或複雜，使用原型模式。</p>
+</blockquote>
+<p>原型模式複製既有的實體來建立新的實體，</p>
+<p>這通常意味著使用<code>clone()</code>方法。</p>
+<h2 id="參觀者模式visitor-pattern">參觀者模式(Visitor Pattern)</h2>
+<blockquote>
+<p>當你想要為一個合成增加新的能力，且封裝不重要時，使用參觀者。</p>
+</blockquote>
+<p>允許你對合成結構加入新的操作而不改變結構本身。</p>
+<p>當採用參觀者模式會打破合成類的封裝。</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

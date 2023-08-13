@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/my-study-note/note/ntu-linear-algebra/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#linear-algebra---ntu-version">Linear Algebra - NTU version</a>
+      <ul>
+        <li><a href="#basic-concepts-on-matrices-and-vectors">Basic Concepts on Matrices and Vectors</a></li>
+        <li><a href="#system-of-linear-equations">System of Linear Equations</a>
+          <ul>
+            <li><a href="#row-echelon-form-and-reduced-row-echelon-form">Row Echelon Form and Reduced Row Echelon Form</a></li>
+          </ul>
+        </li>
+        <li><a href="#gaussian-elimination">Gaussian Elimination</a>
+          <ul>
+            <li><a href="#rank-and-nullity">Rank and Nullity</a></li>
+          </ul>
+        </li>
+        <li><a href="#span-of-a-set-of-vectors">Span of a Set of Vectors</a></li>
+        <li><a href="#linear-dependence-and-linear-independence">Linear Dependence and Linear Independence</a></li>
+        <li><a href="#matrix-multiplication">Matrix Multiplication</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h2 id="linear-algebra---ntu-version">Linear Algebra - NTU version</h2>
+<blockquote>
+<p>學習筆記</p>
+<p>[<a href="https://www.youtube.com/watch?v=IG-EQUIk7P0&amp;list=PLcCssb7oxfAsRFq8V8hDxB4oxCXSjl5Om&amp;index=1&amp;ab_channel=%E8%87%BA%E5%A4%A7%E7%A7%91%E5%AD%B8%E6%95%99%E8%82%B2%E7%99%BC%E5%B1%95%E4%B8%AD%E5%BF%83CASE">線性代數] 第1-1 單元: Introduction to Linear Algebra - YouTube</a></p>
+</blockquote>
+<h3 id="basic-concepts-on-matrices-and-vectors">Basic Concepts on Matrices and Vectors</h3>
+<ul>
+<li>矩陣相等( equal )：兩個矩陣大小相等且所有元素一樣</li>
+</ul>
+<p><code>aij = bij</code></p>
+<ul>
+<li>
+<p>子矩陣( submatix )：從一個矩陣中刪除若干個 rows / columns</p>
+</li>
+<li>
+<p>矩陣的加法</p>
+</li>
+</ul>
+<p>矩陣的大小( m*n )必須相等</p>
+<p>同樣的位置相加即可 <code>aij + bij</code></p>
+<ul>
+<li>係數積( scalar multiplication )</li>
+</ul>
+<p>由矩陣與一個係數構成</p>
+<p>係數 * 矩陣所有元素 即可</p>
+<ul>
+<li>零矩陣( zero matrix )</li>
+</ul>
+<p>以 O 表示，元素全為 0</p>
+<p>任何矩陣乘 O 得 O</p>
+<p>但 A * O 不一定是 B * O</p>
+<p>因為矩陣大小不一定一樣</p>
+<ul>
+<li>transpose</li>
+</ul>
+<p>將一個 mn 矩陣A 變成 nm 矩陣AT且 <code>aij -&gt; aji</code></p>
+<p><code>(AT)T = A</code></p>
+<ul>
+<li>vector</li>
+</ul>
+<p>one row / column matrix</p>
+<p>加法與係數積同矩陣</p>
+<ul>
+<li>linear combination</li>
+</ul>
+<p>u1, u2 &hellip; uk</p>
+<p>c1u1, c2u2 &hellip; ckuk</p>
+<p>兩個向量不平行：u, v 皆非零向量且 u != cv ( u 不是 v 的係數積)</p>
+<p>在二維中，如果 u v 向量不平行，任何向量都可以寫成 u v 的線性組合( 唯一線性組合 )</p>
+<ul>
+<li>standard vectors</li>
+</ul>
+<p>e1 = [1,0&hellip;,0]</p>
+<p>e2 = [0,1&hellip;,0]</p>
+<p>每個向量都可以被 standard vectors 線性組合</p>
+<p>v_ = [v1, v2 &hellip; vn]</p>
+<p>= v1 * [1,0&hellip;,0] + v2 * [0, 1&hellip;.0] + &hellip;. vn * [0,0&hellip;1]</p>
+<ul>
+<li>matrix-vector product</li>
+</ul>
+<p>一個矩陣和一個向量的乘積</p>
+<p>Av = a1v1 + a2v2 + &hellip; anvn</p>
+<p>Av = [a1, a2 &hellip; an] * [v1, v2 &hellip; vn]T</p>
+<img src="./image/NTU-Linear-Algebra/001.png">
+<ul>
+<li>identity matrix</li>
+</ul>
+<p>一個由 standard vectors 構成的正方形矩陣</p>
+<p>表示為 In</p>
+<img src="./image/NTU-Linear-Algebra/002.png">
+<p>所有矩陣乘以 In 不會改變</p>
+<ul>
+<li>stochastic matrix</li>
+</ul>
+<p>所有 colume 相加為 1 且 所有元素非負</p>
+<p>且矩陣為正方形</p>
+<p><code>[[0.53, 0.4],[0.47, 0.6]]</code></p>
+<h3 id="system-of-linear-equations">System of Linear Equations</h3>
+<p>一個方程式稱為 linear equation</p>
+<p>聯立方程式稱為 system of linear equation
+<img src="./image/NTU-Linear-Algebra/003.png"></p>
+<ul>
+<li>
+<p>每個聯立方程式只有<strong>無解</strong>、<strong>一組解</strong>或<strong>無限多組解</strong></p>
+</li>
+<li>
+<p>連續、不連續</p>
+</li>
+</ul>
+<p>如果聯立方程式是連續的，那有一組解或無線多組解</p>
+<p>不連續則無解</p>
+<ul>
+<li>相等</li>
+</ul>
+<p>兩聯立方程式如果有<strong>相同的 solution set 則 相等</strong></p>
+<ul>
+<li>elementary row operations</li>
+</ul>
+<p>不改變 solution set 的方程式轉換</p>
+<ul>
+<li>augmented matrices</li>
+</ul>
+<p>將聯立方程式整個放進矩陣中</p>
+<img src="./image/NTU-Linear-Algebra/004.png">
+<h4 id="row-echelon-form-and-reduced-row-echelon-form">Row Echelon Form and Reduced Row Echelon Form</h4>
+<blockquote>
+<p>看起來像階梯的矩陣</p>
+</blockquote>
+<ul>
+<li>row echelon form</li>
+</ul>
+<p>需要符合三個條件：</p>
+<ol>
+<li>zero row 必須低於所有的 nonzero row</li>
+<li>leading entry (第一個非零值) 必須位於先前 row 的 leading entry 的右邊</li>
+<li>leading entry 的下方 column 都是 0</li>
+</ol>
+<ul>
+<li>reduce row echelon form</li>
+</ul>
+<p>需符合 row echelon form 的條件且：</p>
+<ol start="4">
+<li>除了 leading entry，該 row 的其他數值皆為 0</li>
+<li>leading entry 的值只能是 1</li>
+</ol>
+<img src="./image/NTU-Linear-Algebra/005.png">
+<p>這種矩陣讓我們對方程式求解更加容易</p>
+<img src="./image/NTU-Linear-Algebra/006.png">
+<p>free variable 可以是任意實數</p>
+<ul>
+<li>所有矩陣都能變成 row echelon form 嗎？</li>
+</ul>
+<p>是</p>
+<ul>
+<li>所有矩陣都能變成 reduce row echelon form 嗎？</li>
+</ul>
+<p>是</p>
+<ul>
+<li>所有矩陣都能變成<strong>唯一</strong> row echelon form 嗎？</li>
+</ul>
+<p>否，可以有很多個</p>
+<ul>
+<li>所有矩陣都能變成<strong>唯一</strong> reduce row echelon form 嗎？</li>
+</ul>
+<p>是</p>
+<blockquote>
+<p><strong>定理：所有矩陣都可以被轉換為一個且唯一一個 reduce row echelon form</strong></p>
+</blockquote>
+<h3 id="gaussian-elimination">Gaussian Elimination</h3>
+<p>高斯消去法</p>
+<img src="./image/NTU-Linear-Algebra/007.png">
+<img src="./image/NTU-Linear-Algebra/008.png">
+<p>做完前四步驟即可得到 row echelon form</p>
+<img src="./image/NTU-Linear-Algebra/009.png">
+<img src="./image/NTU-Linear-Algebra/010.png">
+<h4 id="rank-and-nullity">Rank and Nullity</h4>
+<ul>
+<li>rank：矩陣的 reduce row echelon form 中的 number of nonzero rows</li>
+<li>nullity：總 row 數 - rank</li>
+</ul>
+<p>rank 代表的意義是矩陣中的 basic variables 數量</p>
+<p>nullity 代表矩陣中 free variables 數量</p>
+<h3 id="span-of-a-set-of-vectors">Span of a Set of Vectors</h3>
+<p>span 表示一個向量集合</p>
+<h3 id="linear-dependence-and-linear-independence">Linear Dependence and Linear Independence</h3>
+<blockquote>
+<p>線性相依與線性獨立</p>
+</blockquote>
+<ul>
+<li>Linear Dependence：存在一組向量 c1&hellip;ck 可以讓 c1u1&hellip; ckuk = 0  ( c1&hellip;ck 不全為0 )</li>
+</ul>
+<p>白話的說，某些向量 u 是其他向量的線性組合</p>
+<ul>
+<li>Linear Independence</li>
+</ul>
+<p>每個向量都是獨立的</p>
+<ul>
+<li>homogenous</li>
+</ul>
+<p>Ax = b, b = 0</p>
+<h3 id="matrix-multiplication">Matrix Multiplication</h3>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

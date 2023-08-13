@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="article:published_time" content=0001-01-01T00:00:00Z />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "0001-01-01",
+        "description": "",
+        "wordCount":  782 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "0001-01-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Awesome Hugo blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/posts/my-study-note/note/compilers/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#詞法分析">詞法分析</a></li>
+    <li><a href="#parsing">Parsing</a></li>
+    <li><a href="#semantic-analysis">Semantic analysis</a></li>
+    <li><a href="#runtime-organization">Runtime Organization</a></li>
+    <li><a href="#code-generation">Code Generation</a></li>
+    <li><a href="#optimization">Optimization</a>
+      <ul>
+        <li><a href="#local-optimization">Local optimization</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="compilers">Compilers</h1>
+<h2 id="概述">概述</h2>
+<p>一開始，人類使用0, 1序列來編寫程式，明確告訴電腦要怎麼做，這樣容易出錯而且難讀，後來人們有了組合語言，機器指令的別名，還有 micro（就是 C 語言中那個 <code>#define</code>），用程式寫出程式，然後不斷發展新特性至今。</p>
+<p>編譯器的用途：</p>
+<p>IDE 在你一邊寫 Code 時就動態的替你檢查語法錯誤，做一些提高生產力的工具，學習計算思維、數學</p>
+<p>寫一套規則讓程式做最好的選擇，而不是自己手動配置，像是 sql、寄存器</p>
+<p>硬體也需要編譯器生成</p>
+<p>編譯器把一個語言翻譯成另一個等價的語言，</p>
+<p>並行和記憶體階層可以加速</p>
+<p>編譯器的用途</p>
+<p>詞法分析、語法分析、中間代碼生成、優化、生成目標程式碼</p>
+<p>編譯器先把程式碼分解開來，像是變數、每個程式語言的關鍵字（if, for&hellip;）、常數、運算符等等，還要處理空白和註解，生成語法樹，還要檢查文法有沒有正確，不然就會出現 Syntax Error，還有類型檢查，不同的類型可能需要隱性轉型，像是整數和浮點數運算，或者就是報錯，生成中間程式碼、最佳化，生成目標程式碼。</p>
+<h2 id="詞法分析">詞法分析</h2>
+<p>詞法分析將輸入拆分成詞法單元</p>
+<p>有限狀態機，詞法分析可以畫出狀態轉換圖，照著這個圖施工就可以非常的舒服，狀態轉換圖有初態、終態，而這些用線來連著，線有方向性，只要一直跑下去到達終態即可。</p>
+<p>NFA to DFA</p>
+<hr>
+<h2 id="parsing">Parsing</h2>
+<p>top-down parsing</p>
+<p>對照文法，把 token 一步一步轉換</p>
+<p>你可以用回朔法把每個都嘗試一次</p>
+<p>但是這樣很沒效率</p>
+<p>預測分析：</p>
+<p>ll1分析</p>
+<ul>
+<li>Bottom-up parsing</li>
+</ul>
+<p>Top-down 反過來做</p>
+<p>本來是將非終結符轉換</p>
+<p>但現在是反過來</p>
+<p>文法：A -&gt; a ，當你讀取到 a 時，轉換成 A</p>
+<p>我們可以使用 shift-reduce parsing</p>
+<p>有兩個動作 shift, reduce</p>
+<p>現在想像一個指標為 <code>|</code>，輸入 <code>abcdefg</code></p>
+<p>每次都可以選擇要 shift or reduce</p>
+<p>假如是 shift -&gt; <code>a|bcdefg</code>，就是指標往前</p>
+<p>如果是 reduce</p>
+<p>ab -&gt; AB</p>
+<p><code>ab|cdefg</code> -&gt; <code>AB|cdefg</code></p>
+<p>僅僅能 reduce 指標左邊的符號</p>
+<p>這兩種動作會遇到問題</p>
+<ol>
+<li>shift-reduce coflict 同時可以選擇兩者，需要一些除錯即可</li>
+<li>reduce-reduce conflict 可以執行兩種 reduce，嚴重的錯誤</li>
+</ol>
+<p>我們要確保只有一條正確的道路</p>
+<p>而不是 ambiguity</p>
+<p>我們可以用 stack 這個資料結構來處理每個 handle</p>
+<p>我們要處理的一定會在 stack 最上方</p>
+<blockquote>
+<p>畫出狀態機，只是這次還加上了指標的位置</p>
+</blockquote>
+<ul>
+<li>確保 item 是合法的</li>
+</ul>
+<p>檢測他來決定要 shift 還是 reduce</p>
+<ul>
+<li>SLR parsing</li>
+</ul>
+<p>SLR 不會有 conflict，有的話就不是 SLR</p>
+<blockquote>
+<p>定義 function Follow(x)</p>
+<p>表示 x 的接續著的下一個非終結符號集合</p>
+</blockquote>
+<ul>
+<li>example</li>
+</ul>
+<blockquote>
+<p>文法：E -&gt; E * E | E + E</p>
+<p>狀態：</p>
+<p>E -&gt; E. + E</p>
+<p>E -&gt; E * E.</p>
+<p>這時候發生 conflict，究竟要 reduce E * E 還是 shif + ？</p>
+<p>這裡就需要去處理</p>
+</blockquote>
+<p>演算法：</p>
+<ul>
+<li>DFA : <code>M</code></li>
+<li>Let <code>A | Z</code> be current configuration</li>
+<li>Run <code>M</code> on current stack <code>A</code></li>
+<li>if <code>M</code> accecpt <code>A</code> with items <code>I</code>, let <code>a</code> be next input
+<ul>
+<li><code>shift </code> if <code>X -&gt; B.ay ∈ I</code></li>
+<li><code>reduce</code> if <code>X -&gt; B. ∈ I</code> and <code>a ∈ Follow(X)</code></li>
+<li>report parsing error if neither applies</li>
+</ul>
+</li>
+</ul>
+<p>改良：</p>
+<p>太多重複沒效率，改成 goto[i, a] = j 就 shift</p>
+<p>也就是如果 |a 可以到 j，那就 shift</p>
+<blockquote>
+<p>define goto[i, A] = j</p>
+<p>state i + symbol A  -&gt; state j</p>
+<p>即 DFA 的轉換 function</p>
+</blockquote>
+<p>LR(1) 更加強大，即是 LR(0) + 多看一個 item</p>
+<p>LALR(1)</p>
+<h2 id="semantic-analysis">Semantic analysis</h2>
+<p>在前面的章節我們知道：</p>
+<p>Lexical analysis 檢測不合法的 token</p>
+<p>Parsing 檢測語法樹</p>
+<p>現在到了前端的最後一步： Semantic analysis 要檢測剩餘的錯誤</p>
+<p>怎麼這麼麻煩？因為前面兩步驟難以抓到某些錯誤</p>
+<p>parsing 抓不到某些錯誤、有些語言不是 context-free</p>
+<p>靜態分析取決於你的語言想要怎麼樣</p>
+<ul>
+<li>scope（作用域）</li>
+</ul>
+<p>a scope table</p>
+<p><code>enter_scope()</code></p>
+<p><code>find_symbol(x)</code> find current x or null</p>
+<p><code>add_symbol(x)</code> add symbol x to the table</p>
+<p><code>check_scope(x)</code> ture if x define in current scpoe</p>
+<p><code>exit_scope()</code></p>
+<p>靜態分析可能會跑很多次</p>
+<ul>
+<li>Type</li>
+</ul>
+<p>what is type?</p>
+<ul>
+<li>a set of values</li>
+<li>a set of operations on those values</li>
+</ul>
+<p>當你從寄存器拿出數據，遇到<code>+</code>時，你如何知道怎麼做？</p>
+<p>不知道，你之所以知道是因為你定義了<code>int</code>，</p>
+<p>而<code>int</code>遇到<code>+</code>就會做數學上的加法</p>
+<p>型別檢查是為了確保在正確的型別上做正確的動作</p>
+<ul>
+<li>type checking</li>
+</ul>
+<p>假如一個假設是對的，那結論就會是對的</p>
+<blockquote>
+<p>a: int + b: int -&gt; a + b : int</p>
+<p>a 是整數，b 是整數，a+b 是整數</p>
+</blockquote>
+<p>合理的 (sound)：</p>
+<p>whenever it is provable that &ldquo;e&rdquo; is of type &ldquo;T&rdquo;, &ldquo;e&rdquo; must always evaluate to a value of type &ldquo;T&rdquo;</p>
+<p>&ldquo;e&rdquo; 是 type T, 那他就應該一直是 value of type T</p>
+<ul>
+<li>type environment</li>
+</ul>
+<p>因為只有靠剛剛的假設，還是不夠，所以就加入 type environment（蠻合理的</p>
+<p>舉例來說：有一個變數，被宣告為變數，那他到底是什麼？ <code>var x</code></p>
+<p>這東西有點像是上下文，幫忙判斷類型</p>
+<p><code>var x = 5</code>：從此我們知道這是 int</p>
+<p>可以是個像是映射、符號表之類的東西，或者說像是一個 function</p>
+<p>舉例：當知道 e2 是 t2，就可以從此推測知道 e1 是 t1</p>
+<p>就像是對話的上下文</p>
+<p>還有一種方法：</p>
+<p>x 是 type a, y 是 type b</p>
+<p>type a 是 type b 的 sub set</p>
+<p>那 x 就會是 type b</p>
+<p>這種繼承關係可以像一棵樹一樣不斷向下</p>
+<h2 id="runtime-organization">Runtime Organization</h2>
+<p>動態、靜態型別</p>
+<pre tabindex="0"><code>w: Animal = new Cat;
+（動態：Cat 靜態：Animal)
+靜態就是固定的
+動態可以改變
+</code></pre><ul>
+<li>Error Recovery</li>
+</ul>
+<p>使用 self_type, no_type 定義特殊的情況</p>
+<hr>
+<p>作業系統執行程式：</p>
+<ul>
+<li>開闢空間</li>
+<li>把 code 放進空間</li>
+<li>找到程式進入點 (main)</li>
+</ul>
+<p>想了解編譯器，你要熟悉何謂靜態（編譯時期）、動態（執行時期），</p>
+<p>管理執行資源、儲存組織</p>
+<p>編譯器需要：生成程式碼、編排資料</p>
+<ul>
+<li>Activations</li>
+</ul>
+<p>兩個假設：程式碼照順序執行、呼叫程式執行完會回去呼叫點</p>
+<p>lifetime：函式的呼叫到結束。可以是巢狀的，就像大家都在 main 中</p>
+<p>當每個函式開始生命週期，就放進 stack，當結束就移出，</p>
+<p>那要記錄什麼內容呢？frame</p>
+<p>當 F 呼叫 G，不只紀錄 G，還有 F</p>
+<p>當 G 結束了，要回到 F，</p>
+<p>所以要記錄 Activation Records：</p>
+<ul>
+<li>G</li>
+<li>回去 F</li>
+</ul>
+<p>編譯器產生的程式碼必須也考慮到紀錄，兩者互相依賴</p>
+<p>現在瞭解了生命週期，那全域變數呢？或者是回傳的 object 呢？</p>
+<p>他們不是應該在生命週期結束就消失了嗎？</p>
+<p>不是，他們會放在 Heap 上而是 stack。</p>
+<ul>
+<li>Alignment</li>
+</ul>
+<p>現代計算機是 32 bit 或 64 bit</p>
+<p>8 bits = 1 byte</p>
+<p>4 or 8 byte in a word</p>
+<p>機器要對齊這些資料才能讀取，</p>
+<p>假如一個 32-bit 的機器要讀取 &ldquo;Hello&rdquo;</p>
+<p>那他會需要兩個 4 byte，而 &ldquo;Hello&rdquo; 會用掉 5 byte</p>
+<p>那剩下 3 byte 呢？不該使用</p>
+<p>某些程式語言會在字串最後加上 &lsquo;\0&rsquo; 來表示結束</p>
+<h2 id="code-generation">Code Generation</h2>
+<p>MIPS 的計算機</p>
+<p><code>$sp</code> : stack pointer, top of the stack is at address $sp + 4</p>
+<p><code>$a0</code> : accumulator  register address in MIPS</p>
+<p><code>lw reg1 offset(reg2)</code>: load 32-bit word from address <code>reg2 + offset</code> into reg1 （把reg2 放到 reg1</p>
+<p><code>add reg1 reg2 reg3</code>: reg1 &lt;- reg2 + reg3</p>
+<p><code>sw reg1 offset(reg2)</code>: store 32-bit word in reg1 at address reg2 + offset （把 reg1 放到 reg2</p>
+<p><code>addiu reg1 reg2 imm</code>: reg1 &lt;- reg2 + imm</p>
+<p><code>li reg imm</code> : reg &lt;- imm</p>
+<blockquote>
+<p>imm : immediate 立即數 像是 1, 2, 3, 4&hellip;.等等</p>
+</blockquote>
+<p><code>cgen(e)</code> : code generate</p>
+<p>cgen(e1 + e2) = cgen(e1) + cgen(e2)</p>
+<p><code>jal label</code> : jump to label, save address of next instruction in $ra</p>
+<p><code>jr reg</code> : jump to address in register reg</p>
+<ul>
+<li>暫存空間</li>
+</ul>
+<p>執行時需要的空間取決的會花費的最大空間，</p>
+<p>因為空間可以重複使用</p>
+<p>NT(e1 + e2) = max(NT(e1), 1 + NT(e2))</p>
+<blockquote>
+<p>一個 function call :</p>
+<p>2 + n + NT(e)</p>
+<p>return address,</p>
+<p>frame pointer,</p>
+<p>n arguments,</p>
+<p>NT(e) location for intermediate results</p>
+</blockquote>
+<ul>
+<li>Object Layout</li>
+</ul>
+<p>物件怎麼在記憶體中表示？排在一起（classs tag, size, ptr, attributes&hellip;）</p>
+<p>物件的動態實現？</p>
+<h2 id="optimization">Optimization</h2>
+<ul>
+<li>Intermediate code</li>
+</ul>
+<p>source -&gt; intermediate -&gt; target</p>
+<p>為何要有中間的？因為 source 太高階，我們想對某些像是寄存器之類的優化</p>
+<p>就像是高階的組合語言</p>
+<p>three-address code</p>
+<p>總之這就是一種程式碼生成</p>
+<ul>
+<li>Optimization</li>
+</ul>
+<p>lexcial analysis, parsing, remantic analysis,</p>
+<p>code generation,</p>
+<p>最後是 Optimization</p>
+<p>這是現代編譯器最重要的一步</p>
+<p>在何時優化？</p>
+<p>Intermediate，既可以跨機器，又不會太高階</p>
+<p>確保結果是一致的，執行速度、大小</p>
+<h3 id="local-optimization">Local optimization</h3>
+<p>優化 block，大部分編譯器會做的事情</p>
+<p>有些句子不需要</p>
+<p>x := x + 0</p>
+<p>x := x * 1</p>
+<p>有些可以被簡化</p>
+<p>x := x * 0</p>
+<p>x := 0</p>
+<p>y := y**y</p>
+<p>y := y * y</p>
+<p>常數操作可以被直接計算替代</p>
+<ul>
+<li>有時是危險的</li>
+</ul>
+<p>cross compile 兩個浮點數相加</p>
+<p>在不同架構可能會得出不一樣的答案</p>
+<ul>
+<li>
+<p>移除不到抵達的 code，可以更快、更小</p>
+</li>
+<li>
+<p>dead code</p>
+</li>
+</ul>
+<p>一個變數被宣告但用不到，可以被移除</p>
+<ul>
+<li>Cache</li>
+</ul>
+<p>編譯器很會分配寄存器</p>
+<p>考慮兩種寫法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*=</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*=</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span></code></pre></div><p>第二種寫法會快不少，</p>
+<p>因為第二種寫法一直計算同一件事</p>
+<p>可以更好地利用 cache</p>
+<ul>
+<li>垃圾回收演算法</li>
+</ul>
+<p>垃圾回收會把無法抵達的指標給釋放</p>
+<ul>
+<li>Stop and Copy</li>
+</ul>
+<p>開闢一個新的空間，</p>
+<p>從根節點開始複製到新空間，</p>
+<p>再來是根節點的指向的指標，</p>
+<p>直到沒有新的節點。</p>
+<p>清除所有舊的節點</p>
+<p>優點：最快、解決碎片化</p>
+<ul>
+<li>Reference Counting</li>
+</ul>
+<p>在指標紀錄被指向的次數，</p>
+<p>當為零時就釋放。</p>
+<p>缺點是不能有循環</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

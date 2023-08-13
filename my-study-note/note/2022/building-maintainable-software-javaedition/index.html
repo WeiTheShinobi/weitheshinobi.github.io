@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/my-study-note/note/2022/building-maintainable-software-javaedition/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#11-好處">1.1 好處</a></li>
+    <li><a href="#12-重構技巧">1.2 重構技巧</a></li>
+    <li><a href="#13-討論">1.3 討論</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-switch-case">2.1 switch case</a></li>
+    <li><a href="#22-處理嵌套語句">2.2 處理嵌套語句</a></li>
+    <li><a href="#23-討論">2.3 討論</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-定義">3.1 定義</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-解決方法">4.1 解決方法</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-動機">5.1 動機</a></li>
+    <li><a href="#52-解決方法">5.2 解決方法</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#61-可維護性的調用">6.1 可維護性的調用</a></li>
+    <li><a href="#62-討論">6.2 討論</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#91-動機">9.1 動機</a></li>
+    <li><a href="#92-原則">9.2 原則</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#101-規則">10.1 規則</a></li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="building-maintainable-software-java-edition-打造可維護軟體編寫可維護程式碼的10項法則-java版">《<em>Building Maintainable Software, Java Edition 打造可維護軟體：編寫可維護程式碼的10項法則 （Java版）</em>》</h1>
+<p>在圖書館看到這本書，也才一百多頁而已，看到出版商歐萊禮就翻了一下覺得不錯，就借回家來讀，第一次嘗試寫學習筆記，也是嘗試使用更好的學習方法，希望自己未來更強。</p>
+<blockquote>
+<p><strong>筆記作者：葉高緯 Wei the Shinobi</strong></p>
+</blockquote>
+<h1 id="1-簡短的程式碼">1. 簡短的程式碼</h1>
+<blockquote>
+<p>傻瓜也可寫出電腦能懂得程式碼，但優秀的工程師才能寫出人類能夠理解的程式碼 。	— Martin Fowler</p>
+</blockquote>
+<ul>
+<li><strong>程式碼單元的長度應在15行內。</strong></li>
+</ul>
+<h2 id="11-好處">1.1 好處</h2>
+<ul>
+<li>容易測試</li>
+<li>容易分析</li>
+<li>容易複用</li>
+</ul>
+<h2 id="12-重構技巧">1.2 重構技巧</h2>
+<ol>
+<li>提取方法：將一段很長的程式碼，提取出一部份拆分成新的方法。不僅好讀，還可實現程式碼複用。</li>
+</ol>
+<ul>
+<li>那如果遇到需要傳送很多區域變數的情況呢？拆分出來的新方法要傳一長串參數肯定很麻煩，這時我們需要另尋他法。</li>
+</ul>
+<ol start="2">
+<li>以物件方法取代方法：如果你要傳送一長串的變數，可以把某些要傳遞的區域變數，轉變成類別的私有欄位。就是提升作用域的意思。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Something</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">   <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span><span class="n">String</span> <span class="n">y</span><span class="o">,</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span><span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="kt">int</span> <span class="n">c</span><span class="o">,</span> <span class="kt">int</span> <span class="n">d</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>改寫成</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Something</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">x</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">y</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Something</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span><span class="n">String</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span><span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="kt">int</span> <span class="n">c</span><span class="o">,</span> <span class="kt">int</span> <span class="n">d</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h2 id="13-討論">1.3 討論</h2>
+<ol>
+<li>效能
+<ul>
+<li>實際上效能不會有太大的差別，而且兩害取其輕。</li>
+</ul>
+</li>
+<li>拆分程式碼難以閱讀
+<ul>
+<li>其實不會。</li>
+</ul>
+</li>
+</ol>
+<h1 id="2-簡單的程式碼">2. 簡單的程式碼</h1>
+<blockquote>
+<p>每個問題都是由一些小問題組成的。	— Martin Fowler</p>
+</blockquote>
+<ul>
+<li><strong>每個程式碼單元不超過4個邏輯分支點。</strong></li>
+<li><strong>拆分，避免複雜的糾結。</strong></li>
+<li><strong>分支越少，測試及修改能越簡單。</strong></li>
+</ul>
+<p>越多的分支，就有越高的<strong>循環複雜度</strong>，你需要測試的路徑分支就越多。</p>
+<h2 id="21-switch-case">2.1 switch case</h2>
+<ul>
+<li>
+<p>一長串的switch看起來無害，可讀性也很強，但是想要測試方法需要寫很多個的測試案例。</p>
+<ol>
+<li>替換成map，從map取值時再做出判斷。</li>
+<li>替換成多型。</li>
+</ol>
+</li>
+</ul>
+<h2 id="22-處理嵌套語句">2.2 處理嵌套語句</h2>
+<ul>
+<li>以衛述句取代嵌套條件式
+<ul>
+<li>識別不同狀況插入return，來替代嵌套的條件語句。</li>
+<li>還可以再使用<strong>提取方法</strong>的技巧來拆分方法。</li>
+</ul>
+</li>
+</ul>
+<h2 id="23-討論">2.3 討論</h2>
+<ol>
+<li>
+<p>高複雜度無可避免？</p>
+<ul>
+<li>複雜的知識領域未必需要複雜的實作，你還是可以建構簡單的技術方案，而這完全可以辦到。</li>
+</ul>
+</li>
+<li>
+<p>拆分方法不會降低複雜度</p>
+<blockquote>
+<p>將1個循環複雜度為15的方法拆成3個循環複雜度為5的方法不會降低整體的複雜度，這根本沒用。</p>
+</blockquote>
+<ul>
+<li>的確，但會更容易測試和理解，新撰寫的單元測試也能更簡單。</li>
+</ul>
+</li>
+</ol>
+<h1 id="3-不重複的程式碼">3. 不重複的程式碼</h1>
+<blockquote>
+<p>排名第一的程式碼壞味道就是程式碼重複。	— Kent Beck 與 Martin Fowler，《<em>Bad Smells in Code</em>》</p>
+</blockquote>
+<ul>
+<li><strong>禁止程式碼重複。</strong></li>
+</ul>
+<h2 id="31-定義">3.1 定義</h2>
+<ul>
+<li>長度至少6行的一段相同程式碼，不包括空白和註解。</li>
+</ul>
+<blockquote>
+<p>複製就像技術債，將來要修改會很痛苦。</p>
+</blockquote>
+<h1 id="4-參數簡單的程式碼">4. 參數簡單的程式碼</h1>
+<blockquote>
+<p>四處分散的相關資料應該被封裝成一個物件。	— Martin Fowler</p>
+</blockquote>
+<ul>
+<li>限制程式碼單元的參數<strong>不超過4個</strong>。</li>
+<li><strong>將多個參數提取到class</strong>來達成。</li>
+<li>較少的參數較容易理解與重複使用。</li>
+</ul>
+<h2 id="41-解決方法">4.1 解決方法</h2>
+<p>二維或三維空間的參數，長長的一排在方法上，看了就不想讀了。</p>
+<ul>
+<li>
+<p>我們可以<strong>引進參數物件</strong>：</p>
+<ul>
+<li>寫一個內部類來攜帶參數，例如一個方法要傳正方體的xyz，就可以寫一個內部類正方體class。</li>
+</ul>
+</li>
+<li>
+<p><strong>以物件方法取代方法</strong>：</p>
+<ul>
+<li>見<strong>1.2 重構技巧</strong>。</li>
+</ul>
+</li>
+</ul>
+<h1 id="5-不同模組之間的關注點分離">5. 不同模組之間的關注點分離</h1>
+<blockquote>
+<p>在既複雜又緊密耦合的系統中，意外無可避免。	— Charles Perrow 的意外理論（Normal Accidents）</p>
+</blockquote>
+<ul>
+<li><strong>避免形成大型模組，達成模組之間的鬆散耦合。</strong></li>
+<li><strong>不同職責不同模組，隱藏介面內部實作細節。</strong></li>
+</ul>
+<blockquote>
+<p>這裡的模組概念對應到物件導向語言（如Java）的類別。</p>
+</blockquote>
+<h2 id="51-動機">5.1 動機</h2>
+<p>你是否有這樣的經驗，一個UserService的class，本來只有幾個服務，後來越加越多，只要跟user有關連的都丟進來，變的巨大難以維護…</p>
+<ul>
+<li>鬆散耦合的小模組容易維護。</li>
+<li>讓經驗不足的開發人員不會手足無措。</li>
+</ul>
+<h2 id="52-解決方法">5.2 解決方法</h2>
+<ol>
+<li>根據不同的關注點拆分
+<ul>
+<li>一個UserService可能有郵件相關、提醒或是封鎖，根據不同的功能拆分。</li>
+</ul>
+</li>
+<li>將特定實作隱藏在介面
+<ul>
+<li>舉例來說，一個相機有普通功能跟高階功能，你可以實作Camera，然後再實作HighLevelCamera繼承Camera。</li>
+<li>僅使用Camera的話，不需要知道HighLevelCamera的實作方法。</li>
+</ul>
+</li>
+</ol>
+<h1 id="6-以鬆散耦合的方式架構元件">6. 以鬆散耦合的方式架構元件</h1>
+<blockquote>
+<p>有兩種方式建構軟體設計：一種是簡單到明顯沒有缺陷，另一種是複雜到沒有明顯缺陷。	— C.A.R. Hoare</p>
+</blockquote>
+<ul>
+<li><strong>頂層元件之間應該保持鬆散耦合。</strong></li>
+<li><strong>盡量減少目前模組需要暴露給（被呼叫）其他元件之模組的程式碼數量。</strong></li>
+<li>此方針可提升<strong>可維護性，因為獨立的元件有利於獨立的維護。</strong></li>
+</ul>
+<blockquote>
+<ul>
+<li><strong>元件 = 模組群</strong></li>
+</ul>
+</blockquote>
+<h2 id="61-可維護性的調用">6.1 可維護性的調用</h2>
+<ul>
+<li>
+<p>正面：</p>
+<ul>
+<li><strong>內部調用是健康的</strong>。元件裡的模組群內部調用。</li>
+<li>傳出調用也是健康的。</li>
+</ul>
+</li>
+<li>
+<p>負面：</p>
+<ul>
+<li>傳入調用。為其他元件提供功能性應該限制。修改傳入調用的程式碼可能會影響其他程式。</li>
+<li>透傳程式碼。透過程式碼接收傳入，再傳出給其他元件，風險不小。</li>
+</ul>
+</li>
+</ul>
+<h2 id="62-討論">6.2 討論</h2>
+<p>一開始的系統很讚，但隨著時間可能有人違反原則，單向依賴變得混亂模糊。</p>
+<p>低度元件依賴讓分工更容易，因為緊密依賴要看其他團隊的臉色。</p>
+<p>低度元件依賴讓測試也變得容易，要弄一堆mock實在太麻煩了。</p>
+<p>透過<strong>設計模式</strong>可以幫你實現。</p>
+<ul>
+<li>
+<p>反對意見：</p>
+<ul>
+<li>因為相互糾纏無法修正：分析傳遞調用將邊界劃分清楚。</li>
+</ul>
+</li>
+<li>
+<p>例如有大量傳入調用的模組可能表示它們承擔多重職責，可以劃分與拆解。</p>
+</li>
+<li>
+<p>我知道這很重要，但我沒時間：你可以衡量維護成本，重點在於權衡。</p>
+</li>
+<li>
+<p>透傳調用是需求：</p>
+<p>某些架構被設計出中間層，一個服務層收集請求然後打包給其他分層。存在不是問題，但應該分區傳入請求與傳出請求。</p>
+<ul>
+<li>不應該處理請求本身</li>
+<li>不應該知道哪裡及如何處理請求</li>
+</ul>
+</li>
+</ul>
+<h1 id="7-保持架構元件平衡">7. 保持架構元件平衡</h1>
+<blockquote>
+<p>建構封裝邊界是設計軟體架構的重要技巧。 — George H. Fairbanks，《<em>Just Enough Archiecture</em>》</p>
+</blockquote>
+<ul>
+<li>讓頂層元件的數量和尺寸維持平衡。</li>
+<li>良好的平衡能讓查詢與分析更容易。</li>
+<li>能夠更好分工。</li>
+</ul>
+<h1 id="8-保持小規模的程式碼基礎">8. 保持小規模的程式碼基礎</h1>
+<blockquote>
+<p>程式複雜度持續增加，直到超出維護人員的負荷。 — 電腦編程的第七條法則</p>
+</blockquote>
+<ul>
+<li>盡可能保持<strong>小規模的程式碼基礎</strong></li>
+<li><strong>小產品、小專案與小團隊是成功的要因</strong></li>
+</ul>
+<p>統計結果顯示，大型專案品質較差，<strong>缺陷密度</strong>較高。</p>
+<h1 id="9-自動化測試">9. 自動化測試</h1>
+<blockquote>
+<p>要想保持程式碼乾淨無慮，先讓測試進度條維持綠色。	— JUnit格言</p>
+</blockquote>
+<ul>
+<li>使用<strong>測試框架</strong>。</li>
+<li>自動化測試讓開發過程<strong>可以預測</strong>並<strong>降低風險</strong>。</li>
+</ul>
+<h2 id="91-動機">9.1 動機</h2>
+<ul>
+<li>自動化測試可以反覆進行</li>
+<li>讓開發更有效率：盡量<strong>在開發流程早期開始測試</strong>，降低修正問題的成本。</li>
+<li>讓程式碼的行為可預測：避免出現打地鼠的問題。</li>
+</ul>
+<h2 id="92-原則">9.2 原則</h2>
+<ol>
+<li>
+<p>一般或特殊情況都要測試：</p>
+<ul>
+<li>快樂流程測試正常的情況。</li>
+<li>不快樂流程測試不正常的情況或確定在測試中拋出特定例外。</li>
+</ul>
+</li>
+<li>
+<p>像維護非測試程式碼一樣維護測試程式碼：</p>
+<ul>
+<li>對系統程式碼進行修改，測試程式碼也會被影響。</li>
+</ul>
+</li>
+<li>
+<p>獨立的測試：</p>
+<ul>
+<li>每個測試都應該只測試一個功能。</li>
+</ul>
+</li>
+<li>
+<p>覆蓋率在80%以上，幾乎跟產品程式碼差不多。</p>
+</li>
+</ol>
+<h1 id="10-撰寫乾淨的程式碼">10. 撰寫乾淨的程式碼</h1>
+<blockquote>
+<p>專業開發者有責任撰寫簡潔的程式碼。 — Robert C. Martin</p>
+</blockquote>
+<ul>
+<li><strong>簡潔的程式碼</strong>。</li>
+<li><strong>童軍守則</strong>：離開營地時，要讓它比原先更乾淨。</li>
+</ul>
+<h2 id="101-規則">10.1 規則</h2>
+<ol>
+<li>
+<p>不要留下單元層級的程式碼壞味道</p>
+<ul>
+<li>本書前四章的技巧，可以些許違反，但在程式碼<strong>提交到版本控制之前</strong>要修改好。</li>
+</ul>
+</li>
+<li>
+<p>不要撰寫不好的註解</p>
+<ul>
+<li>好的程式碼和命名足以說明這段在做什麼，不要有教條式的註解。</li>
+</ul>
+</li>
+<li>
+<p>不要再註解中撰寫程式碼</p>
+<ul>
+<li>對於新的開發人員是種干擾，版本控制會記錄程式碼的。</li>
+</ul>
+</li>
+<li>
+<p>別留下無用的程式碼</p>
+<ul>
+<li>無法達到的程式碼、沒被使用的私有方法等等。</li>
+</ul>
+</li>
+<li>
+<p>不要使用冗長的名稱</p>
+</li>
+<li>
+<p>不要使用魔法常數</p>
+<ul>
+<li>
+<p>魔法常數是指在程式碼中沒有明確寫明意思的值，例如下方例子的65，應該明確定義。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="n">65</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>修改成</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">OLD_MAN_AGE</span> <span class="o">=</span> <span class="n">65</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="n">OLD_MAN_AGE</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>不要留下未正確處理的例外</p>
+<ul>
+<li>總是捕捉例外，不要空的catch區塊。</li>
+<li>捕捉特定例外，不要捕捉最抽象的。</li>
+<li>將例外轉譯成通用訊息，否則使用者會困惑。</li>
+</ul>
+</li>
+</ol>
+<h1 id="end">END</h1>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

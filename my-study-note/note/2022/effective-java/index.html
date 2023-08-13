@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/my-study-note/note/2022/effective-java/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#創建與銷毀物件">創建與銷毀物件</a>
+      <ul>
+        <li><a href="#條款-1-考慮以靜態工廠方法取代建構式">條款 1 ：考慮以<strong>靜態工廠方法</strong>取代建構式</a></li>
+        <li><a href="#條款-2-以private建構式厲行singleton單例性質">條款 2 ：以private建構式厲行singleton〈單例〉性質</a></li>
+        <li><a href="#條款--3以private建構式厲行不可實體化性質noninstantiability">條款  3：以private建構式厲行不可實體化性質(noninstantiability)</a></li>
+        <li><a href="#條款-4避免創建重複物件duplicate-objects">條款 4：避免創建重複物件(duplicate objects)</a></li>
+        <li><a href="#條款-5消除老舊的object-references">條款 5：消除老舊的object references</a></li>
+        <li><a href="#條款-6避免使用finalizers">條款 6：避免使用finalizers</a></li>
+      </ul>
+    </li>
+    <li><a href="#通用於所有物件的函式">通用於所有物件的函式</a>
+      <ul>
+        <li><a href="#條款-7覆寫equals時請遵守通用契約general-contract">條款 7：覆寫<code>equals()</code>時請遵守通用契約(general contract)</a></li>
+        <li><a href="#條款-8覆寫equals時請總是一併覆寫hashcode">條款 8：覆寫<code>equals()</code>時請總是一併覆寫<code>hashCode()</code></a></li>
+        <li><a href="#條款-9總是覆寫tostring">條款 9：總是覆寫<code>toString()</code></a></li>
+        <li><a href="#條款-10審慎地覆寫clone">條款 10：審慎地覆寫<code>clone()</code></a></li>
+        <li><a href="#條款-11考慮實現comparable">條款 11：考慮實現Comparable</a></li>
+      </ul>
+    </li>
+    <li><a href="#類別與介面">類別與介面</a>
+      <ul>
+        <li><a href="#條款-12將classes和其成員的可存取性最小化">條款 12：將classes和其成員的可存取性最小化</a></li>
+        <li><a href="#條款-13偏愛不變性immutability">條款 13：偏愛不變性(immutability)</a></li>
+        <li><a href="#條款-14優先考慮複合composition然後才是繼承ingeritance">條款 14：優先考慮複合(composition)，然後才是繼承(ingeritance)</a></li>
+        <li><a href="#條款-15除非專為繼承而設計並提供文件否則不要使用繼承">條款 15：除非專為繼承而設計並提供文件，否則不要使用繼承</a></li>
+        <li><a href="#條款-16盡量以介面取代抽象類別">條款 16：盡量以介面取代抽象類別</a></li>
+        <li><a href="#條款-17interfaces-只應當被用來定義型別types">條款 17：interfaces 只應當被用來定義型別(types)</a></li>
+        <li><a href="#條款-18優先考慮-static-member-classes然後才是-nonstatic">條款 18：優先考慮 static member classes，然後才是 nonstatic</a></li>
+      </ul>
+    </li>
+    <li><a href="#c-建構的替代品">C 建構的替代品</a>
+      <ul>
+        <li><a href="#條款-19以-classes-替代-structures">條款 19：以 classes 替代 structures</a></li>
+        <li><a href="#條款-20以-class-繼承體系取代-unions">條款 20：以 class 繼承體系取代 unions</a></li>
+        <li><a href="#條款-21以-classes-替代-enums">條款 21：以 classes 替代 enums</a></li>
+        <li><a href="#條款-22以-classes-和-interfaces-替代函式指標fubction-pointers">條款 22：以 classes 和 interfaces 替代函式指標(fubction pointers)</a></li>
+      </ul>
+    </li>
+    <li><a href="#函式">函式</a>
+      <ul>
+        <li><a href="#條款-23檢查參數的有效性validity">條款 23：檢查參數的有效性(validity)</a></li>
+        <li><a href="#條款-24必要時製作出保護性拷貝defensive-copies">條款 24：必要時製作出「保護性拷貝」(defensive copies)</a></li>
+        <li><a href="#條款-25謹慎設計函式的署名簽名signatures">條款 25：謹慎設計函式的署名〈簽名，signatures〉</a></li>
+        <li><a href="#條款-26審慎運用-overloading">條款 26：審慎運用 overloading</a></li>
+        <li><a href="#條款-27寧願傳回長度為-0-的-array不要傳回-nulls">條款 27：寧願傳回長度為 0 的 array，不要傳回 nulls</a></li>
+        <li><a href="#條款-28為所有-exposed-api-撰寫文件註釋doc-comments">條款 28：為所有 exposed API 撰寫文件註釋(doc comments)</a></li>
+      </ul>
+    </li>
+    <li><a href="#一般編程準則">一般編程準則</a>
+      <ul>
+        <li><a href="#條款-29將區域變數的作用域scope最小化">條款 29：將區域變數的作用域(scope)最小化</a></li>
+        <li><a href="#條款-30熟悉並善用函式庫libraries">條款 30：熟悉並善用函式庫(libraries)</a></li>
+        <li><a href="#條款-31如需精確運算結果請勿使用-float-和-double">條款 31：如需精確運算結果，請勿使用 float 和 double</a></li>
+        <li><a href="#條款-32如果其他型別更適合就不要使用字串strings">條款 32：如果其他型別更適合，就不要使用字串(strings)</a></li>
+        <li><a href="#條款-33注意字串接合string-concatenation的效率">條款 33：注意字串接合(string concatenation)的效率</a></li>
+        <li><a href="#條款-34透過-interfaces-使用物件">條款 34：透過 interfaces 使用物件</a></li>
+        <li><a href="#條款-35優先使用-interfaces然後才考慮-reflection">條款 35：優先使用 interfaces，然後才考慮 reflection</a></li>
+        <li><a href="#條款-36審慎運用-native-函式">條款 36：審慎運用 native 函式</a></li>
+        <li><a href="#條款-37審慎進行最佳化optimize">條款 37：審慎進行最佳化(Optimize)</a></li>
+        <li><a href="#條款-38遵守普遍的命名習慣naming-conventions">條款 38：遵守普遍的命名習慣(naming conventions)</a></li>
+      </ul>
+    </li>
+    <li><a href="#異常">異常</a>
+      <ul>
+        <li><a href="#條款-39只在異常情況下才使用異常機制">條款 39：只在異常情況下才使用異常機制</a></li>
+        <li><a href="#條款-40對可複狀態recoverable-conditions使用可控式異常checked-exceptions對編程錯誤使用執行期異常runtime-exceptions">條款 40：對可複狀態(recoverable conditions)使用可控式異常(checked exceptions)，對編程錯誤使用執行期異常(runtime exceptions)</a></li>
+        <li><a href="#條款-41不要濫用可控式異常checked-exceptions">條款 41：不要濫用可控式異常(checked exceptions)</a></li>
+        <li><a href="#條款-42盡量使用標準異常standard-exceptions">條款 42：盡量使用標準異常(standard exceptions)</a></li>
+        <li><a href="#條款-43拋出與其抽象層abstraction相應的異常">條款 43：拋出與其抽象層(abstraction)相應的異常</a></li>
+        <li><a href="#條款-44對每一個函式所拋出的每一個異常詳加說明">條款 44：對每一個函式所拋出的每一個異常詳加說明</a></li>
+        <li><a href="#條款-45以詳細的訊息紀錄失敗情況下捕獲的異常">條款 45：以詳細的訊息紀錄「失敗情況下捕獲的異常」</a></li>
+        <li><a href="#條款-46努力保持-failure-atomicity">條款 46：努力保持 failure atomicity</a></li>
+        <li><a href="#條款-47不要輕忽異常">條款 47：不要輕忽異常</a></li>
+      </ul>
+    </li>
+    <li><a href="#執行緒">執行緒</a>
+      <ul>
+        <li><a href="#條款-48同步存取synchronize-access共享之可變資料shared-mutable-data">條款 48：同步存取(synchronize access)共享之可變資料(shared mutable data)</a></li>
+        <li><a href="#條款-49避免過度使用同步機制synchronization">條款 49：避免過度使用同步機制(synchronization)</a></li>
+        <li><a href="#條款-50絕對不要在迴圈之外喚起wait">條款 50：絕對不要在迴圈之外喚起<code>wait()</code></a></li>
+        <li><a href="#條款-51不要依賴執行緒排程器">條款 51：不要依賴執行緒排程器</a></li>
+        <li><a href="#條款-52以文件說明你的多緒安全性">條款 52：以文件說明你的多緒安全性</a></li>
+        <li><a href="#條款-53避免使用執行緒群組">條款 53：避免使用執行緒群組</a></li>
+      </ul>
+    </li>
+    <li><a href="#序列化">序列化</a>
+      <ul>
+        <li><a href="#條款-54審慎實現-serializable">條款 54：審慎實現 Serializable</a></li>
+        <li><a href="#條款-55考慮使用自訂的序列化格式">條款 55：考慮使用自訂的序列化格式</a></li>
+        <li><a href="#條款-56保護性地寫一個readobject">條款 56：保護性地寫一個<code>readObject()</code></a></li>
+        <li><a href="#條款-57必要時提供一個readresolve">條款 57：必要時提供一個<code>readResolve()</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="effective-java">Effective Java</h1>
+<blockquote>
+<p>書名：《<em>Effective Java Programming Language Guide</em>》</p>
+<p>筆記作者：葉高緯</p>
+<p>還好這本書專有名詞是用英文，不然不同的中文翻譯會看得很痛苦。</p>
+<p>這本書提出一些不變的通則。</p>
+</blockquote>
+<h2 id="創建與銷毀物件">創建與銷毀物件</h2>
+<h3 id="條款-1-考慮以靜態工廠方法取代建構式">條款 1 ：考慮以<strong>靜態工廠方法</strong>取代建構式</h3>
+<p>優點：</p>
+<ul>
+<li>方法有名稱易讀，而且比overload的建構式更好調用。</li>
+<li>可以預先創建好實體。</li>
+<li>你可以<strong>傳回介面</strong>而非物件實體。</li>
+<li>可以傳回nonpublic class</li>
+</ul>
+<p>缺點：</p>
+<ul>
+<li>如果沒有public或protected建構式，將無法被子類化。</li>
+<li>可能無法明顯和其他的靜態方法區區，在API文檔中也不像建構式那麼引人注目。</li>
+</ul>
+<p>可以透過命名規範來改善，例如：<code>valueOf()</code>、<code>getInstance()</code></p>
+<h3 id="條款-2-以private建構式厲行singleton單例性質">條款 2 ：以private建構式厲行singleton〈單例〉性質</h3>
+<p>singleton是指<strong>只能被實體化一次</strong>的class</p>
+<p>方法一</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Test</span> <span class="n">INSTANCE</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="o">();</span>
+</span></span></code></pre></div><p>方法二</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Test</span> <span class="n">INSTANCE</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">Test</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">INSTANCE</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>兩種方法皆把建構式私有化，第二種方法日後修改較有彈性。</p>
+<h3 id="條款--3以private建構式厲行不可實體化性質noninstantiability">條款  3：以private建構式厲行不可實體化性質(noninstantiability)</h3>
+<p>有時你想寫個靜態組成的類別，</p>
+<p>不希望它被實體化，</p>
+<p>將<strong>建構式私有化</strong>。</p>
+<p>不要把類別變成abstract class，</p>
+<p>因為可能會被繼承。</p>
+<h3 id="條款-4避免創建重複物件duplicate-objects">條款 4：避免創建重複物件(duplicate objects)</h3>
+<p>盡量讓程式碼重複使用(reuse)</p>
+<p>不重複創建一旦被計算出來就決不會再被更改的物件</p>
+<h3 id="條款-5消除老舊的object-references">條款 5：消除老舊的object references</h3>
+<p>有垃圾回收的語言並不表示你不需要管理記憶體</p>
+<p>例如在array中，</p>
+<p>某些物件不會再用到，</p>
+<p>但是GC並不會把它清除，</p>
+<p>嚴重可能導致OOM。</p>
+<p>要手動釋放設定成<code>null</code></p>
+<p>另一個memory leak常見的原因就是caches</p>
+<h3 id="條款-6避免使用finalizers">條款 6：避免使用finalizers</h3>
+<h2 id="通用於所有物件的函式">通用於所有物件的函式</h2>
+<p>雖然object是個concrete class，其主要設計目的卻是為了擴展，</p>
+<p>因為它所有的nofinal函式都是為了將來被override。</p>
+<p>override這些函式應該遵守通用契約，</p>
+<p>否則日後會很困擾。</p>
+<h3 id="條款-7覆寫equals時請遵守通用契約general-contract">條款 7：覆寫<code>equals()</code>時請遵守通用契約(general contract)</h3>
+<p>避免出錯的最簡單方法就是不覆寫<code>equals()</code></p>
+<p>遵守以下通用契約：</p>
+<ul>
+<li>反身性 reflexivce</li>
+</ul>
+<p>物件與自身相等</p>
+<ul>
+<li>對稱性 symmetric</li>
+</ul>
+<p>兩個物件對於彼此是否相等取得一致</p>
+<ul>
+<li>遞移性 transitive</li>
+</ul>
+<p>A是B，B是C，那A必定是C</p>
+<ul>
+<li>一致性 consistent</li>
+</ul>
+<p>多次呼叫得到的結果一致</p>
+<ul>
+<li><code>x.equals(null)</code>必定回傳<code>false</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">(!(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">MyType</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+</span></span></code></pre></div><p>以<code>==</code>檢查引數是否為物件自身的reference</p>
+<p>以<code>instanceof</code>檢查引數是否為正確型別</p>
+<p>完成撰寫時記得問自己：它有對稱性、反身性、遞移性嗎？</p>
+<h3 id="條款-8覆寫equals時請總是一併覆寫hashcode">條款 8：覆寫<code>equals()</code>時請總是一併覆寫<code>hashCode()</code></h3>
+<p>如果你忘記這麼做，會違反hashCode的通用契約，</p>
+<p>在和&quot;hash-based collections&quot;(HashMap, HashSet, Hashtable)協作時會妨礙正確的表現。</p>
+<p><strong>兩個相等的物件必須具有相等的hash碼</strong></p>
+<p>如果你沒覆寫<code>hashCode()</code>，就會失敗。</p>
+<ul>
+<li>不好的寫法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">int</span> <span class="nf">hashCode</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">42</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>這是合法的，但很爛，</p>
+<p>會讓hash table變成linked lists</p>
+<p>O(n)變成O(n^2)</p>
+<p>要點：</p>
+<ol>
+<li>將一個非0常數儲存於int result變數中</li>
+<li>對物件中的每一個被<code>equals()</code>所考慮的欄位<code>f</code>進行以下處理：
+<ol>
+<li>對這個欄位計算出型別為<code>int</code>的hash碼<code>c</code>：
+<ol>
+<li>如果是<code>boolean</code>，計算<code>(f ? 0 : 1)</code></li>
+<li>如果是<code>byte</code>,<code>char</code>,<code>short</code>或<code>int</code>，計算<code>(int)f</code>。</li>
+<li>如果是<code>long</code>，計算<code>(int)(f ^ ( f &gt;&gt;&gt; 32))</code>。</li>
+<li>如果是<code>float</code>，計算<code>Float.floatToIntBits(f)</code>。</li>
+<li>如果是<code>double</code>，計算<code>Double.doubleToLongBits(f)</code>，然後再按照<code>long</code>的處理方式處理。</li>
+<li>如果是object reference，而且class的<code>equals()</code>透過遞迴比較，那也遞迴呼叫<code>hashCode()</code>。如果要更複雜，使用正則表達式。如果是<code>null</code>回傳0。</li>
+<li>如果是<code>array</code>，按照個別方法計算後將數值組合。</li>
+</ol>
+</li>
+<li>將剛剛算出來的hash碼<code>c</code>按公式組合到<code>result</code>中：<code>result = 37*result + c;</code></li>
+</ol>
+</li>
+<li>傳回<code>result</code></li>
+<li>檢查一下</li>
+</ol>
+<p>選擇乘以37這個奇質數，和第一步選擇非0常數都是為了減少碰撞可能。</p>
+<p>如果你的class不可變，而且計算代價很大，你可以考慮將 hash 碼緩存於物件之中待用</p>
+<p>如果你認為某型別的大多數物件將被作為 hash 鍵，那你應當在創建實體時就計算 hash 碼。</p>
+<h3 id="條款-9總是覆寫tostring">條款 9：總是覆寫<code>toString()</code></h3>
+<p>class名稱 + @ + 不帶正負號的十六進制 hash 碼</p>
+<p>這種東西好讀嗎？</p>
+<p><code>println()</code>、<code>+</code>、<code>assert()</code>時<code>toString()</code>會被自動喚起。</p>
+<h3 id="條款-10審慎地覆寫clone">條款 10：審慎地覆寫<code>clone()</code></h3>
+<blockquote>
+<p>建議參考<code>java.util.collection</code>的原始碼，例如HashMap或ArrayList的clone作法</p>
+</blockquote>
+<p><code>clone()</code>會回傳一個欄位逐一拷貝的副本物件</p>
+<p>如果你要 clone 一個 array</p>
+<p>而你只是<code>return super.clone()</code></p>
+<p>那array元素的記憶體參考還是指向原本的物件。</p>
+<h3 id="條款-11考慮實現comparable">條款 11：考慮實現Comparable</h3>
+<p><code>compareTo()</code>並非在object中，</p>
+<p>而是在<code>java.lang.Comparable</code></p>
+<p>如果你正在撰寫一個具有明顯內在次序的 value class</p>
+<p><strong>強烈建議</strong>你實現這個 interface</p>
+<p>極小的努力就可以獲得巨大的能量</p>
+<p>撰寫<code>compareTo()</code>和撰寫<code>equal()</code>差不多，</p>
+<p>但有幾個差異，</p>
+<p>不需要在型別轉換前檢查型別，</p>
+<p>不一樣就拋出異常，</p>
+<p>如果是 null 也拋出異常。</p>
+<h2 id="類別與介面">類別與介面</h2>
+<p>本章的許多守則將使你的 classes 和 interface 更有用、強固、靈活。</p>
+<h3 id="條款-12將classes和其成員的可存取性最小化">條款 12：將classes和其成員的可存取性最小化</h3>
+<p>模組的好壞，在於模組隱藏其內部資料與實作的程度，</p>
+<p>模組和模組之間只透過 APIs 進行通訊，隱藏細節。</p>
+<p>稱為 information hiding 或 encapsulation</p>
+<p>Java 語言有許多設施可以實現隱藏，</p>
+<p>其中之一便是<strong>存取控制(access control)</strong>。</p>
+<p>盡可能使成員不被外界存取，</p>
+<p>根據用途盡量使用最低的存取級別</p>
+<p>頂層的 classes 和 interface 只可能使用 package-private(default)、public</p>
+<p>讓 public class 變成 package-private ，</p>
+<p>讓以後修改更方便，</p>
+<p>因為是包內實作而不是API。</p>
+<p>public class 不該擁有 public 欄位，</p>
+<p>除非是 public static final 表示常量。</p>
+<p><strong>注意：長度不為0的 array 總是可變的，這會導致安全漏洞。</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 不安全
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Type</span><span class="o">[]</span> <span class="n">VALUES</span> <span class="o">=</span> <span class="o">{...};</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 正確示範
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Type</span><span class="o">[]</span> <span class="n">PRIVATE_VALUES</span> <span class="o">=</span> <span class="o">{...};</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 方法1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">List</span> <span class="n">VALUES</span> <span class="o">=</span> <span class="n">Collections</span><span class="o">.</span><span class="na">unmodifiableList</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">PRIVATE_VALUES</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 方法2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Type</span><span class="o">[]</span> <span class="nf">values</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">(</span><span class="n">Type</span><span class="o">[])</span> <span class="n">PRIVATE_VALUES</span><span class="o">.</span><span class="na">clone</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h3 id="條款-13偏愛不變性immutability">條款 13：偏愛不變性(immutability)</h3>
+<p>immutable class 就是實體不能被修改的 class</p>
+<p>資訊皆在創建之初提供</p>
+<p>例如 String、包裝類、BigInteger、BigDecimal</p>
+<p>不可變物件不易犯錯且更安全</p>
+<ul>
+<li>不提供修改物件內容的方法</li>
+<li>不可被覆寫，可以將 class 加上 final 修飾</li>
+<li>final 所有欄位</li>
+<li>private 所有欄位</li>
+<li>確保可變物件不會被取得參考，避免被修改，在建構式、存取式和<code>readObject()</code>中使用保護性拷貝〈回傳物件副本〉。</li>
+</ul>
+<p>immutable object 是執行緒安全的</p>
+<p>String 是個不可變物件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span> <span class="n">test</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">100</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">test</span> <span class="o">+=</span> <span class="s">&#34;test&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>上面這段程式碼，</p>
+<p>因為 String 是個不可變物件，</p>
+<p>重複一百次就要創建一百個實體，</p>
+<p>非常沒效率，</p>
+<p>所以 String 製作了 StringBuffer</p>
+<p>要實現不可變物件可能也要解決這個問題。</p>
+<p>不可變物件序列化要明確提供一個<code>readObject()</code></p>
+<p>你應該盡量讓你的數值物件不可變，不需要為每個 getter 都提供一個 setter</p>
+<h3 id="條款-14優先考慮複合composition然後才是繼承ingeritance">條款 14：優先考慮複合(composition)，然後才是繼承(ingeritance)</h3>
+<p><strong>本條款討論的問題不適用於介面繼承</strong></p>
+<p>不當的使用繼承會導致脆弱的軟體</p>
+<ul>
+<li>在 package 之內使用繼承是安全的</li>
+<li>繼承專門設計來被繼承且有文件的 class 也是安全的</li>
+<li>跨越 package 邊界，對具象 class 繼承是危險的</li>
+</ul>
+<p>一個簡單的方法可以避免複雜的問題：裝飾者模式</p>
+<p>不是繼承，而是在新的 class 中包含一個現有 class 的欄位</p>
+<p>以複合替代繼承</p>
+<p>只有在「B 是一種 A」的情況下才使用繼承</p>
+<h3 id="條款-15除非專為繼承而設計並提供文件否則不要使用繼承">條款 15：除非專為繼承而設計並提供文件，否則不要使用繼承</h3>
+<p>因為繼承違反了封裝性，</p>
+<p>所以文件必須描述它是如何做、與其它方法的關係</p>
+<p>這與給一般的終端使用者文檔不懂，這是 self-use 形式的文檔</p>
+<p>你可以撰寫 protected 的方法提供給 subclass</p>
+<p>class 還必須遵守一些限制規定才能被繼承：</p>
+<ul>
+<li>建構式不能呼叫可被覆寫的函式</li>
+<li>實作 Cloneable 和 Serializable 介面，<code>clone()</code>和<code>readObject()</code>不能呼叫可被覆寫的函式</li>
+<li><code>readResolve()</code>和<code>writeReplace()</code>是 protected 而不是 private</li>
+</ul>
+<h3 id="條款-16盡量以介面取代抽象類別">條款 16：盡量以介面取代抽象類別</h3>
+<p>繼承有很多不方便的地方，</p>
+<p>而且破壞了封裝性。</p>
+<p>我們可以使用**骨幹實作類別(AbstractInterface)**來取代抽象類別的實作程式碼，</p>
+<p>撰寫骨幹實作類別十分簡單，一個 abstract class 實作介面，分析那些函式是基本元素，讓他們成為抽象函式，實作其他的具象方法。</p>
+<p>骨幹實作類別的優勢在於演進比介面更容易，</p>
+<p>當我們認為演進的容易性比程式的彈性和功能更為重要時，就使用 abstract class。</p>
+<h3 id="條款-17interfaces-只應當被用來定義型別types">條款 17：interfaces 只應當被用來定義型別(types)</h3>
+<p>當 class 實現某個 interface，該 interface 就成了一個型別。</p>
+<p>interface 不應該被用來匯出常數。</p>
+<h3 id="條款-18優先考慮-static-member-classes然後才是-nonstatic">條款 18：優先考慮 static member classes，然後才是 nonstatic</h3>
+<p>nested class 是一種定義於其他 class 內部的 class，它應該僅為其 enclosing class (外圍類別)而存在。</p>
+<p>nested class 有四種：</p>
+<ol>
+<li>static member classes</li>
+<li>nonstatic member classes</li>
+<li>anonymous classes</li>
+<li>local classes</li>
+</ol>
+<p>static member class 常見的用法是作為補助用的 public class，只在與其外圍 class 結合時才有用，</p>
+<p>舉例來說 Calulator.Operation.PLUS</p>
+<p>如果 member class 實體需要一個 reference 指向其外圍實體，讓它成為 nonstatic，反之。</p>
+<h2 id="c-建構的替代品">C 建構的替代品</h2>
+<h3 id="條款-19以-classes-替代-structures">條款 19：以 classes 替代 structures</h3>
+<h3 id="條款-20以-class-繼承體系取代-unions">條款 20：以 class 繼承體系取代 unions</h3>
+<h3 id="條款-21以-classes-替代-enums">條款 21：以 classes 替代 enums</h3>
+<p>可以使用 typesafe enum</p>
+<h3 id="條款-22以-classes-和-interfaces-替代函式指標fubction-pointers">條款 22：以 classes 和 interfaces 替代函式指標(fubction pointers)</h3>
+<h2 id="函式">函式</h2>
+<h3 id="條款-23檢查參數的有效性validity">條款 23：檢查參數的有效性(validity)</h3>
+<p><strong>執行函式的運算之前應該先檢查參數</strong>，</p>
+<p>避免 null 或其他自訂的限制，不檢查日後除錯也麻煩</p>
+<p>可以使用 Javadoc 的<code>@throws</code>說明異常和限制</p>
+<p>除非檢驗成本過高或計算過程中會暗自進行有效性檢驗</p>
+<h3 id="條款-24必要時製作出保護性拷貝defensive-copies">條款 24：必要時製作出「保護性拷貝」(defensive copies)</h3>
+<p>Java 用起來這麼於愉悅的一個原因是，它是一個安全的語言。</p>
+<p>只要不使用 native methods，就不會出事。</p>
+<p>在 immutable class 中，傳入物件欄位時使用保護性拷貝(new 新物件)，</p>
+<p>避免物件能被修改。</p>
+<p><strong>注意：傳入時不能使用<code>clone()</code>進行保護性拷貝，因為可能被傳入的是該物件的 subclass 而被攻擊。</strong></p>
+<p>傳出時則可以<code>clone()</code>，因為我們能確定該物件是我們的。</p>
+<p>你應該想想物件是否是可變的，例如長度不為0的 array。</p>
+<h3 id="條款-25謹慎設計函式的署名簽名signatures">條款 25：謹慎設計函式的署名〈簽名，signatures〉</h3>
+<p>程式命名應該：</p>
+<ul>
+<li>一看就懂功能</li>
+<li>風格一致</li>
+<li>大眾化</li>
+</ul>
+<p>例如 remove 和 delete，應該使用 remove，因為用的人多。</p>
+<p>不要有太多的便捷函式，函式太多難以維護與使用</p>
+<p>不要過長的參數列，不好用</p>
+<p>可以將函式分割或使用 helper classes 傳入</p>
+<p>參數型別 interfaces 優於 classes，靈活性更好</p>
+<p>審慎使用 function object</p>
+<p>(查了一下，這本書出版十多年後 Java 8 才出來，現在使用 lambda 應該是沒問題的)</p>
+<h3 id="條款-26審慎運用-overloading">條款 26：審慎運用 overloading</h3>
+<p>重載是靜態的，在執行時就被決定，</p>
+<p>書中例子使用重載來判斷 interfaces 的實作，</p>
+<p>結果卻是失敗。</p>
+<p>子類別的重載容易導致混亂</p>
+<p>兩個完全不同的建構式重載不會造成混亂</p>
+<p>例如 primitive 和 reference</p>
+<p>又或者兩個重載做著完全相同的事情</p>
+<p>那就沒關係</p>
+<h3 id="條款-27寧願傳回長度為-0-的-array不要傳回-nulls">條款 27：寧願傳回長度為 0 的 array，不要傳回 nulls</h3>
+<p>傳 null 代表要額外處理判斷 null，容易出錯</p>
+<p>長度為 0 的 array 是不可變的，這很棒</p>
+<h3 id="條款-28為所有-exposed-api-撰寫文件註釋doc-comments">條款 28：為所有 exposed API 撰寫文件註釋(doc comments)</h3>
+<p>手工撰寫 API 文件是一件繁瑣的事情，</p>
+<p>使用 Javadoc 替你省事。</p>
+<p>doc comment 應該簡潔描述契約，</p>
+<p>契約應說明函式做了什麼而不是如何做</p>
+<p>你需要描述前提、後期狀態、異常、連帶影響、多線程安全</p>
+<ul>
+<li>@param：參數</li>
+<li>@return：回傳</li>
+<li>@throw：異常，後面接上 if 表示觸發條件</li>
+</ul>
+<h2 id="一般編程準則">一般編程準則</h2>
+<h3 id="條款-29將區域變數的作用域scope最小化">條款 29：將區域變數的作用域(scope)最小化</h3>
+<p>類似條款12</p>
+<p>區域變數在使用時再宣告即可，</p>
+<p>過早宣告可能會讓人遺忘，</p>
+<p>日後也不好維護</p>
+<p>while 迴圈需要注意作用域</p>
+<p>能用 for 就用 for 吧</p>
+<h3 id="條款-30熟悉並善用函式庫libraries">條款 30：熟悉並善用函式庫(libraries)</h3>
+<p>函式庫是很棒的，</p>
+<p>經過理工大師的設計和測試，</p>
+<p>至少會比自己寫的還棒。</p>
+<p>例如自己亂寫的 random 很容易出錯</p>
+<p>需要數學和計算機的深厚背景</p>
+<p>總之，不要重複造輪子，用大師造好的。</p>
+<h3 id="條款-31如需精確運算結果請勿使用-float-和-double">條款 31：如需精確運算結果，請勿使用 float 和 double</h3>
+<p>float 和 double 並不提供精確的結果，</p>
+<p>尤其不要拿它們來算錢</p>
+<p>解決方法是使用 BigDecimal、int 或 long</p>
+<p>BigDecimal 有兩個缺點：不方便和速度較慢</p>
+<h3 id="條款-32如果其他型別更適合就不要使用字串strings">條款 32：如果其他型別更適合，就不要使用字串(strings)</h3>
+<p>如果有更適合的 value 型別可用，不論是 primitive 或 object reference，就用它們。</p>
+<p>字串不適合替代 enum，typesafe enums 或 int 更適合</p>
+<h3 id="條款-33注意字串接合string-concatenation的效率">條款 33：注意字串接合(string concatenation)的效率</h3>
+<p>大量連接字串使用 StringBuffer 或 StringBuilder</p>
+<p>因為字串不可變，直接用 + 大量連接要不斷創建實體</p>
+<p>除非你不在乎效率</p>
+<h3 id="條款-34透過-interfaces-使用物件">條款 34：透過 interfaces 使用物件</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 正確
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 錯誤
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Vector</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">();</span>
+</span></span></code></pre></div><p>使用介面讓程式需要改動時更有彈性</p>
+<h3 id="條款-35優先使用-interfaces然後才考慮-reflection">條款 35：優先使用 interfaces，然後才考慮 reflection</h3>
+<p>使用反射的神奇力量是需要付出代價的：</p>
+<ul>
+<li>失去編譯期型別檢查的所有好處</li>
+<li>程式碼笨拙又冗長</li>
+<li>效率更慢</li>
+</ul>
+<h3 id="條款-36審慎運用-native-函式">條款 36：審慎運用 native 函式</h3>
+<h3 id="條款-37審慎進行最佳化optimize">條款 37：審慎進行最佳化(Optimize)</h3>
+<p>不要最佳化的警語比 Java 語言出現至少早了20年</p>
+<p>最佳化的盲點是</p>
+<p>程式把80%的執行時間花在20%的程式碼上</p>
+<p>你不知道你最佳化的那部分到底重不重要</p>
+<p>與其寫出「快速程式」，不如寫出「優質程式」</p>
+<h3 id="條款-38遵守普遍的命名習慣naming-conventions">條款 38：遵守普遍的命名習慣(naming conventions)</h3>
+<p>切記文法性的命名</p>
+<ul>
+<li>例如 -able 結尾</li>
+<li>執行動作使用動詞</li>
+<li>回傳 boolean 以 is 開頭</li>
+<li>回傳某物件的屬性，用名詞或 get 開頭</li>
+<li>承上，如果是 JavaBean，一定用 get 開頭</li>
+<li>轉換型別，命名為 toType</li>
+<li>工廠常用的名字 valueOf 和 getInstance</li>
+</ul>
+<p>當然命名應該以所在團隊為主</p>
+<h2 id="異常">異常</h2>
+<h3 id="條款-39只在異常情況下才使用異常機制">條款 39：只在異常情況下才使用異常機制</h3>
+<p>濫用異常不僅效率慢，還可能導致無法捕獲的 bug。</p>
+<p>狀態測試優於傳回特異值</p>
+<h3 id="條款-40對可複狀態recoverable-conditions使用可控式異常checked-exceptions對編程錯誤使用執行期異常runtime-exceptions">條款 40：對可複狀態(recoverable conditions)使用可控式異常(checked exceptions)，對編程錯誤使用執行期異常(runtime exceptions)</h3>
+<p>Java 提供三種 throwables：</p>
+<ul>
+<li>checked 可控式異常</li>
+<li>runtime 執行期異常</li>
+<li>errors 錯誤</li>
+</ul>
+<p>runtime 和 errors 都沒有必要且不該被捕獲</p>
+<p>errors 很嚴重，你也不該實現他的子類</p>
+<p>checked 用於狀態可被復原</p>
+<h3 id="條款-41不要濫用可控式異常checked-exceptions">條款 41：不要濫用可控式異常(checked exceptions)</h3>
+<h3 id="條款-42盡量使用標準異常standard-exceptions">條款 42：盡量使用標準異常(standard exceptions)</h3>
+<p>複用異常更容易被閱讀和使用</p>
+<ul>
+<li>IllegalArgumentException</li>
+<li>IllegalStateException</li>
+</ul>
+<p>使用哪種異常並不是嚴格規定</p>
+<h3 id="條款-43拋出與其抽象層abstraction相應的異常">條款 43：拋出與其抽象層(abstraction)相應的異常</h3>
+<p>透過<strong>異常轉換</strong></p>
+<p>將低階異常轉變成高階抽象層的異常</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">catch</span> <span class="o">(</span><span class="n">LowerLevelException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">throw</span> <span class="k">new</span> <span class="n">HighLevelException</span><span class="o">(...);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h3 id="條款-44對每一個函式所拋出的每一個異常詳加說明">條款 44：對每一個函式所拋出的每一個異常詳加說明</h3>
+<h3 id="條款-45以詳細的訊息紀錄失敗情況下捕獲的異常">條款 45：以詳細的訊息紀錄「失敗情況下捕獲的異常」</h3>
+<p>必須要寫好說明，出現異常時才知道如何修改</p>
+<h3 id="條款-46努力保持-failure-atomicity">條款 46：努力保持 failure atomicity</h3>
+<h3 id="條款-47不要輕忽異常">條款 47：不要輕忽異常</h3>
+<p>不要把整段程式碼都用捕獲異常包起來</p>
+<p>至少也要寫下說明</p>
+<h2 id="執行緒">執行緒</h2>
+<h3 id="條款-48同步存取synchronize-access共享之可變資料shared-mutable-data">條款 48：同步存取(synchronize access)共享之可變資料(shared mutable data)</h3>
+<p>Java 語言保證對單一變數的讀寫操作是原子性的(不可切割)</p>
+<p>但也不就這樣不使用 synchronize，</p>
+<p>因為有原子性不代表有可見性(可以被所有 thread 同時看見)</p>
+<h3 id="條款-49避免過度使用同步機制synchronization">條款 49：避免過度使用同步機制(synchronization)</h3>
+<p>為了避免死結，</p>
+<p>不要再同步區域呼叫 alien method</p>
+<p>或者說</p>
+<p>盡可能限制同步區的工作量</p>
+<h3 id="條款-50絕對不要在迴圈之外喚起wait">條款 50：絕對不要在迴圈之外喚起<code>wait()</code></h3>
+<h3 id="條款-51不要依賴執行緒排程器">條款 51：不要依賴執行緒排程器</h3>
+<h3 id="條款-52以文件說明你的多緒安全性">條款 52：以文件說明你的多緒安全性</h3>
+<h3 id="條款-53避免使用執行緒群組">條款 53：避免使用執行緒群組</h3>
+<h2 id="序列化">序列化</h2>
+<h3 id="條款-54審慎實現-serializable">條款 54：審慎實現 Serializable</h3>
+<p>實現序列化的缺點在於日後修改 class 有些麻煩，</p>
+<p>使用舊版 class 序列化，</p>
+<p>在新版反序列化會出現問題，</p>
+<p>每次修改還需要測試。</p>
+<h3 id="條款-55考慮使用自訂的序列化格式">條款 55：考慮使用自訂的序列化格式</h3>
+<h3 id="條款-56保護性地寫一個readobject">條款 56：保護性地寫一個<code>readObject()</code></h3>
+<ul>
+<li>對 private 的 object reference 欄位進行保護性拷貝</li>
+<li>檢驗約束條件，拋出 InvalidObjectException</li>
+<li>不在<code>readObject()</code>中喚起 class 可被覆寫的任何函式</li>
+</ul>
+<h3 id="條款-57必要時提供一個readresolve">條款 57：必要時提供一個<code>readResolve()</code></h3>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My-study-notes on Awesome Hugo blog</title>
+    <link>https://hba.sid.one/my-study-note/</link>
+    <description>Recent content in My-study-notes on Awesome Hugo blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://hba.sid.one/my-study-note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/clean-architecture/clean-architecture-%E8%A7%A3%E6%B1%BA%E7%9A%84%E7%97%9B%E9%BB%9E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/clean-architecture/clean-architecture-%E8%A7%A3%E6%B1%BA%E7%9A%84%E7%97%9B%E9%BB%9E/</guid>
+      <description>Clean Architecture 替我解決的痛點 WeiTheShinobi
+Clean Architecture 是我讀的一本書，這本書講了架構、SOLID、作者的自傳等等，我來分享一些我得到的新東西，也許這比較像是讀書心得或是我對自己的碎碎念。
+被資料庫綁架 我想這是出發點問題，很多人應該看過以下這種依賴關係：
+這是你常常會看到的做法，甚至是網路上很多的範例也是這樣，程式可以跑、可以正確執行，我不知道你有沒有這樣想過，但我總是覺得這種做法卡卡的，不管是開發中或是日後維護，總是有種說不出的怪，為什麼改起來怪怪的？接手起來好痛苦啊！需求改動總是像大地震一樣，最終變成一團義大利麵。商業邏輯依賴於資料庫表、直接使用資料庫表的 model 輸出，語意不明確又容易出錯。
+以領域為主 以主要的商業邏輯做出發點，寫出邏輯與資料結構，你不需要知道你的資料是從 MySQL 還是 Redis 來的，你只需要知道有個東西會給你資料。你也不需要知道你的資料會送到瀏覽器、桌面應用還是 RPC，你只知道把資料交出去就對了。把主要的邏輯與 IO 的部分解耦，讓外部依賴領域邏輯，也不要讓外部插手領域邏輯，這樣你才能在日後改變的更少，為何？這與依賴關係有關。
+所謂依賴 並不是把程式分開來寫就真的解耦了，重點在於依賴關係，這與你用微服務或是單體無關，上游改動下游就會受到影響，所以管理依賴很重要，如果把常常變動的元件當作核心會很痛苦的，在 Go 語言中你的迴圈依賴是過不了編譯器的。
+簡單點 我覺得寫 code 還是要取捨，功能就只是簡單的讀取資料就簡單寫，不要過度設計，在動態中逐步成長，一開始就弄一堆有的沒的也許之後也用不到了，還讓接手的人覺得困擾，一堆不必要的 interface 在 trace 的時候是挺困擾的，記得那句話：「你現在不需要」，我覺得其實寫程式還是很自由的，但不代表做什麼都可以，遵守基礎的原則然後發揮創意，就像畫畫一樣。
+測試程式碼 我基本上是那種會「一邊寫測試一邊開發」的人，所以測試的痛我有感觸，我常常覺得測試寫起來難以維護，測試依賴於產品程式碼，所以測試維護寫得不好維護成本超高，維護超累就懶得弄，懶得弄測試就沒意義了，寫測試也是需要思考與練習的。別讓測試特定化，這也是我常犯的錯，太過訂製的測試會一改就廢，測試需要 mock 、輸入輸出都需要想想，我現在寫測試都會思考如何讓測試更好維護。
+聊聊框架 以前用 Java Spring Boot 框架，那時就覺得這根本是魔法，怎麼可以這麼方便啊！加上一個註解就幫我做好多事，依賴注入還有開箱即用真的很舒服，後來我開始寫 Go，我動手實作以前那些所謂的「魔法」，注入物件、初始化，不知道為什麼心裡反而有種踏實的感覺哈哈哈哈，畢竟以前都是讓框架來替我管理，大概是因為自己從頭寫到尾真的理解了吧，回到正題，我想說少即是多，也許是時候開始思考你到底需要什麼，就像家裡面有一堆放很久沒用到的東西，之後大概也用不到，可以丟掉了。
+推薦大家都可以看看這本書
+參考資料：《Clean Architecture》</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/compilers01/%E4%B8%80%E8%B5%B7%E5%AD%B8%E7%BF%92%E7%B7%A8%E8%AD%AF%E5%99%A8%E5%90%A7_01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/compilers01/%E4%B8%80%E8%B5%B7%E5%AD%B8%E7%BF%92%E7%B7%A8%E8%AD%AF%E5%99%A8%E5%90%A7_01/</guid>
+      <description>一起學習編譯器吧_01 我記得以前聽大學的教授說過：「如果大學只能選一堂課，選編譯器」。最近在學習編譯器，這是系列文的第一篇，我想用費曼學習法來學習，簡單來說，就是要能夠將所學的東西解釋給不懂的人聽，我希望這個系列文能讓一般人也能夠理解，你可以當作有趣的科普，融會貫通後使用到其他地方。如果你對這個主題有興趣，可以看看最下方參考資料的書籍。
+為了知道自己不知道 我們常常覺得自己什麼都會了，其實只是因為不知道自己不懂，這樣的無知會讓人充滿自信。其實我是覺得學習編譯器投資報酬率很高，可以有很多應用，舉例來說：整合開發環境（IDE） 在你一邊寫 Code 時就動態地為你檢查語法錯誤、做一些工具、學習計算思維和數學，學編譯器不一定要從事開發編譯器的工作，反正遲早要學會，不如早點學會。
+編譯器是什麼 一開始，人類使用 01 序列來編寫程式，明確命令電腦要怎麼做，但是這樣容易出錯而且難讀，舉例來說：電腦有一套指令集，1001 代表加，1, 10 代表地址1, 地址2，一起輸入進去就會計算地址1的值 + 地址2的值。
+後來人們有了組合語言：機器指令的別名，例如把 1001改名叫 ADD，這樣就會好寫好懂好讀，還有 macro（就是 C 語言中那個 #define），macro 簡單說就是把程式碼做替換，舉例：#define a x會把a替換成x，用程式寫出程式，然後不斷發展新特性至今，程式語言有了更多的抽象，這些高階語言翻譯成最底層的機器碼來執行。
+編譯器把一個語言翻譯成另一個語言，這就像一套流水線一樣：
+編譯器先把程式碼分解開來，像是變數、程式語言的關鍵字（if, for, int&amp;hellip;）、常數、運算子（sizeof, +, -&amp;hellip;）等等，方便後面更好動作。
+處理空白和註解，這些是給人看的所以要刪掉；生成抽象語法樹，檢查文法有沒有正確，類型檢查，不同的類型要怎麼辦，像是 1 和 1.0 能夠一起運算嗎？需要轉型成整數嗎？或者不正確的類型就是報錯。
+生成中間程式碼，最佳化程式碼，最重要的事必須確保意思是一樣的，不然毫無意義。
+最後生成目標程式碼（不一定要是機器碼，像是 Java 虛擬機的字節碼等等，程式語言之間也能互相翻譯，例如 Kotlin 可以編譯成 Javascript）。
+我們現在很抽象的說每個環節在做什麼，而每個環節的實作都是可以替換的，或者拆分開來，想要不同功能就替換某個實作即可。制定好抽象就確保了好的系統。
+下回預告 一個簡單的語法制導翻譯器
+參考資料 《编译原理》（Compilers: Principles, Techniques, and Tools）
+《现代编译原理》（Modern Compiler Implementation in C）
+WeiTheShinobi</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/program-trade/%E4%B9%9F%E8%A8%B1%E7%A8%8B%E5%BC%8F%E4%BA%A4%E6%98%93%E4%B8%8D%E6%98%AF%E4%BD%A0%E6%83%B3%E6%89%BE%E7%9A%84%E9%82%A3%E5%80%8B%E5%8D%B0%E9%88%94%E6%A9%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/program-trade/%E4%B9%9F%E8%A8%B1%E7%A8%8B%E5%BC%8F%E4%BA%A4%E6%98%93%E4%B8%8D%E6%98%AF%E4%BD%A0%E6%83%B3%E6%89%BE%E7%9A%84%E9%82%A3%E5%80%8B%E5%8D%B0%E9%88%94%E6%A9%9F/</guid>
+      <description>也許程式交易不是你想找的那個印鈔機 為什麼寫這篇文章呢？最近在思考投資股票，其中我的投資策略會參考某些指標，但老實說每次都要開某些網站還蠻麻煩的，難道我就不能一個按鈕下去，就能知道我要的指標嗎？所以我就很快速地寫了一個計算的程式，寫完之後我就想，既然都要參考某些指標來交易了，幹嘛不做成自動化交易就好了，然後就想到了程式交易，剛好朋友也有在和我討論，與其只跟他講不如跟大家講哈哈。
+何謂程式交易？ 現在拿出手機打開券商的 app，下單，程式交易完成。
+沒錯，但這應該不是一邊人想像的，與其說是程式交易，不如說是自動化交易。
+只要把平常做的事情自動化即可：
+首先是搜集資料，下單總要看一下股價吧！把平常會看的資訊收集起來。 整理出需要的指標，有了股價、交易量這些東西，就可以畫成圖、計算想要的指標、回測，可以上網找找看公式，把擁有的資料照著計算即可。舉例來說移動平均線就是簡單的加法和乘法，把每天的點算出來就可以畫成圖，就跟在財經網站上看到的一樣。 延伸學習：
+更有效率的計算移動平均線：K Radius Subarray Averages - LeetCode
+簡單的說，計算移動平均線時，不用每次都全部算完，只要計算差異的部分即可。（與這題類似）
+當然在這個情況可以不用這麼複雜，因為移動平均線頂多看個幾百幾千天，電腦使用沒效率的做法也可以很快地完成。
+我的解答放在最下方，如果你要練習請不要先看喔！
+有了需要的指標，就可以決定何時要下單，這部分就是簡單的條件判斷：如果符合條件就做某些事 剛剛提到的某些事，可以寫程式連線到券商下單、發出訊息給常用的通訊軟體 不難發現，就只是把平常做的事情交給程式做而已，先看各種指標、價格，然後看看自己的投資策略，有的人是定期定額、有的人是量化交易，然後看完了手動下單，現在全都交給機器來做，這四個步驟可以自己選擇和客製化。
+想想看需要什麼 如果只是覺得學了程式就可以在證券市場靠交易賺錢，我覺得是不可能，不需要被焦慮感給控制。但是學習程式是很開心的事情，我覺得得失心不用太重，好奇心就像食慾一樣，得到新的資訊總是使人開心，如果覺得無聊，學習這是一個很好的選擇！
+程式只是工具 終歸來說，最重要的還是策略，程式只是幫忙自動化的部分，如果能夠下單賺錢，那自動跟手動會有差嗎？（高頻交易例外，不過我覺得普通人很難參與到這塊，可以忽略。）程式只是幫忙省去麻煩，像是計算指標、下單等等。你不會因為自動化交易就突然賺錢，那也是因為策略本來就是賺錢的。
+總結 使用自動化交易並不會使你突然大賺一筆，關鍵在於交易策略，自動化交易只是省去手動的麻煩，讓你能夠睡得安穩（前提是程式有寫好，不然可能睡覺更差）
+WeiTheShinobi
+// LeetCode 2090. K Radius Subarray Averages // https://leetcode.com/problems/k-radius-subarray-averages/ // golang func getAverages(nums []int, k int) []int { result := make([]int, len(nums)) sum := 0 for i := 0; i &amp;lt; k+k+1 &amp;amp;&amp;amp; i &amp;lt; len(nums); i++ { sum += nums[i] } for i := 0; i &amp;lt; len(nums); i++ { if i &amp;lt; k { result[i] = -1 continue } if i + k &amp;gt;= len(nums) { result[i] = -1 continue } result[i] = sum / (k+k+1) sum -= nums[i-k] if i + k + 1 &amp;gt;= len(nums) { continue } sum += nums[i+k+1] } return result } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/quack-tree/%E6%9C%83%E6%89%93%E5%AD%97%E5%B0%B1%E8%A1%8C%E7%94%A8-go-%E8%AA%9E%E8%A8%80%E5%AF%A6%E4%BD%9C%E5%A5%BD%E7%8E%A9%E5%B0%8F%E5%B0%88%E6%A1%88tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/quack-tree/%E6%9C%83%E6%89%93%E5%AD%97%E5%B0%B1%E8%A1%8C%E7%94%A8-go-%E8%AA%9E%E8%A8%80%E5%AF%A6%E4%BD%9C%E5%A5%BD%E7%8E%A9%E5%B0%8F%E5%B0%88%E6%A1%88tree/</guid>
+      <description>會打字就行！用 Go 語言實作好玩小專案：tree tree 是一個很讚的工具，它可以把你的資料夾底下的檔案弄成一個樹的型狀，非常的酷。實作這個工具不難，而且也可以擴充很多很酷的功能，本篇將帶大家實作最基本的功能：遞迴印出資料夾下的檔案，我們會使用 Go 語言來實作，一起動動手吧！
+什麼是樹？ 樹是一種資料結構，那什麼是樹？為何叫樹？就像是我們在看星星，一顆一顆的星星連起來成了星座。我們看著許許多多的記憶體位址灑在天空，當一個位址指向另一個位址，我們就畫一條線把他們連起來，而最後這個圖形就像樹一樣。同樣的道理，這樣也能理解什麼是鏈結串列了：「排成一串的記憶體位址」，別被名字被疑惑，思考事情的本質。
+type TreeNode struct { data any nodes []*TreeNode } 樹跟我們的 tree 有什麼關係？ 看看樹的形狀，再看看你的資料夾，你有發現什麼嗎？這兩個東西形狀真像呢！所以我們可以把這些目錄轉換成樹型資料結構，真是太棒了！而當我們做完第一個資料夾，我們只要遞迴的往子資料夾重複一樣的動作，就可以延伸我們的枝幹。
+前往每個樹節點 透過遞迴的方式，可以輕鬆的拜訪每個樹的節點，邏輯是這樣的：拜訪這個節點，如果節點有子節點就拜訪，否則結束，非常的簡單吧！有一些方式可以讓我們選擇，這裡我們使用深度優先搜尋（Depth-First-Search，DFS），如字面上的意思，相對於廣度優先搜尋，深度優先是指如果可以往下走就往下走，不能往下才往側邊走。這裡先有個概念，在接下來的實作中很有幫助。
+所謂遞迴 對於不習慣使用遞迴的人來說遞迴很陌生，其實遞迴跟迴圈差不多，就是重複做一樣的事情，輸入的參數就是狀態。每一次創建樹節點就是在做一樣的事情。這次問題的差別在於查詢的路徑不一樣，所以就以路徑當作參數。以下示範遞迴與迴圈從 1 加到 10 總和的實作，還不理解的讀者可以多多思考。
+func main() { // 以迴圈的方式 var result int for i := 1; i &amp;lt;= 10; i++ { result += i } fmt.Println(result == 55) // 以遞迴的方式 var recursive func(n int) int recursive = func(n int) int { if n == 1 { return 1 } return n + recursive(n-1) } fmt.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/turing-complete/%E5%A6%82%E4%BD%95%E5%9C%A8-steam-%E4%B8%8A%E7%8E%A9%E6%8E%A5%E9%9B%BB%E7%B7%9Aturing-complete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/turing-complete/%E5%A6%82%E4%BD%95%E5%9C%A8-steam-%E4%B8%8A%E7%8E%A9%E6%8E%A5%E9%9B%BB%E7%B7%9Aturing-complete/</guid>
+      <description>如何在 Steam 上玩接電線？《Turing Complete》 作為一個 Steam 重度用戶，我平時沒事就是逛逛商店，某次意外的發現這個超讚的遊戲，就被這樸實的畫面所吸引，又因為我本就喜歡建造經營類的遊戲，舉例像是《Rimworld》就是個超讚的遊戲，我十分推薦。而這次發現的遊戲就是《Turing Complete》，就是常常聽到的那個圖靈完備，在遊戲中玩家扮演一個實驗體，作為一個被外星人抓來研究的地球生物，將為了保住小命而做出圖靈完備的計算機。
+一個接電線的遊戲 說起來遊戲在幹嘛？這就是一個接電線的遊戲。玩家會從一開始的邏輯閘關卡，一步一步領導你，組合不同的邏輯閘變成小元件，不同的小元件組合後，成為一台計算機，你會了解到二進制、二補數、解碼、一堆錯綜復雜的線路、寄存器等等，你也會知道什麼是 opcode、地址、組合語言、stack，你會在遊戲中遇上不同的難關，而你也需要不斷擴充自己的機器才能過關，如果你本來就對程式有點概念，在過關後，就會有種昇華的感覺，非常得愉快，就像是得到了不得了的東西的愉快感。
+這遊戲在做什麼 遊戲中並沒有太多的引導，只有任務說明和簡單的術語解釋，玩家需要大量的試錯和思考來完成關卡，如果你本身對於寫程式沒有什麼概念，玩家可以會在中途某些關卡卡住一段時間。玩家需要寫下「對應機器」的組合語言，所謂的「對應機器」就是玩家造好的那台電腦，這可不像在 2023 寫程式那麼方便，因為一切都是玩家設計的，在開始寫邏輯之前需要對照指令集定義一大堆有的沒的，這些做完才能開始用彆扭的方式寫程式。
+隨著遊戲深入，玩家會需要更好的處理器架構，同時也要能加上記憶體，才能夠完成後面更加艱難的關卡。
+總結 優點 耐玩、遊戲時數高 價格便宜 高難度帶來高成就感 steam workshop 社群 缺點 不太好用的 UI 遊戲指引少 劇情薄弱 這是一款客群較小眾的遊戲，如果你是對於解謎、puzzle 感興趣的玩家，那我十分推薦這款遊戲給你，這遊戲會花掉很多時間在思考，屬於喜歡會非常喜歡，不喜歡完全不想碰的遊戲。
+Steam 商店連結：Turing Complete Steam 商店頁面
+WeiTheShinobi</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/why-mod-3/%E4%BD%A0%E6%9C%89%E6%83%B3%E9%81%8E%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%80%8B%E6%95%B8%E8%83%BD%E8%A2%AB3%E6%95%B4%E9%99%A4%E5%97%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/why-mod-3/%E4%BD%A0%E6%9C%89%E6%83%B3%E9%81%8E%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%80%8B%E6%95%B8%E8%83%BD%E8%A2%AB3%E6%95%B4%E9%99%A4%E5%97%8E/</guid>
+      <description>你有想過為什麼一個數能被3整除嗎 還記得小時候在數學課上學過，如果一個數的所有位數相加能被 3 整除，那它就是就是 3 的倍數。這個公式大家應該都記得，但你有想過為什麼嗎？它的原理何在？該怎麼解釋？本篇會用直白的口吻來帶大家了解這個小數學！
+先了解取模 模除（modulo）即是兩數相除的餘數，根據除法原理，我們知道一個數可以被分成n = ax + b，所以n / a = x + b，可以知道n mod a = b，這就像是數學課會看到的8 / 3 = 2 ... 2這樣的式子。在一些程式語言中，你可以看到 mod 運算以%表示。取模是一個應用廣泛的運算，生活中常見的例子就是分組，舉例來說：一個班級要分成三組，每個人的號碼 mod 3，會發現只會得到 0, 1 或 2，這樣就成功分成三組了。小到計算最大公因數、大到密碼學都會用到取模。
+數學課教的公式 數學課學到：一個數字的所有位數相加，只要計算這個數字 mod 3 是否等於 0，就能知道此數能否被 3 整除，如果用 153 為例：我們把1 + 5 + 3 = 9，因為 9 是 3 的倍數，所以 153 能被 3 整除。接下來我們來看看這是如何推論的。
+所以如何推導 我們知道 mod 有交換律，即：
+(a+b) mod c = [(a mod c) + (b mod c)] mod c</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/2023/why-you-should-leetcode/%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%A0%E6%87%89%E8%A9%B2%E5%88%B7%E9%A1%8C%E8%B6%85%E4%B9%8E%E6%83%B3%E5%83%8F%E7%9A%84%E5%B7%A8%E5%A4%A7%E6%94%B6%E7%9B%8A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/2023/why-you-should-leetcode/%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%A0%E6%87%89%E8%A9%B2%E5%88%B7%E9%A1%8C%E8%B6%85%E4%B9%8E%E6%83%B3%E5%83%8F%E7%9A%84%E5%B7%A8%E5%A4%A7%E6%94%B6%E7%9B%8A/</guid>
+      <description>為什麼你應該刷題？超乎想像的巨大收益 「老師啊，感激不盡，如今的我，就能挑戰星星。」—「碎星」拉塔恩
+刷題指的是上 LeetCode 做題目，這個網站提供演算法題目和競賽，不管是初學者或是頂尖大神都能找到挑戰。想想我也做了六百來題了，今天來談談刷題究竟改變了我什麼、我認為的學習方向，我得說，本來以為只是做做題目，最後的結果遠超我的預期，不過都是我的主觀看法啦。
+故事從何而起 我認為這是一種長期收益的投資，你並不會因為多學一題而能夠馬上展現差別，但是你做一個專案馬上就可以博人眼球。但我得說刷題是非常值得的，我沒騙你！這也是我寫這篇文章的原因。
+我也是看到其他人在講 LeetCode，覺得好像挺有意思才開始刷題的。一開始我覺得難的不得了，連個 easy 題目都做不出來，後來就每天學習，一天一點點的累積其實效果非常顯著，並且讓自己每天至少都能做一題。
+經歷過這些也讓我開始思考，我對電腦開始有更多不同的看法，原來寫程式的重點不在寫程式，而是在背後的數學和證明。程式只是實現想法的工具，重要的是把數學的模型放到電腦上，離散數學受用無窮。
+達成前置知識 我覺得刷題就像重量訓練，而學框架、專案那些的就像練習用兵器，當然能打出一套招式很帥，不過重訓讓你力氣大，力氣大的人學什麼兵器都能事半功倍。在我大量練習後，動手的能力變強很多，很多事都變簡單了。
+這是一個正向的循環，因為覺得簡單所以更傾向去學習更多，而學更多會覺得更多事情變簡單。就好像類銀河惡魔城的遊戲，以前開不了的門必須在之後取得某些力量或鑰匙才能打開，學習到的不只是資料結構與演算法，而是打開後面關卡的鑰匙。
+在我看資料庫開發的線上課程時，就聽過一句話：「會開發資料庫，什麼都能開發。」聽起來很合理，因為開發資料庫需要涵蓋大範圍的知識，並行、ACID、怎麼持久化到硬碟、SQL等等，這些不同的知識點融會貫通才能做出資料庫。
+歸納與推理 我曾經聽過一個故事：「關於防範駭客，為什麼不自己發明一種符號，這種符號和其他程式不共通，這樣系統就安全了。」
+乍聽之下好像蠻合理的，但其實是行不通的，因為電腦中的符號（a, b, c, 1, 2, 3&amp;hellip;）只是 bit 排列組合的子集，而自己發明的符號也會落在這個子集中，一個簡單的舉例來說：現在你設計一個特殊符號@是1001，假如 b 是10，a 是01的話，你的這個特殊符號@就等價於ba而已，不論設計多麽複雜的符號，最終都會在01010101010110....排列組合的子集中。
+說這個故事是想表達，當擁有足夠的基礎知識，就能夠推理出很多事情、舉一反三，用公理推測新的事物而不是硬背，現在能學到的都是前人的肩膀，想想開創新的事物是多麽困難？需要多少的前置知識呢？牛頓被蘋果砸到不是偶然。
+有些事情不會改變 許多軟體工程師會遇到的問題，一直追新的技術太累了，十年前用的技術與現在不同，當然開發工具也更好用很多。我覺得我對這個問題的解決方法就是：加快學新東西的速度，而加快速度的方法就是建構你的知識譜系。
+你讀小說的速度會比你讀不熟悉領域的論文還快，因為你已經熟悉你的母語了，不用看兩行字就跑去 google，所謂的新東西就是在原有的知識中增加或修改一些，這個領域都會依賴這個知識譜系的核心（除非整個核心都替換了），新的東西出來你可以推理，就知道大概是怎麼樣；可以根據以往的經驗歸納，並不會花很多時間學習，這就是學習核心原理的好處，Vue, Spring, Django 等等的框架會改變，但核心的知識不會，這是非常棒的收益。
+欣賞美麗的世界 「沒有技藝，靈感不過是風中搖曳的蘆葦。」 —約翰尼斯‧布拉姆斯
+這個世界是很美麗的，心流的感覺非常愉快，在你學習的路上，去思考前人的是怎麼想的，讚嘆怎麼可以如此的精巧，這種快樂難以形容。希望大家都能找到自己的方向，有創新的想法卻無法實現是非常可惜的一件事，我希望自己有一天靈感到來時，能有夠能力去做出來。
+WeiTheShinobi</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/daily/230802/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/daily/230802/</guid>
+      <description>貢獻 rust
+为 Rust 做贡献的经验分享 | 程序员的喵 (catcoding.me)
+如何为Rust语言做贡献 - 知乎 (zhihu.com)
+如何为 Rust 语言做贡献 | Part 1 - Rust精选 (rustmagazine.github.io)
+閱讀和寫作學習英文
+你的感受、思考的具象化
+能夠重構你的淺意識
+不斷的重複，你能夠改變自己</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E4%B8%80%E8%B5%B7%E4%BE%86%E5%AD%B8%E7%BF%92rust%E5%90%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E4%B8%80%E8%B5%B7%E4%BE%86%E5%AD%B8%E7%BF%92rust%E5%90%A7/</guid>
+      <description>一起來學習 Rust 吧 Rust 真的超酷的，沒有空值、獨特的記憶體管理機制、函數式，透過編譯時檢查，把很多不安全的行為給排除，能寫出高校又安全的程式，不必再擔心未定義行為。
+十億美元的錯誤 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E4%BD%BF%E7%94%A8-hugo-%E6%9E%B6%E8%A8%AD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E4%BD%BF%E7%94%A8-hugo-%E6%9E%B6%E8%A8%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E5%8F%8D%E8%84%86%E5%BC%B1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E5%8F%8D%E8%84%86%E5%BC%B1/</guid>
+      <description>我們生活在一個被設計好的世界中，無聊了想看影片，想去哪裡玩，就好像倉鼠去人類替他搭建的樂園，生活那麼制式化，而我們對自己的生活卻沒有察覺。生命沒有起伏，會少了很多樂趣，我想這就是為什麼賭博這麼快樂，相比於贏到的籌碼，我們期待的是擲骰子的那一刻。給予自己壓力其實才是對身體最好的，為何在國外生活外語能力會進步？強迫自己使用外語。我想到我生命中學習最有體悟的是：修物件導向時，我幾乎不會寫程式，但也因此直接上這麼進階的課讓我能力飛躍性的成長，我覺得這種感覺在我數年之後都未曾體悟到，我知道自己一直變強，但絕對沒有那個學期這麼強烈的感受，就好像是阻塞的水龍頭突然順暢了。
+壓力 短期且巨大的壓力使你成長，長期且微小的壓力會折磨你，像滴水穿石
+選擇重訓或其他高強度短期目標訓練自己，
+避免讓生活上的壓力侵蝕自己，工作、錢</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E7%8B%80%E6%85%8B%E6%A9%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E7%8B%80%E6%85%8B%E6%A9%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E7%A7%81%E6%88%BF%E8%8F%9C%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E7%A7%81%E6%88%BF%E8%8F%9C%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>比較 enums 時，使用 Equal()代替==，讓編譯器檢查替你做防呆
+func (e enums) Equal(ee enums) bool { return e == ee } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E8%AE%93%E4%BD%A0%E5%BF%AB%E6%A8%82%E7%9A%84%E8%A7%80%E5%BF%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E8%AE%93%E4%BD%A0%E5%BF%AB%E6%A8%82%E7%9A%84%E8%A7%80%E5%BF%B5/</guid>
+      <description>當你知道了會很快樂的事情 今天我想來輕鬆一點，
+留下紀錄 拍照也好，寫文章也好，日後回憶會很快樂
+充足睡眠能解決大部分問題 某些所謂「成功學」很喜歡提倡一天只睡三小時，什麼努力拚命有的沒的，我認為，如果人類真的像遊戲一樣可以看到各種能力值的話，缺乏睡眠會讓所有能力值大減，
+完美主義是毒藥 不願意健身的人說：「我怕練太壯」、買了書從來沒翻過、既然做不到最好不如不做。這些你是否有聽過？我得說想做就去做，書本太厚看不完？沒人說看書一定要從頭看到尾，運動好累？你可以只在家做五分鐘就好，很多人錯誤的認為，一開始就要連讀五個小時書，要做三小時運動，要跟練習上萬小時的大師比較，這樣的挫折感只會讓人無力再去嘗試，先從簡單的開始，再慢慢的進步，就算你從五十歲開始彈鋼琴，你也還能彈二十年。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/article/edit/%E9%B4%A8%E5%AD%90%E5%9E%8B%E5%88%A5%E8%88%87%E9%A1%AF%E7%A4%BA%E8%81%B2%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/article/edit/%E9%B4%A8%E5%AD%90%E5%9E%8B%E5%88%A5%E8%88%87%E9%A1%AF%E7%A4%BA%E8%81%B2%E6%98%8E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/anxiety-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/anxiety-control/</guid>
+      <description>《別讓猴子控制你的情緒大腦：打破焦慮迴圈，找回人生的掌控權》 三大原因 無法容忍不確定 完美主義 過度的責任感 解決 對抗焦慮的唯一方法就是面對它，
+如果你被控制一次，下次他就會越強大，會越來越無法自拔，
+你必須要學會在焦慮中行動，不要餵養焦慮猴子。
+當我下次焦慮想逃避時，我要面對它。
+當我下次要進行無意義的檢查，我告訴我自己，這是不健康且沒意義的，我不能讓焦慮猴子控制我。
+安全策略 為了短期的延緩焦慮而去捨棄長期利益的行為，
+或者是重複且無意義的行為。
+可以分為心理上與生理上，
+像是擔憂。
+這些可能無意識，必須要自己去發掘自己是否有安全策略。
+轉移注意力 當你焦慮時你可能會想做其他事情來轉移注意力，
+這也是為什麼很多人要做正事突然就想去打掃，
+不要讓這些事成為你的安全策略。
+嘗試放鬆 讀書很焦慮，所以想逃避去放鬆，
+但是你也知道這只會讓你越來越焦慮，
+放鬆是好事，
+但把放鬆當成安全策略就不是，
+這只會導致猴子的惡性循環。
+開闊思維 糾結在小地方讓我們焦慮，
+我們可是嘗試從更遠更寬廣的視角來看原本的事物，
+別人猴子控制自己，
+或者是去做那些讓你焦慮的事情，
+學習到新的經驗將會讓你不再害怕，
+安全策略讓我們停在自己的安全區不再進步。
+用開闊策略取代安全策略。
+面對討厭的感覺 負面的感覺是成長的必經之路，
+就像是生長痛一樣，
+我們要歡迎不舒服的感覺，
+當你越能接受它，
+你的適應能力就越強，
+就像免疫系統一樣或者是肌肉訓練。
+歡迎呼吸 每個猴子來臨，一邊呼吸一邊歡迎它。
+「謝謝你，猴子！」
+讚美不完美 我們從事正面的事情時，
+重要的是過程而不是結果，
+讀一千次不如做一次，
+害怕失敗讓你焦慮，
+害怕失敗被別人嘲笑，
+所以不敢做，
+不敢做就永遠不會進步，
+學會表彰自己的行為。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/building-maintainable-software-javaedition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/building-maintainable-software-javaedition/</guid>
+      <description>《Building Maintainable Software, Java Edition 打造可維護軟體：編寫可維護程式碼的10項法則 （Java版）》 在圖書館看到這本書，也才一百多頁而已，看到出版商歐萊禮就翻了一下覺得不錯，就借回家來讀，第一次嘗試寫學習筆記，也是嘗試使用更好的學習方法，希望自己未來更強。
+筆記作者：葉高緯 Wei the Shinobi
+1. 簡短的程式碼 傻瓜也可寫出電腦能懂得程式碼，但優秀的工程師才能寫出人類能夠理解的程式碼 。	— Martin Fowler
+程式碼單元的長度應在15行內。 1.1 好處 容易測試 容易分析 容易複用 1.2 重構技巧 提取方法：將一段很長的程式碼，提取出一部份拆分成新的方法。不僅好讀，還可實現程式碼複用。 那如果遇到需要傳送很多區域變數的情況呢？拆分出來的新方法要傳一長串參數肯定很麻煩，這時我們需要另尋他法。 以物件方法取代方法：如果你要傳送一長串的變數，可以把某些要傳遞的區域變數，轉變成類別的私有欄位。就是提升作用域的意思。 class Something { void doSomething(int x,String y,int a,int b, int c, int d){ // ... } } 改寫成
+class Something { private int x; private String y; Something(int x,String y) { this.x = x; this.y = y; } void doSomething(int a,int b, int c, int d){ // .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/clean-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/clean-code/</guid>
+      <description>《Clean Code》 筆記作者：Wei the Shinobi 葉高緯
+筆記
+開發時，我們花費大量的時間在閱讀舊程式碼，
+因為要了解舊的才能寫新的，
+所以提高可讀性就是提高效率。
+第二章 有意義的命名 簡單的程式碼也可以難以閱讀
+要避免使用抽象的命名
+讓名稱代表意圖
+避免誤導 不要相似的名稱，也不要會被誤認為其他單詞的名稱，小寫的l和大寫的O
+有意義的區別 message 和 messageInfo 沒有區別
+類別用名詞、方法用動詞
+一個概念使用一種字詞
+例如 controller 和 manager
+讓人難以看出差別
+專業領域的命名 使用的設計模式的名稱、演算法的名稱
+無意義的上下文資訊 第三章 函式 函式應該要盡量的簡短，易於閱讀 傳入布林值是糟糕的作法，因為這讓函式做了兩件事，不如拆成兩個 傳入的參數應該越少越好，可以傳入物件代替多個參數 不要有副作用 使用例外取代回傳錯誤碼 一開始寫出的函式肯定雜亂，但通過準則慢慢修改到好。
+第四章 註解 好的程式碼不需要註解，
+註解是用來彌補我們的失敗。
+尤其註解可能會隨著更新欺騙你，但程式碼絕對不會。
+好的註解：
+可以寫下解釋這段程式碼的意圖 可以寫下程式碼的問題 ex. not thread safe // TODO 可以讓 IDE 找到代辦事項，但要記得刪除 公共 API 裡的 Javadoc，無庸置疑 爛的註解：
+把程式碼的過程描述一次，直接看程式碼就好了 註解不夠精確，導致誤導 日誌註解，請使用 VCS 署名，VCS 知道作者是誰，而且隨著時間可能也不一定了 註解程式碼 第五章 編排 程式碼應該像報紙一樣，短而多篇，而不是大長篇。 當程式碼進入不同的概念，用空白分隔開。 為了不再讀程式碼時跳來跳去，應該有些固定的規則 變數宣告在開始</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/competitive-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/competitive-programming/</guid>
+      <description>Competitive Programming 筆記：Wei the Shinobi
+比賽 多參加比賽、模擬 先計畫再動手，不能靠蠻力，畫好圖、找出公式、仔細思考邊界條件 賽後復盤，重新思考如何思考？如何歸納？ 比賽中保持住心態，崩潰時一定要記得穩度好自己 訓練 規定時間，時間內做出習題 刻意練習零失誤通過 一定要練習畫出圖、公式，不能習慣摸石頭過河 技巧 起點有多個，終點只有一個時，可以改從終點開始找 有時思考的方向一開始就錯了，一直想不到時要換換出發點 StringBuilder.toString()是一個花費巨大的操作 用 Deque 來實作 sliding window Graph Theory 二分圖 二分圖只有雙數環，若探測到單數環就不是二分圖 替點標記顏色兩種，若相鄰點顏色相同就不是二分圖 DFS 白灰黑三色可以探測有環 BFS 計算最短的距離、次數、階層 拓撲排序是 BFS 的一種變體 Topological Sort 尋找 in-degree 為 0 的點（只出不進的點）加入 queue 中 持續queue.poll()刪除並更新其他點的 in-degree 重複以上步驟直到 queue 為空 單條最短路徑 圖上無負環時是 P 問題，反之則是 NP-complete 問題
+Dijkstra int[] 到起點的最短路徑; int[] 前一個點; 貪心
+選定一個起點
+尋找不再最短路徑上且離起點最近的點
+新點路徑長 + 前一個到起點的距離 = 新點到起點距離
+直到所有點都被加入
+Bellman 重複 n - 1 輪鬆弛</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/effective-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/effective-java/</guid>
+      <description>Effective Java 書名：《Effective Java Programming Language Guide》
+筆記作者：葉高緯
+還好這本書專有名詞是用英文，不然不同的中文翻譯會看得很痛苦。
+這本書提出一些不變的通則。
+創建與銷毀物件 條款 1 ：考慮以靜態工廠方法取代建構式 優點：
+方法有名稱易讀，而且比overload的建構式更好調用。 可以預先創建好實體。 你可以傳回介面而非物件實體。 可以傳回nonpublic class 缺點：
+如果沒有public或protected建構式，將無法被子類化。 可能無法明顯和其他的靜態方法區區，在API文檔中也不像建構式那麼引人注目。 可以透過命名規範來改善，例如：valueOf()、getInstance()
+條款 2 ：以private建構式厲行singleton〈單例〉性質 singleton是指只能被實體化一次的class
+方法一
+public static final Test INSTANCE = new Test(); 方法二
+private static final Test INSTANCE = new Test(); public static Test getInstance() { return INSTANCE; } 兩種方法皆把建構式私有化，第二種方法日後修改較有彈性。
+條款 3：以private建構式厲行不可實體化性質(noninstantiability) 有時你想寫個靜態組成的類別，
+不希望它被實體化，
+將建構式私有化。
+不要把類別變成abstract class，
+因為可能會被繼承。
+條款 4：避免創建重複物件(duplicate objects) 盡量讓程式碼重複使用(reuse)
+不重複創建一旦被計算出來就決不會再被更改的物件
+條款 5：消除老舊的object references 有垃圾回收的語言並不表示你不需要管理記憶體</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/head-first-design-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/head-first-design-patterns/</guid>
+      <description>Head First Design Patterns 書名：《Head First Design Patterns》
+筆記作者：葉高緯 Wei the Shinobi
+之前看了《Head First Java》，我覺得Head First系列都很讚。
+介紹設計模式 設計模式讓我們與其他人討論時更方便，
+現在有一個鴨子父類，
+有很多不同的鴨子子類會繼承，
+但是不同的鴨子有不同的行為，
+像是呱呱叫和飛翔，
+個別修改不同的行為對於日後維護困難。
+把變動部分封裝起來 我們可以把呱呱叫和飛翔從鴨子中取出，
+建立一個新的類別。
+封裝呱呱叫和飛翔的行為。
+針對介面寫程式，不是針對實踐寫程式 在鴨子class中，
+選擇行為的介面。
+FlyBehavior fly = new FlyNoWay; 從介面呼叫方法易於維護與擴充。
+多用合成，少用繼承 我們把行為的介面和鴨子組合起來，
+而不是把繼承行為，
+組合更加靈活，
+還可以動態指定不同的行為。
+「有一個」比「是一個」更好。
+策略模式 定義了演算法家族，個別封裝，讓它們可以替換，演算法的變動不會影響使用演算法的程式。
+舉例：
+一個角色有一個武器行為，
+做出一個武器行為介面，
+可以實作出不同武器的武器行為，
+還可以使用角色的setWeapon方法來替換武器。
+觀察者模式 定義了物件之間的一對多關係，當一個物件改變狀態，其他相依者都會收到通知並更新。
+就像是報社和訂閱者，
+訂閱可以收到報紙，
+也可以取消訂閱就不再收到報紙。
+設計主題介面與觀察者介面。
+設計時，盡量讓需要互動的物件之間關係鬆綁 當兩個物件被鬆綁，
+依然可以互動，
+但是不太清楚彼此的細節。
+通知變更 有時候資訊頻繁改動，
+可以設定setChange方法，
+自訂改動的幅度才通知觀察者。
+裝飾者模式 動態地將責任加諸於物件上。若要擴充功能，裝飾者提供比繼承更有彈性的選擇。
+讓裝飾者與被裝飾者能使用多型，
+繼承同一個類，
+再建構式中實例化父類。
+範例：
+Drink drink = new coffee(); drink = new Mocha(drink); drink = new Whip(drink); 這看起來有沒有像什麼？</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/java-stream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/java-stream/</guid>
+      <description>Java Stream 筆記作者：葉高緯 Wei the Shinobi
+學會函數式程式設計，用流式運算來替代for。
+四大函數式介面（重點、必須掌握） 現代工程師應該掌握的：lambda表達式、鍊式編程、函數式介面、Stream流式計算
+@FunctionalInterface
+函數式介面：只有一個方法的介面。
+例如Runnable。
+函數式介面 自訂輸入輸出
+// 回傳輸入的值 Function function = new Function&amp;lt;String,String&amp;gt;() { @Override public String apply(String str) { return str; } }; // lambda表達式 Function&amp;lt;String,String&amp;gt; function2 = (str)-&amp;gt;str; 斷定式介面 回傳布林
+// 判斷傳入值是否為空 Predicate&amp;lt;String&amp;gt; predicate = new Predicate&amp;lt;String&amp;gt;() { @Override public boolean test(String str) { return str.isEmpty(); } }; // lambda表達式 Predicate&amp;lt;String&amp;gt; predicate2 = (str)-&amp;gt;str.isEmpty(); 消費型介面 無回傳值
+// println傳入值 Consumer&amp;lt;String&amp;gt; consumer = new Consumer&amp;lt;String&amp;gt;() { @Override public void accept(String s) { System.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/juc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/juc/</guid>
+      <description>java.util.concurrent 筆記作者：葉高緯 Wei the Shinobi
+參考資料：【狂神说Java】JUC并发编程
+裡面有關於多執行緒的一些東西
+簡單點像是Thread或是Runable，但相較callable略為慢一點。
+處理程序（進程）與多執行緒（多線程） 一個處理程序可以包含多的執行緒。
+Java默認兩個執行緒：main、GC
+Java真的可以開啟執行緒嗎？不能。
+點進Thread可以看到他最終會調用start0，
+這是一個native方法。
+多執行緒的狀態 從Thread的原始碼裡面可以找到多執行緒的六種狀態：
+public enum State { NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED; } 問題 多執行緒操作同一個資源 大家同時操作同一個資源可能會出問題，這時我們需要加上鎖。
+Synchornized
+Interface Lock
+Lock的實現類：ReentrantLock、ReadLock、WriteLock
+ReentrantLock建構子可以傳入boolean來決定公平鎖 公平鎖：先來後到 非公平鎖（默認）：可以插隊 Synchornized 與 Lock 的區別 Synchornized 是關鍵字；Lock是個Java類。 Synchornized 無法判斷獲取鎖的狀態；Lock可以判斷是否獲取到鎖。 Synchornized 會自動釋放鎖；Lock要手動。 Synchornized 阻塞時，另一個線程會一直等待；Lock就不一定。 Synchornized 可重入鎖，不可中斷，非公平；Lock可重入鎖，可以判斷鎖，非公平（可設置）。 Synchornized 有程式碼鎖和方法鎖，Lock只有程式碼鎖。 生產者與消費者 判斷等待、業務、通知 假設現在有兩條執行緒，
+一條負責生產漢堡，
+一條負責販賣。
+一個標準的流程就是
+判斷等待 業務 通知 // 判斷等待 if(漢堡 != 0) { wait(); } // 業務 漢堡++; // 通知 notifyAll(); 然後也會有個的販售者執行緒，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/jvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/jvm/</guid>
+      <description>JVM 筆記作者：葉高緯 Wei the Shinobi
+參考資料：【狂神说Java】JVM快速入门篇
+延伸閱讀：《深入理解 Java 虛擬機：JVM 高級特性與最佳實踐》
+JVM 結構 加載器與雙親委派 加載器：
+根加載器 擴展類加載器 應用程式加載器 雙親委派：
+先找根加載器，如果沒有 找擴展類加載器，如果沒有 找應用程式加載器（我們寫的程式） 如果都沒有，ClassNotFoundException Native 關鍵字 凡是帶了native關鍵字，說明Java的作用範圍達不到了，調用底層C語言的庫。 進入本地方法棧(native method stack) 調用本地方法接口JNI(native method interface) JNI作用：擴展Java的使用，融合不同的語言為Java所用。
+Java開闢了一個標記區域：native method stack，登記Native方法，
+在最終執行時，加載本地方法庫中的方法通過JNI。
+方法區 方法區被所有線程共享，靜態變量、常量、類信息和常量池存在方法區中，
+但是實例變量存在堆中，和方法區無關。
+static, final, Class, 常量池
+棧 Stack 線程等級
+先進後出
+堆 Heap 一個JVM只有一個Heap，
+Heap記憶體的大小是可以調節的。
+類加載器讀取類文件後，把類、方法、常量、變量放到堆中，
+保存所有引用類型的真實對象。
+三個區域 新生區 伊甸園 倖存區1 倖存區2 老年區 永久區（JDK 1.8後叫元空間） GC回收主要在伊甸區和老年區。
+假設記憶體滿了就會出現OOM(OutOfMemoryError)，
+新生區 誕生和死亡的地方 伊甸園：所有物件都在這new出來。 沒被GC清除的物件會不斷往下移動，直到老年區， 永久區 用來存放JDK自身攜帶的Class物件。Interface元數據，存儲的是Java運行時的環境。
+不存在GC回收。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/linear-algebra-3b1b-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/linear-algebra-3b1b-version/</guid>
+      <description>Linear Algebra - 3B1B version 學習筆記
+Vectors | Chapter 1, Essence of linear algebra - YouTube
+Chapter 1 向量是線性代數的基本
+不論我們怎麼看到向量都無所謂
+不論是計算機或物理學
+純量乘法 = 向量 * 純量 ( scalar )
+純量乘法是把向量每個構建都乘以純量
+Chapter 2 x 方向的向量 i-hat
+y 方向的向量 j-hat
+他們被稱作座標的基本單位
+span 伸展
+Chapter 3 線性轉換與矩陣的關聯
+線性轉換就像是 function：輸入、輸出
+線性轉換是空間移動的方式
+而我們只要用向量的停留點來表示即可
+線性轉換必須：
+原點不動 line 依然平行、均勻分布 [[a, b], [c, d]] * [x, y] = [[ax + by], [cx + dy]]
+要了解線性代數就要知道：
+矩陣可以解釋成空間中的某種轉換
+這個想法讓以後學到的概念更好理解
+Chapter 4 Composition 合成 組合 function</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/syetem-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/syetem-design/</guid>
+      <description>Syetem Design 單體與微服務 微服務更加複雜，
+而且需要額外的補助系統，
+例如 log 來追蹤、服務發現、自動化等等，
+服務間的網路溝通會略慢一些，
+微服務的好處是：
+不同服務可以使用不同的技術
+更好部署
+更好協作
+單體和微服務的選擇取決於專案的大小與人力，
+大型公司需要微服務．
+服務間溝通 同步 每個服務都同步溝通，
+需要應付很多場景，某個環節出錯很麻煩，
+服務間緊密的耦合，
+使用者要等待非常久的延遲．
+非同步 服務非同步可以更快，
+某些服務出錯時，我們沒辦法取消流程．
+綜合方案 某些強制任務以同步方法執行ㄝ
+除此之外都用非同步執行．
+但還是有個問題，
+如果服務請求失敗，
+我們可能會丟失狀態．
+可以加入消息對列．
+Message Queue 消息對列存儲非同步的請求，
+保存請求的狀態，
+出版者放入對列，
+訂閱者從對列取出．
+Message Queue 的好處 提升穩定性，
+更好擴展，而且擴展需要耗費的硬體更小，
+減少系統的複雜性．因為少了連動性操作．
+通訊協定 HTTP 現在都通常的使用HTTPS來避免中間人攻擊
+WebSocket 需要持續溝通使用
+比較耗資源
+要考慮場景選擇
+Consistent Hashing 一致性哈希
+傳統 mod 在以前，我們算出 hash 並 mod，
+來決定我們使用哪個節點，
+但這種做法讓我們在增加或刪減服務時，
+會很困擾，
+因為這會讓映射規則失效，
+已經算出的 hash 需要重新安排是很大的花費．
+延伸閱讀 布林過濾器 透過一個位元向量（0與1）與幾個 hash function，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2022/unit-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2022/unit-test/</guid>
+      <description>單元測試 作者：葉高緯 Wei the Shinobi
+測試基礎 本篇使用JUnit5示範。
+為什麼要單元測試：
+用main方法測試，不能同時運行，還要人工觀察結果，每次改動又要重新測試，又累又麻煩。
+第一個簡單的單元測試 public class MonkeyTest { Monkey monkey; @BeforeEach public void setup(){ monkey = new Monkey(); } @Test public void addTest(){ int x = monkey.add(5,3); assertEquals(8,x); } } 命名規則 &amp;lt;單元的行為或名稱&amp;gt;_&amp;lt;單元要接受的測試&amp;gt;_&amp;lt;預期結果&amp;gt;
+舉例：
+public void reverse_singleCharacter_sameStringReturned() throw Exception { // 反轉字串_傳入一個字_預期回傳一個字。 } 你可以把被測試的物件取名為SUT(System Under Test)。 測試3A 你應該照著這個順序寫單元測試：
+Arrange: 初始化 Act: 執行 Assert: 驗證 測試錯誤與測試失敗 測試錯誤是發生了錯誤了。 測試失敗是沒通過測試。 剛開始時避免去看被測試類的實作 避免被影響，產生先入為主。先以輸入輸出為準。 測試物件而不是資料結構 你應該測試的是有行為的物件。 不需要測試資料結構，就是指那些getter/setter。 開始 步驟 setup：先設定好你需要的物件。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2023/clean-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2023/clean-architecture/</guid>
+      <description>Clean Architecture 架構 結構式 減去了 goto
+限制了程式的控制
+物件導向 減去了函式指標
+物件導向並沒有新增東西
+而是給我們更安全的規範
+函數式 減去了變數
+沒有變量就沒有競爭條件、平行計算等非常多的麻煩
+得到一個乾淨純粹的程式
+我們的版本控制系統就是這樣
+記下每一筆交易而不是狀態
+計算所有交易就可以得到最終狀態．
+幾十年來，
+軟體一直在做減法而不是加法．
+SOLID 單一職責 這是常被誤解的名字，
+這是指他只替一個使用者做一件事，
+對不同的使用者來說同一件事可能不同（技術與商業是有差的）
+開放封閉 新增不修改
+李氏代換 這個原則提醒我要注意實作的副作用
+測試時要注意
+介面隔離 不需要的不要帶
+依賴反轉 架構 拆分邏輯、設定邊界 依賴的方向很重要 以領域、使用案例為核心，而不是IO，我們不在乎程式是給 rpc 還是 web controller -&amp;gt; service -&amp;gt; repository
+被資料端綁架，完全被按「表」操課 以元件或領域當 package，而不是 controller, service&amp;hellip;等 水平拆分讓架構不明顯，
+而且暴露不必要的細節．
+解耦的謬誤 並不是使用了微服務架構就是解耦
+而是要基於元件來解耦，基於依賴
+框架是細節 別讓框架進入核心
+框架只是補助、外人
+測試 測試依賴於我們的產品程式碼
+這代表他非常容易改動
+不讓測試特定化 測試也需要解耦，否則會有痛苦的維護成本 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/2023/number-theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/2023/number-theory/</guid>
+      <description>Number Theory 參考資料：數論 01 Division Algorithm - YouTube
+數論全是整數
+Division Algorithm $$ let \quad a \in Z\quad , b\in N \ then \quad \exists!,q\quad ,r\in N \ a = bq + r \ where \quad 0 \leq r \lt b $$ 證明： $$ let,S = \begin{Bmatrix} a-xb:a-xb\ge0,,x\in Z \end{Bmatrix} \ $$
+if r &amp;gt;= b：
+by well ordering principle
+S 集合有一個最小值 minS = r $$ r = a - bq = minS \ge b\</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/compilers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/compilers/</guid>
+      <description>Compilers 概述 一開始，人類使用0, 1序列來編寫程式，明確告訴電腦要怎麼做，這樣容易出錯而且難讀，後來人們有了組合語言，機器指令的別名，還有 micro（就是 C 語言中那個 #define），用程式寫出程式，然後不斷發展新特性至今。
+編譯器的用途：
+IDE 在你一邊寫 Code 時就動態的替你檢查語法錯誤，做一些提高生產力的工具，學習計算思維、數學
+寫一套規則讓程式做最好的選擇，而不是自己手動配置，像是 sql、寄存器
+硬體也需要編譯器生成
+編譯器把一個語言翻譯成另一個等價的語言，
+並行和記憶體階層可以加速
+編譯器的用途
+詞法分析、語法分析、中間代碼生成、優化、生成目標程式碼
+編譯器先把程式碼分解開來，像是變數、每個程式語言的關鍵字（if, for&amp;hellip;）、常數、運算符等等，還要處理空白和註解，生成語法樹，還要檢查文法有沒有正確，不然就會出現 Syntax Error，還有類型檢查，不同的類型可能需要隱性轉型，像是整數和浮點數運算，或者就是報錯，生成中間程式碼、最佳化，生成目標程式碼。
+詞法分析 詞法分析將輸入拆分成詞法單元
+有限狀態機，詞法分析可以畫出狀態轉換圖，照著這個圖施工就可以非常的舒服，狀態轉換圖有初態、終態，而這些用線來連著，線有方向性，只要一直跑下去到達終態即可。
+NFA to DFA
+Parsing top-down parsing
+對照文法，把 token 一步一步轉換
+你可以用回朔法把每個都嘗試一次
+但是這樣很沒效率
+預測分析：
+ll1分析
+Bottom-up parsing Top-down 反過來做
+本來是將非終結符轉換
+但現在是反過來
+文法：A -&amp;gt; a ，當你讀取到 a 時，轉換成 A
+我們可以使用 shift-reduce parsing
+有兩個動作 shift, reduce
+現在想像一個指標為 |，輸入 abcdefg
+每次都可以選擇要 shift or reduce
+假如是 shift -&amp;gt; a|bcdefg，就是指標往前</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/designing-data-intensive-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/designing-data-intensive-applications/</guid>
+      <description>資料密集系統設計 Designing Data-Intensive Applications 筆記作者：WeiTheShinobi
+第一章 可靠性、可擴展性、可維護性 現在大部分的應用程式都是資料密集而非計算密集，資料才是問題，還好人類已經研究很多很好的抽象解決這些問題。本章會先走一次基礎知識，接下來的章節層層推進。現在的應用系統由多個組件和資料系統組合而成。
+可靠性 即時發生了故障，系統依舊能正常工作。
+故障是不可能完全消除的，故意產生故障來檢驗系統是很好的，因為許多 bug 是由於不當的錯誤處理。硬體、軟體、人為都有可能出錯，軟體的故障出於對執行的系統有某些假設，而人為故障是最常發生的，例如環境配置錯誤，想要降低人為失誤：
+設計系統時就減少出錯機會 完整的測試：整合、單元、手動測試 測試環境 好的監控系統：好的 log，記錄出錯 能輕鬆地回滾 並不是只有核電廠的系統需要可靠性，想想一個老奶奶把所有的照片都存在你的系統中，如果系統出錯他們的感受如何。
+可擴展性 描述系統對於負載增加的能力
+以 Twitter 為例，分為兩個功能，讀取和寫入文章，而這兩種功能分別有不同量級，一個被三千萬人追蹤的明星發布文章跟一般人的量級又不一樣。
+我們通常關心吞吐量與回應時間，而回應時間也不該只是一個平均數字，而是要看他的分布狀況，通常會因為 IO 問題有一些異常值。人們常常以平均時間來當作指標，但這不太好。首先將數值做排序，然後選擇百分位數，例如 p50(中位數), p95 或 p99 都不錯，假如中位數延遲是200ms，代表有一半的人不超過，而高百分位通常代表高價值客戶，要確保這些人開心。根據 Amazon 的資料：回應每增加 100ms，銷售減少 1%；延遲 1 秒使客戶滿意度下降 16％。當然優化 p99 並不容易，因為這通常是因為發生不可控事件。
+一個請求可能涉及多個後端服務，而最慢的服務會拖慢整體進度，每分鐘監控並作圖計算百分位數，降低取樣精度或是結合多台機器並沒有意義。
+應對負載 可以大致區分為水平擴展和垂直擴展，無狀態的服務水平擴展容易，有狀態的資料系統水平擴展會增加系統複雜度。大規模的系統需要高度訂製，沒有銀彈，例如每秒十萬次請求和每秒三次但每次 2GB 的系統非常不同，快速迭代通常比為假想做準備好。
+可維護性 軟體開發大部分的成本在於維護遺留系統，特別注意三個原則：
+可維運性 有人說好的維運可以帶起壞的軟體，但壞的維運帶不動好的軟體。
+簡單性 緊密耦合、依賴關係混亂、奇怪的特例，複雜讓維護變得超困難，容易出現 bug 而且超累人，消除複雜性最佳工具就是抽象，就像程式語言是機器碼、系統呼叫的抽象，SQL 是磁碟和記憶體資料結構的抽象，但道理人人都懂，做出好的抽象不容易。書中後面會提到。
+可演化性 需求總是不斷變化，本書會探討大的資料系統中，提高敏捷性的做法，例如前面提到的 Twitter。
+小節 一個系統要滿足多種需求，包括功能性需求（要做什麼事）與非功能性需求（可靠、可擴展），可靠性意味著系統故障依然可運作，可擴展性是指系統應對負載增加，可維護性要好的運維和好的抽象。
+第二章 資料模型與查詢語言 本章探討關聯式資料庫、文件資料庫和圖像資料庫
+關聯模型與文件模型 模型百家爭鳴，關聯模型最終主導了持續三十年，而為了彈性與表達力，NoSQL出現了。SQL 在應用層與資料層中會有笨拙的轉換層。
+關聯模型做的就是把資料攤開，靠查詢優化器搜尋，一個通用的優化器比手寫每個最佳做法好得多，關聯模型有簡潔的 join，多對一和多對多關係。
+文件模型可以產生方便的一對多樹，但不太好多對一、多對多，如果想 join 就要處理應用程式碼，但是只要用在適合的場景就好了，像是紀錄 log，文件模型有較好的靈活性在遷移上（migration）。（schema-on-read）</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/microservices-patterns-with-examples-in-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/microservices-patterns-with-examples-in-java/</guid>
+      <description>《Microservices Patterns: With examples in Java》 筆記：Wei the Shinobi
+第 1 章 逃離單體地獄 應用程式不斷開發，
+最終變得龐大、複雜而難以維護，
+開發十分艱難。
+一個錯誤就會導致整個程式崩壞 被迫使用過時的技術難以更新 微服務架構 模組化，服務之間透過 API 通信 每個服務有自己的私有資料庫 避免了堵塞
+好處：
+更容易地持續交付與測試 不同團隊的耦合被拆分 不同服務被隔離 壞處：
+拆分的定義 決定哪些要拆開，做的不好可能變成分布式的單體程式
+複雜 不只設計、需要更多基礎設施
+思考何時開始微服務架構 初期直接從微服務架構開發非常困難
+模式 從建築界得到的靈感，
+我們可以學習特定場景的解決方案。
+微服務架構的模式語言是一種模式
+服務拆分：決定如何分解系統
+根據業務 根據子域 通信：微服務架構是分布式系統，因此 IPC 是很重要的
+數據一致性：2PC 在微服務架構之下不再適用，用 Saga 取而代之
+查詢數據：傳統應用使用 SQL JOIN，使用 API 組合或命令查詢職責隔離（CQRS）
+部署：相較於傳統直接複製到伺服器，你需要自動化部署
+觀測：理解與診斷微服務很麻煩，因為請求在多個服務跳轉
+第 2 章 服務的拆分策略 4 + 1 視圖模型 邏輯視圖：開發人員創建的元素 實現視圖：編譯系統、打包程式碼的模組，在 Java 中是 JAR 或 WAR，關係是他們之間的依賴關係 進程視圖：運行時的組件，每個元素都是一個進程，進程的關係代表進程間通訊 部屬視圖：進程如何映射到機器，元素是機器和進程，關係代表網路 4 + 1 的 1 代表場景，它把四個視圖串聯起來</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/nthu-database-management-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/nthu-database-management-system/</guid>
+      <description>Database Management System 筆記：葉高緯 Wei the Shinobi
+學習資料：吳尚鴻資料庫系統概論
+Java 多線程 在 Java 中，物件會放在 heap 中，heap是所有 threads 共享的
+這代表兩個 thread 可以存取同一個 object
+在寫 database code 的時候要對多線程非常了解
+畢竟都在操作同一份資料
+並不是把方法都寫上 synchronized 就能避免 concurrency issue 重點是你要 synchronized 在對的地方
+例如包覆整個完整的步驟
+在 call wait()時，通常會放在 loop 中。不要使用if代替 loop Chapter 2, 3 DBMS != Database database 指的是存在 DBMS 中的資料，
+DBMS(DataBase Management System) 是管理 databases 的軟體。
+常見的 data model：ER model 與 relational model
+ER model = Entity Relationship model</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/nthu-discrete-mathematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/nthu-discrete-mathematics/</guid>
+      <description>離散數學 10920趙啟超教授離散數學_第1A講 Logic and Set Theory - YouTube
+Logic and Set Theory Logic p 表示狀態
+Implication 若 p 則 q
+p 表前提
+q 表結論 $$ \begin{array}{c|lcr} &amp;amp; \text{p} &amp;amp; \text{q} &amp;amp; \text{p } \implies { q} &amp;amp; p \iff q\ \hline &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1\ &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0\ &amp;amp; 1 &amp;amp; 1 &amp;amp; 1 &amp;amp; 1\ &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \end{array} $$ 當前提是錯的，結論必是對的</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/nthu-operating-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/nthu-operating-system/</guid>
+      <description>Operating System 10510周志遠教授作業系統_第1A講 Syllabus&amp;amp;Ch0: Historical Prospective - YouTube
+Historical Prospective Mainframe System：早期的電腦又大又慢而且單純
+Batch System 一次處理一個工作，程式是插卡片讓機器讀取 無法互動 因為靠讀取卡片，所以 IO 非常慢，CPU 常常閒置 Multi-Programming System 為了提高 CPU 的使用率，
+把需要執行的任務一次讀進記憶體中
+IO 給其他物件做，
+CPU 執行重要的任務
+Time-Sharing System 一次只執行一個任務有很多的不方便
+所以讓 CPU 能夠快速切換任務
+每個做一點不斷切換
+是現代電腦的實現
+System SMP 多個同等的 CPU 一起計算
+用於消費級的 CPU
+AMP 一個主 CPU 管理多個 CPU
+注重效能
+Many-Core Processor 超多處理器集合在一起，舉例來說 GPU
+適合用來處理 Array 計算
+分散式系統 不同電腦透過網路接起
+P2P 或 client-server
+What is an Operating System? OS 是應用程式與硬體之間的一層</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/ntu-linear-algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/ntu-linear-algebra/</guid>
+      <description>Linear Algebra - NTU version 學習筆記
+[線性代數] 第1-1 單元: Introduction to Linear Algebra - YouTube
+Basic Concepts on Matrices and Vectors 矩陣相等( equal )：兩個矩陣大小相等且所有元素一樣 aij = bij
+子矩陣( submatix )：從一個矩陣中刪除若干個 rows / columns
+矩陣的加法
+矩陣的大小( m*n )必須相等
+同樣的位置相加即可 aij + bij
+係數積( scalar multiplication ) 由矩陣與一個係數構成
+係數 * 矩陣所有元素 即可
+零矩陣( zero matrix ) 以 O 表示，元素全為 0
+任何矩陣乘 O 得 O
+但 A * O 不一定是 B * O</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/readme/</guid>
+      <description>我的學習筆記 線上課程、書籍的筆記</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hba.sid.one/my-study-note/note/%E9%9D%A2%E8%A9%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hba.sid.one/my-study-note/note/%E9%9D%A2%E8%A9%A6/</guid>
+      <description>串接金流
+制定coding style
+研討會
+使用nosql 存取log
+架構 加強
+多對多關聯
+資料庫的事務邏輯
+資料庫索引、使用explain
+研究開源框架：gin, groupcache, gorm
+學習編譯原理, rust
+我的優勢 LeetCode、Medium 文章、看過工作描述都符合、認為自己有能力
+自我介紹（希望的環境、待遇） 你好！我叫葉高緯，應徵工程師，如同在medium寫的自我介紹，我是一個好相處的人，我認為這對一個團隊是很重要的，是一個幽默的人，希望有一個輕鬆的環境，不想要去勾心鬥角，喜歡思考
+Clean Code, Clean Architecture, unit-test
+研究開源框架：gin, groupcache
+學習編譯原理, rust
+自我推薦 我覺得剛剛的問題可能無法足夠瞭解我，因為有些問題讓求職者被迫選擇最佳解，就是面試常見的那些，這就變成大家都在背奇奇怪怪的解答，我想說我是個好相處的人，
+side project Leedcode：讓我學習離散數學
+信 您好！我是一個幽默且隨和的工程師，目前任職於一家區塊鏈公司擔任後端工程師，主要使用 Go, Java，擁有強悍的程式能力：在 LeetCode 練習六百多題，在工作中使用測試驅動開發（TDD）來產出高品質的程式碼，有一台 Linux 筆電用於日常和開發。我渴望與聰明的人共事，希望有幸與各位暢談。
+您好！
+我是一名擅長使用 Go 和 Java 等程式語言的後端工程師，目前在一家區塊鏈公司任職，主要內容是使用 Go 語言開發 NFT 電商。我擁有豐厚的程式能力，在 LeetCode 上練習了 600 多題的算法題目。在工作中我使用測試驅動開發（TDD），以產出高品質的程式碼。我有一台 Linux 筆電用於日常使用和開發。
+除了技術能力，我也是一個幽默且隨和的人，因為渴望與聰明的人共事，希望有幸與各位暢談。
+Have a good day!
+技巧 導向自己有把握的 知道公司想要什麼樣的人，面試不是考試 履歷朝著公司想要的方向寫 履歷設計上，公司想要的要特別突出在空白（第一眼注意） 寫下未來會完成的事，預測一年、二年的目標 好的婉拒 面試問題回答：回答情境，而不是背答案；遇到問題不是背答案，而是融入自己的想法輸出。 需要有個總結 超連結一律放在第一頁 版面大會吸引人 最好的面試策略就是，讓別人沒機會問太多題目：講話時偷渡自己知道的。 面試要帶東西，可以準備資料 面試要反問，然後偷渡並推銷自己 問題背後的問題：問題就在答案之中、以 what, how回答、個人擔當而不是責怪</description>
+    </item>
+    
+  </channel>
+</rss>

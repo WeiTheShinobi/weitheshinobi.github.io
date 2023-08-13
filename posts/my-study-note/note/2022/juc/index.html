@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="article:published_time" content=0001-01-01T00:00:00Z />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "0001-01-01",
+        "description": "",
+        "wordCount":  962 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "0001-01-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Awesome Hugo blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/posts/my-study-note/note/2022/juc/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#多執行緒的狀態">多執行緒的狀態</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#多執行緒操作同一個資源">多執行緒操作同一個資源</a></li>
+    <li><a href="#synchornized-與-lock-的區別">Synchornized 與 Lock 的區別</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#判斷等待業務通知">判斷等待、業務、通知</a></li>
+    <li><a href="#虛假喚醒">虛假喚醒</a></li>
+    <li><a href="#juc版本">JUC版本</a>
+      <ul>
+        <li><a href="#與傳統對照">與傳統對照</a></li>
+        <li><a href="#juc精確喚醒">JUC精確喚醒</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#countdownlatch">CountDownLatch</a></li>
+    <li><a href="#cyclicbarrier">CyclicBarrier</a></li>
+    <li><a href="#semaphore">Semaphore</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#四組api">四組API</a>
+      <ul>
+        <li><a href="#synchronousqueue">SynchronousQueue</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#七大參數">七大參數</a></li>
+    <li><a href="#四大拒絕策略">四大拒絕策略</a></li>
+    <li><a href="#最大線程該如何決定">最大線程該如何決定？</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#函數式介面">函數式介面</a></li>
+    <li><a href="#斷定式介面">斷定式介面</a></li>
+    <li><a href="#消費型介面">消費型介面</a></li>
+    <li><a href="#供給型介面">供給型介面</a></li>
+    <li><a href="#stream流式計算">Stream流式計算</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#forkjoin-特點工作竊取">ForkJoin 特點：工作竊取</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#什麼是jmm">什麼是JMM</a></li>
+    <li><a href="#volatile">Volatile</a>
+      <ul>
+        <li><a href="#保證可見性">保證可見性</a></li>
+        <li><a href="#不保證原子性">不保證原子性</a>
+          <ul>
+            <li><a href="#不使用synchornized或lock保證原子性">不使用<code>Synchornized</code>或<code>Lock</code>保證原子性</a></li>
+          </ul>
+        </li>
+        <li><a href="#禁止指令重排">禁止指令重排</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#原子引用">原子引用</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#公平鎖">公平鎖</a></li>
+    <li><a href="#可重入鎖">可重入鎖</a></li>
+    <li><a href="#自旋鎖">自旋鎖</a></li>
+    <li><a href="#死鎖排查">死鎖排查</a></li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="javautilconcurrent">java.util.concurrent</h1>
+<blockquote>
+<p>筆記作者：葉高緯 Wei the Shinobi</p>
+<p>參考資料：<a href="https://www.bilibili.com/video/BV1B7411L7tE?p=1">【狂神说Java】JUC并发编程</a></p>
+</blockquote>
+<p>裡面有關於多執行緒的一些東西</p>
+<p>簡單點像是<code>Thread</code>或是<code>Runable</code>，但相較<code>callable</code>略為慢一點。</p>
+<h1 id="處理程序進程與多執行緒多線程">處理程序（進程）與多執行緒（多線程）</h1>
+<p>一個處理程序可以包含多的執行緒。</p>
+<p>Java默認兩個執行緒：main、GC</p>
+<p><strong>Java真的可以開啟執行緒嗎</strong>？不能。</p>
+<p>點進<code>Thread</code>可以看到他最終會調用<code>start0</code>，</p>
+<p>這是一個<code>native</code>方法。</p>
+<h2 id="多執行緒的狀態">多執行緒的狀態</h2>
+<p>從Thread的原始碼裡面可以找到<strong>多執行緒的六種狀態</strong>：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">State</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">NEW</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">RUNNABLE</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BLOCKED</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WAITING</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">TIMED_WAITING</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">TERMINATED</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h1 id="問題">問題</h1>
+<h2 id="多執行緒操作同一個資源">多執行緒操作同一個資源</h2>
+<p>大家同時操作同一個資源可能會出問題，這時我們需要加上鎖。</p>
+<ul>
+<li>
+<p>Synchornized</p>
+</li>
+<li>
+<p>Interface Lock</p>
+</li>
+</ul>
+<p>Lock的實現類：ReentrantLock、ReadLock、WriteLock</p>
+<ul>
+<li>ReentrantLock建構子可以傳入boolean來決定公平鎖
+<ul>
+<li>公平鎖：先來後到</li>
+<li>非公平鎖（默認）：可以插隊</li>
+</ul>
+</li>
+</ul>
+<h2 id="synchornized-與-lock-的區別">Synchornized 與 Lock 的區別</h2>
+<ol>
+<li>Synchornized 是關鍵字；Lock是個Java類。</li>
+<li>Synchornized 無法判斷獲取鎖的狀態；Lock可以判斷是否獲取到鎖。</li>
+<li>Synchornized 會自動釋放鎖；Lock要手動。</li>
+<li>Synchornized 阻塞時，另一個線程會一直等待；Lock就不一定。</li>
+<li>Synchornized 可重入鎖，不可中斷，非公平；Lock可重入鎖，可以判斷鎖，非公平（可設置）。</li>
+<li>Synchornized 有程式碼鎖和方法鎖，Lock只有程式碼鎖。</li>
+</ol>
+<h1 id="生產者與消費者">生產者與消費者</h1>
+<h2 id="判斷等待業務通知">判斷等待、業務、通知</h2>
+<p>假設現在有兩條執行緒，</p>
+<p>一條負責生產漢堡，</p>
+<p>一條負責販賣。</p>
+<p>一個標準的流程就是</p>
+<ol>
+<li><strong>判斷等待</strong></li>
+<li><strong>業務</strong></li>
+<li><strong>通知</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 判斷等待
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span><span class="o">(</span><span class="n">漢堡</span> <span class="o">!=</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wait</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 業務
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">漢堡</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 通知
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">notifyAll</span><span class="o">();</span>
+</span></span></code></pre></div><p>然後也會有個的販售者執行緒，</p>
+<p>一旦漢堡產出就會賣掉。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 判斷等待
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span><span class="o">(</span><span class="n">漢堡</span> <span class="o">==</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wait</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 業務
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">漢堡</span><span class="o">--;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 通知
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">notifyAll</span><span class="o">();</span>
+</span></span></code></pre></div><p>漢堡數量只會是1或0。</p>
+<h2 id="虛假喚醒">虛假喚醒</h2>
+<p>只有兩條執行緒的情況下沒問題，</p>
+<p>但是如果有更多的執行緒可能會發生<strong>虛假喚醒</strong>，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">if</span><span class="o">(</span><span class="n">漢堡狀態</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wait</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>這是因為 <code>if</code> 只會判斷一次，</p>
+<p>多個生產漢堡的執行緒可能就會產出超過1個漢堡，</p>
+<p><strong>解決的方法是將 <code>if</code> 改成 <code>while</code> 即可。</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">while</span><span class="o">(</span><span class="n">漢堡狀態</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wait</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h2 id="juc版本">JUC版本</h2>
+<h3 id="與傳統對照">與傳統對照</h3>
+<table>
+<thead>
+<tr>
+<th>Synchroized</th>
+<th>Lock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wait</td>
+<td>await</td>
+</tr>
+<tr>
+<td>notify</td>
+<td>signal</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Lock</span> <span class="n">lock</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ReentrantLock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Condition</span> <span class="n">condition</span> <span class="o">=</span> <span class="n">lock</span><span class="o">.</span><span class="na">newCondition</span><span class="o">();</span>
+</span></span></code></pre></div><p>按照對應表將傳統的方法替換成JUC版本即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">lock</span><span class="o">.</span><span class="na">lock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">condition</span><span class="o">.</span><span class="na">await</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">condition</span><span class="o">.</span><span class="na">signalAll</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">lock</span><span class="o">.</span><span class="na">unlock</span><span class="o">();</span>
+</span></span></code></pre></div><h3 id="juc精確喚醒">JUC精確喚醒</h3>
+<p>你可以建構多個監視器來達成精確喚醒，</p>
+<p>例如我希望A -&gt; B -&gt; C，</p>
+<p>但是執行緒的順序是隨機的，</p>
+<p>我該怎麼辦？</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Condition</span> <span class="n">conditionA</span> <span class="o">=</span> <span class="n">lock</span><span class="o">.</span><span class="na">newCondition</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Condition</span> <span class="n">conditionB</span> <span class="o">=</span> <span class="n">lock</span><span class="o">.</span><span class="na">newCondition</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Condition</span> <span class="n">conditionC</span> <span class="o">=</span> <span class="n">lock</span><span class="o">.</span><span class="na">newCondition</span><span class="o">();</span>
+</span></span></code></pre></div><p>創建多個監視器，然後在方法結束時設定你想要喚醒的執行緒。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">threadA</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">conditionB</span><span class="o">.</span><span class="na">signal</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">threadB</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">conditionC</span><span class="o">.</span><span class="na">signal</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">threadC</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">conditionA</span><span class="o">.</span><span class="na">signal</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h1 id="鎖的一些問題">鎖的一些問題</h1>
+<p>我們執行兩條執行緒，</p>
+<p>發送簡訊先，</p>
+<p>但是他的方法會睡4秒，</p>
+<p>然後是打電話。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lock8</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Phone</span> <span class="n">phone</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Phone</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">new</span> <span class="n">Thread</span><span class="o">(()-&gt;{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">phone</span><span class="o">.</span><span class="na">sendSms</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}).</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">new</span> <span class="n">Thread</span><span class="o">(()-&gt;{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">phone</span><span class="o">.</span><span class="na">call</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}).</span><span class="na">start</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Phone</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">sendSms</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">4</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;簡訊&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">call</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;電話&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>現在的問題是，</p>
+<p>輸出的結果會是如何？</p>
+<p>是簡訊先還是電話先？</p>
+<p><strong>答案是簡訊依然先</strong>，</p>
+<p>雖然他睡了4秒，</p>
+<p>但是 <code>synchronized</code> 這個關鍵字<strong>鎖的是執行方法的物件</strong>。</p>
+<p>而不是<strong>物件</strong>。</p>
+<blockquote>
+<p>沒有 <code>synchronized</code> 的方法和有鎖的方法同時執行，並不會被鎖住。</p>
+</blockquote>
+<hr>
+<p>那如果把<code>sendSms()</code>和<code>call()</code>改成靜態方法，</p>
+<p>且將物件改成兩個分開執行會如何？</p>
+<p>兩個不同的物件一個執行簡訊，</p>
+<p>另一個執行打電話，</p>
+<p>應該是打電話先，</p>
+<p>因為簡訊方法內延遲了4秒，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Phone</span> <span class="n">phone1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Phone</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Phone</span> <span class="n">phone2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Phone</span><span class="o">();</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">sendSms</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">4</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;簡訊&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">call</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;電話&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>輸出結果會是<strong>簡訊先</strong>。</p>
+<p>因為靜態方法鎖的是<code>Phone.class</code>，</p>
+<p>這是全局唯一的。</p>
+<hr>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"> 	<span class="kd">public</span> <span class="kd">static</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">sendSms</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">4</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;簡訊&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">call</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;電話&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>一個是靜態方法，一個是普通方法，一個物件的情況，</p>
+<p>簡訊跟打電話哪個會先呢？</p>
+<p>答案是打電話，</p>
+<p>因為兩者鎖的對象不一樣，</p>
+<p>一個是<code>Phone.class</code>，</p>
+<p>一個是<code>new</code>出來的物件，</p>
+<p>所以互不影響，</p>
+<p>那沒有睡的打電話就會先了。</p>
+<h1 id="集合類不安全">集合類不安全</h1>
+<p>在併發時，</p>
+<p><code>ArrayList</code>不安全，</p>
+<p>可能出現併發修改異常，</p>
+<p>解決方案：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="n">Collections</span><span class="o">.</span><span class="na">synchronizedList</span><span class="o">(</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;());</span>
+</span></span><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CopyOnWriteArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span></code></pre></div><p><code>CopyOnWrite</code>寫入時複製（推薦使用）。</p>
+<hr>
+<p><code>set</code>的解決方案也是這樣，</p>
+<p>畢竟他們都繼承了<code>Collections</code>，</p>
+<p>補充：<code>set</code>的底層就是<code>map</code>。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConcurrentHashMap</span><span class="o">&lt;&gt;();</span>
+</span></span></code></pre></div><h1 id="interface-callablev">Interface Callable&lt;V&gt;</h1>
+<ol>
+<li>可以有返回值</li>
+<li>可以拋出異常</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Interface Callable 裡的方法。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">V</span> <span class="nf">call</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">;</span>
+</span></span></code></pre></div><p>這個泛型&lt;V&gt;等於方法的返回值。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// new Thread(new Runnable());
+</span></span></span><span class="line"><span class="cl"><span class="c1">// new Thread(new FutureTask&lt;V&gt;());
+</span></span></span><span class="line"><span class="cl"><span class="c1">// new Thread(new FutureTask&lt;V&gt;(Callable));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">MyThread</span> <span class="n">thread</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyThread</span><span class="o">();</span> <span class="c1">//MyThread實現了Callable介面
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">FutureTask</span> <span class="n">futureTask</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FutureTask</span><span class="o">(</span><span class="n">thread</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="n">futureTask</span><span class="o">).</span><span class="na">start</span><span class="o">();</span>
+</span></span></code></pre></div><p>你可以使用<code>get()</code>來得到回傳值。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="n">futureTask</span><span class="o">.</span><span class="na">get</span><span class="o">();</span>
+</span></span></code></pre></div><p>但是這個方法<strong>可能會發生阻塞</strong>，</p>
+<p>你得<strong>放在最後</strong>或<strong>使用異步</strong>。</p>
+<h1 id="常用的輔助類">常用的輔助類</h1>
+<h2 id="countdownlatch">CountDownLatch</h2>
+<p>倒計時計數器，</p>
+<p>建構子需要傳入<code>int</code>。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">CountDownLatch</span> <span class="n">countDownLatch</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CountDownLatch</span><span class="o">(</span><span class="n">6</span><span class="o">);</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 業務
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">countDownLatch</span><span class="o">.</span><span class="na">countDown</span><span class="o">();</span> <span class="c1">// 計數器 -1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">countDownLatch</span><span class="o">.</span><span class="na">await</span><span class="o">();</span>     <span class="c1">// 等待計數器歸零才向下執行
+</span></span></span></code></pre></div><p>非常簡單，適用於需要先完成某些方法。</p>
+<p>每次有執行緒調用<code>countDown()</code>數量就會-1，</p>
+<p>計數器變成0，</p>
+<p><code>await()</code>就會被喚醒繼續執行。</p>
+<h2 id="cyclicbarrier">CyclicBarrier</h2>
+<p>加法計數器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">CyclicBarrier</span> <span class="n">cyclicBarrier</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CyclicBarrier</span><span class="o">(</span><span class="n">10</span><span class="o">,</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 當有十條執行緒在cyclicBarrier.await()，就會執行後面的Runnable();
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">cyclicBarrier</span><span class="o">.</span><span class="na">await</span><span class="o">();</span>
+</span></span></code></pre></div><h2 id="semaphore">Semaphore</h2>
+<p>信號量</p>
+<p>可以理解為停車場</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Semaphore</span> <span class="n">semaphore</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Semaphore</span><span class="o">(</span><span class="n">5</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">semaphore</span><span class="o">.</span><span class="na">acquire</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">semaphore</span><span class="o">.</span><span class="na">release</span><span class="o">();</span>
+</span></span></code></pre></div><p>在執行緒中，取得停車位<code>acquire()</code>，</p>
+<p>如果停車位滿了，其他執行緒就要等待，</p>
+<p>停車完的執行緒調用<code>semaphore.release()</code>釋放停車位。</p>
+<h1 id="readwritelock">ReadWriteLock</h1>
+<p>讀寫鎖</p>
+<p>獨佔鎖（寫鎖）一次只能被一個線程佔有</p>
+<p>共享鎖（讀鎖）多個線程可以同時佔有</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">ReadWriteLock</span> <span class="n">readWriteLock</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ReentrantReadWriteLock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 寫入資料時用writeLock()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">readWriteLock</span><span class="o">.</span><span class="na">writeLock</span><span class="o">().</span><span class="na">lock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">readWriteLock</span><span class="o">.</span><span class="na">writeLock</span><span class="o">().</span><span class="na">unlock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 讀取資料用readLock()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">readWriteLock</span><span class="o">.</span><span class="na">readLock</span><span class="o">().</span><span class="na">lock</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">readWriteLock</span><span class="o">.</span><span class="na">readLock</span><span class="o">().</span><span class="na">lock</span><span class="o">();</span>
+</span></span></code></pre></div><h1 id="blockingqueue">BlockingQueue</h1>
+<p>先進先出。</p>
+<p>與<code>Set</code>和<code>List</code>一樣，<code>BlockingQueue</code>也實作了<code>Collection</code>。</p>
+<p>什麼情況會用到？多線程併發、線程池</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">ArrayBlockingQueue</span> <span class="n">blockingQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayBlockingQueue</span><span class="o">&lt;&gt;(</span><span class="n">3</span><span class="o">);</span> <span class="c1">// 傳入大小
+</span></span></span></code></pre></div><h2 id="四組api">四組API</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">方式</th>
+<th>拋出異常</th>
+<th>回傳值，不拋異常</th>
+<th>阻塞 等待</th>
+<th>超時等待</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">添加</td>
+<td>add</td>
+<td>offer</td>
+<td>put</td>
+<td>offer()</td>
+</tr>
+<tr>
+<td style="text-align:left">移除</td>
+<td>remove</td>
+<td>poll</td>
+<td>take</td>
+<td>poll()</td>
+</tr>
+<tr>
+<td style="text-align:left">判斷對列首</td>
+<td>element</td>
+<td>peek</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>超時等待的方法需要傳入時間參數。</strong></p>
+</blockquote>
+<h3 id="synchronousqueue">SynchronousQueue</h3>
+<p>和其他的BlockingQueue不同，</p>
+<p>SynchronousQueue如果<code>put</code>了一個元素進去，</p>
+<p>必須先<code>take</code>出來，</p>
+<p>否則不能再放進去。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">BlockingQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">synchronousQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SynchronousQueue</span><span class="o">&lt;&gt;();</span>
+</span></span></code></pre></div><h1 id="線程池重點">線程池（重點）</h1>
+<p>優化資源的使用，更加快速。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">ExecutorService</span> <span class="n">threadPool1</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newSingleThreadExecutor</span><span class="o">();</span>  <span class="c1">// 單個線程
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ExecutorService</span> <span class="n">threadPool3</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newFixedThreadPool</span><span class="o">(</span><span class="n">10</span><span class="o">);</span>     <span class="c1">// 創建一個固定大小的線程
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ExecutorService</span> <span class="n">threadPool2</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newCachedThreadPool</span><span class="o">();</span>      <span class="c1">// 動態大小
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 有線程池後就使用它來創建
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">threadPool1</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;haha&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">});</span>
+</span></span></code></pre></div><h2 id="七大參數">七大參數</h2>
+<p>原始碼分析</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">ExecutorService</span> <span class="nf">newSingleThreadExecutor</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="n">FinalizableDelegatedExecutorService</span>
+</span></span><span class="line"><span class="cl">        <span class="o">(</span><span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="n">1</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">0L</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">MILLISECONDS</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                <span class="k">new</span> <span class="n">LinkedBlockingQueue</span><span class="o">&lt;</span><span class="n">Runnable</span><span class="o">&gt;()));</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">ExecutorService</span> <span class="nf">newCachedThreadPool</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                  <span class="n">60L</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                  <span class="k">new</span> <span class="n">SynchronousQueue</span><span class="o">&lt;</span><span class="n">Runnable</span><span class="o">&gt;());</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">ExecutorService</span> <span class="nf">newFixedThreadPool</span><span class="o">(</span><span class="kt">int</span> <span class="n">nThreads</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span><span class="n">nThreads</span><span class="o">,</span> <span class="n">nThreads</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                  <span class="n">0L</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">MILLISECONDS</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                  <span class="k">new</span> <span class="n">LinkedBlockingQueue</span><span class="o">&lt;</span><span class="n">Runnable</span><span class="o">&gt;());</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>進入原始碼我們可以發現，</p>
+<p>他們都是調用<code>ThreadPoolExecutor()</code>，</p>
+<p>再次點入<code>ThreadPoolExecutor()</code>的原始碼，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="nf">ThreadPoolExecutor</span><span class="o">(</span><span class="kt">int</span> <span class="n">corePoolSize</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="kt">int</span> <span class="n">maximumPoolSize</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="kt">long</span> <span class="n">keepAliveTime</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">TimeUnit</span> <span class="n">unit</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">BlockingQueue</span><span class="o">&lt;</span><span class="n">Runnable</span><span class="o">&gt;</span> <span class="n">workQueue</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">ThreadFactory</span> <span class="n">threadFactory</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">RejectedExecutionHandler</span> <span class="n">handler</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">corePoolSize</span> <span class="o">&lt;</span> <span class="n">0</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">        <span class="n">maximumPoolSize</span> <span class="o">&lt;=</span> <span class="n">0</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">        <span class="n">maximumPoolSize</span> <span class="o">&lt;</span> <span class="n">corePoolSize</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">        <span class="n">keepAliveTime</span> <span class="o">&lt;</span> <span class="n">0</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">workQueue</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">threadFactory</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">handler</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">throw</span> <span class="k">new</span> <span class="n">NullPointerException</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">corePoolSize</span> <span class="o">=</span> <span class="n">corePoolSize</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">maximumPoolSize</span> <span class="o">=</span> <span class="n">maximumPoolSize</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">workQueue</span> <span class="o">=</span> <span class="n">workQueue</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">keepAliveTime</span> <span class="o">=</span> <span class="n">unit</span><span class="o">.</span><span class="na">toNanos</span><span class="o">(</span><span class="n">keepAliveTime</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">threadFactory</span> <span class="o">=</span> <span class="n">threadFactory</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="o">.</span><span class="na">handler</span> <span class="o">=</span> <span class="n">handler</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>來看看這些參數</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="nf">ThreadPoolExecutor</span><span class="o">(</span><span class="kt">int</span> <span class="n">corePoolSize</span><span class="o">,</span>  <span class="c1">// 核心線程數
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="kt">int</span> <span class="n">maximumPoolSize</span><span class="o">,</span> <span class="c1">// 最大線程數
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="kt">long</span> <span class="n">keepAliveTime</span><span class="o">,</span>  <span class="c1">// 額外線程的閒置存活時間
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="n">TimeUnit</span> <span class="n">unit</span><span class="o">,</span>  <span class="c1">// 時間單位
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="n">BlockingQueue</span><span class="o">&lt;</span><span class="n">Runnable</span><span class="o">&gt;</span> <span class="n">workQueue</span><span class="o">,</span>  <span class="c1">// 阻塞隊列
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="n">ThreadFactory</span> <span class="n">threadFactory</span><span class="o">,</span>  <span class="c1">// 線程工廠
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                          <span class="n">RejectedExecutionHandler</span> <span class="n">handler</span><span class="o">)</span> <span class="c1">// 拒絕策略
+</span></span></span></code></pre></div><p>線程池就像一間銀行，核心線程數是平時櫃檯的數量，</p>
+<p>當核心線程數達到了，多的線程會去候位區（阻塞隊列）中，</p>
+<p>當阻塞隊列也滿了，銀行就會加開櫃檯，</p>
+<p>一直到最大線程數，</p>
+<p>如果這也滿了，就會發動拒絕策略。</p>
+<p>最後客人都走了，</p>
+<p>加開櫃檯（超出核心線程數的線程）在超過閒置存活時間後便會關閉。</p>
+<h2 id="四大拒絕策略">四大拒絕策略</h2>
+<p><code>Interface RejectedExecutionHandler</code>有四個實現類，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">.</span><span class="na">AbortPolicy</span><span class="o">()</span>          <span class="c1">// 不理人，拋出異常
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">.</span><span class="na">CallerRunsPolicy</span><span class="o">()</span>     <span class="c1">// 哪裡來的回哪裡（例如main線程）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">.</span><span class="na">DiscardPolicy</span><span class="o">()</span>        <span class="c1">// 拋棄任務，不會拋出異常
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">.</span><span class="na">DiscardOldestPolicy</span><span class="o">()</span>  <span class="c1">// 嘗試和最早的競爭，不會拋出異常
+</span></span></span></code></pre></div><h2 id="最大線程該如何決定">最大線程該如何決定？</h2>
+<ol>
+<li>
+<p>CPU密集型</p>
+<ul>
+<li>
+<p>從CPU可以同時跑多少線程來決定，如何動態得知？</p>
+</li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">availableProcessors</span><span class="o">()</span> <span class="c1">// 返回CPU能同時執行的最大線程數。
+</span></span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>IO密集型</p>
+<ul>
+<li>判斷你的程式中十分耗IO的線程，如果有n個，就是n*2個最大線程。</li>
+</ul>
+</li>
+</ol>
+<h1 id="四大函數式介面重點必須掌握">四大函數式介面（重點、必須掌握）</h1>
+<p>現代工程師應該掌握的：lambda表達式、鍊式編程、函數式介面、Stream流式計算</p>
+<p><code>@FunctionalInterface</code></p>
+<p><strong>函數式介面：只有一個方法的介面。</strong></p>
+<p>例如<code>Runnable</code>。</p>
+<h2 id="函數式介面">函數式介面</h2>
+<p>自訂輸入輸出</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 回傳輸入的值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Function</span> <span class="n">function</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">apply</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">str</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// lambda表達式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">function2</span> <span class="o">=</span> <span class="o">(</span><span class="n">str</span><span class="o">)-&gt;</span><span class="n">str</span><span class="o">;</span>
+</span></span></code></pre></div><h2 id="斷定式介面">斷定式介面</h2>
+<p>回傳布林</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 判斷傳入值是否為空
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Predicate</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">predicate</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Predicate</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">test</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">str</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// lambda表達式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Predicate</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">predicate2</span> <span class="o">=</span> <span class="o">(</span><span class="n">str</span><span class="o">)-&gt;</span><span class="n">str</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">();</span>
+</span></span></code></pre></div><h2 id="消費型介面">消費型介面</h2>
+<p>無回傳值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// println傳入值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Consumer</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">accept</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// lambda表達式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Consumer</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">consumer2</span> <span class="o">=</span> <span class="o">(</span><span class="n">str</span><span class="o">)-&gt;</span> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+</span></span></code></pre></div><h2 id="供給型介面">供給型介面</h2>
+<p>只有返回值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 回傳&#34;hello&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Supplier</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">supplier</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Supplier</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s">&#34;hello&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// lambda表達式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Supplier</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">supplier2</span>  <span class="o">=</span> <span class="o">()-&gt;</span><span class="s">&#34;hello&#34;</span><span class="o">;</span>
+</span></span></code></pre></div><hr>
+<h2 id="stream流式計算">Stream流式計算</h2>
+<p>把計算都交給<code>Stream</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span></code></pre></div><p>現在有一個<code>list</code></p>
+<p>使用<code>list.stream()</code></p>
+<p>這個<code>strea()</code>中有很多方法可以對<code>list</code>的內容做判斷。</p>
+<p>例子：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 通過filter()得到list中大於2的值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">list</span><span class="o">.</span><span class="na">stream</span><span class="o">().</span><span class="na">filter</span><span class="o">((</span><span class="n">i</span><span class="o">)-&gt;</span><span class="n">i</span><span class="o">&gt;</span><span class="n">2</span><span class="o">).</span><span class="na">forEach</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
+</span></span></code></pre></div><h1 id="forkjoin">ForkJoin</h1>
+<p>將一個任務拆分成數個小的子任務，</p>
+<p>每個子任務都會有結果，</p>
+<p>最終將所有結果彙整。</p>
+<h2 id="forkjoin-特點工作竊取">ForkJoin 特點：工作竊取</h2>
+<p>這裡面維護的都是雙端隊列。</p>
+<p>假如有線程A和線程B，</p>
+<p>線程A的工作先做完了，</p>
+<p>它會把線程B的工作偷過來執行，</p>
+<p>以提高效率。</p>
+<h1 id="異步回調">異步回調</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">CompletableFuture</span>
+</span></span></code></pre></div><h1 id="jmm">JMM</h1>
+<p><code>Volatile</code> 是JVM提供的<strong>輕量級同步機制</strong></p>
+<ol>
+<li>保證可見性</li>
+<li>不保證原子性</li>
+<li>禁止指令重排</li>
+</ol>
+<h2 id="什麼是jmm">什麼是JMM</h2>
+<p>Java 內存模型，不存在，是一種約定。</p>
+<ol>
+<li>線程解鎖前，必須把共享變量<strong>立刻</strong>刷回主存。</li>
+<li>線程加鎖前，必須讀取主存中的最新值到工作變量。</li>
+<li>加鎖和解鎖是同一把鎖。</li>
+</ol>
+<p>它對於8種動作還有約定。</p>
+<h2 id="volatile">Volatile</h2>
+<p>線程A和線程B從主存取得變量0，</p>
+<p>現在線程A和線程B內的工作變量都是0，</p>
+<p>現在線程B把0改成了1並且刷回了主存，</p>
+<p>但是線程A並不知道。</p>
+<h3 id="保證可見性">保證可見性</h3>
+<p>可見性是指當多個執行緒訪問同一個變數時，一個執行緒修改了這個變數的值，其他執行緒能夠立即看得到修改的值。</p>
+<p>在變數加上<code>volatile</code>關鍵字即可。</p>
+<h3 id="不保證原子性">不保證原子性</h3>
+<p>原子性：不可分割，同時失敗或同時成功。</p>
+<p>使用多線程同時操作同一個資源可能會出錯，</p>
+<p>使用<code>Synchornized</code>或<code>Lock</code>可以保證原子性，</p>
+<p>但<code>Volatile</code>不能。</p>
+<h4 id="不使用synchornized或lock保證原子性">不使用<code>Synchornized</code>或<code>Lock</code>保證原子性</h4>
+<p>嘗試修改這段程式碼</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">volatile</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="nf">add</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span><span class="o">++;</span> <span class="c1">// 不是原子性操作 它其實是幾個操作併在一起
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>使用JUC下的<code>atomic</code>包</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">volatile</span> <span class="kd">static</span> <span class="n">AtomicInteger</span> <span class="n">num</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AtomicInteger</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="nf">add</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// num++; // 不是原子性操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">num</span><span class="o">.</span><span class="na">getAndIncrement</span><span class="o">();</span> <span class="c1">// AtomicInteger + 1 的方法， CAS
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>進去原始碼可以發現這個包大量地使用了<code>native</code>方法，</p>
+<p>底層用了CAS來實現。</p>
+<p>這些類的底層直接和操作系統掛勾，在記憶體中修改值。<code>Unsafe</code>類</p>
+<h3 id="禁止指令重排">禁止指令重排</h3>
+<p>指令重排：<strong>你寫的程式，並不是按你寫的去執行的。</strong></p>
+<p>計算機可能會把你的順序重排。</p>
+<p>這個重排與關聯性有關，所以結果才會是一樣的。</p>
+<p>但是在多線程可能會產生異常的結果，</p>
+<p>因為在各自的線程指令重排沒關聯問題，</p>
+<p>但是可能影響到了別的線程，</p>
+<p>導致同樣的程式出現不同的結果。</p>
+<p><code>Volatile</code>可以避免指令重排：</p>
+<p>記憶體屏障。CPU指令。</p>
+<ol>
+<li>保證特定操作的執行順序</li>
+<li>可以保證某些變量的記憶體可見性</li>
+</ol>
+<p><code>volatile</code>在單例模式大量使用。</p>
+<h1 id="cas">CAS</h1>
+<p>compare and swap</p>
+<p><code>compareAndSet()</code></p>
+<p>比較工作內存中的值和主內存中的值，如果值是期望的，執行，否則就一直循環。</p>
+<h2 id="原子引用">原子引用</h2>
+<p>ABA問題：</p>
+<p>A線程把1改成0，再把0改成1</p>
+<p>B線程拿到了1，但是已經不是同個1</p>
+<p>引入版本號解決</p>
+<h1 id="各種鎖">各種鎖</h1>
+<h2 id="公平鎖">公平鎖</h2>
+<ol>
+<li>公平鎖：不可插隊</li>
+<li>非公平鎖：可以插隊（默認）</li>
+</ol>
+<h2 id="可重入鎖">可重入鎖</h2>
+<p>遞迴鎖</p>
+<p>拿到外層的鎖，就自動拿到內層的鎖</p>
+<h2 id="自旋鎖">自旋鎖</h2>
+<p>達成某些條件就會解鎖，否則會一直迴圈自旋。</p>
+<h2 id="死鎖排查">死鎖排查</h2>
+<ol>
+<li>進入終端機，輸入<code>jps -1</code>定位進程號</li>
+<li><code>jstack 進程號</code>找到死鎖</li>
+</ol>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

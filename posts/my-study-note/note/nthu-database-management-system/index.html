@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Awesome Hugo blog</title>
+<meta property="og:title" content=" | Awesome Hugo blog" />
+<meta name="twitter:title" content=" | Awesome Hugo blog" />
+<meta itemprop="name" content=" | Awesome Hugo blog" />
+<meta name="application-name" content=" | Awesome Hugo blog" />
+<meta property="og:site_name" content="Awesome hugo blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://hba.sid.one/" />
+  <meta property="og:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image" content="https://hba.sid.one/" />
+  <meta name="twitter:image:src" content="https://hba.sid.one/" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="article:published_time" content=0001-01-01T00:00:00Z />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "0001-01-01",
+        "description": "",
+        "wordCount":  698 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "0001-01-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Awesome Hugo blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.117.0">
+
+    
+
+    <link rel="canonical" href="https://hba.sid.one/posts/my-study-note/note/nthu-database-management-system/">
+    <link href="/style.min.840eada6dfddec7b8ccfcf867f039bf80b1f16a265ec6e01dc553a3dddc9d509.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://hba.sid.one/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://hba.sid.one/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#java-多線程">Java 多線程</a></li>
+    <li><a href="#chapter-2-3">Chapter 2, 3</a></li>
+    <li><a href="#chapter-4-5">Chapter 4, 5</a></li>
+    <li><a href="#chapter-19">Chapter 19</a></li>
+    <li><a href="#architecture-and-interfaces">Architecture and Interfaces</a></li>
+    <li><a href="#server-and-threads">Server and Threads</a>
+      <ul>
+        <li><a href="#process-vs-thread">Process vs. Thread</a></li>
+        <li><a href="#supporting-concurrent-clients">Supporting concurrent clients</a></li>
+        <li><a href="#embedded-client">Embedded client</a></li>
+        <li><a href="#remote-clients">Remote clients</a></li>
+      </ul>
+    </li>
+    <li><a href="#query-processing">Query Processing</a></li>
+    <li><a href="#data-access--file-management">Data Access &amp; File Management</a>
+      <ul>
+        <li><a href="#file-management-in-vanvillacore">File Management in VanvillaCore</a>
+          <ul>
+            <li><a href="#vanvillacores-choice">VanvillaCore&rsquo;s Choice</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#memory-management">Memory Management</a></li>
+    <li><a href="#transaction">Transaction</a></li>
+    <li><a href="#indexing">Indexing</a>
+      <ul>
+        <li><a href="#hash-based-indexes">Hash-Based Indexes</a></li>
+        <li><a href="#b-tree-indexes">B-Tree Indexes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </details><div class="page-content">
+                <h1 id="database-management-system">Database Management System</h1>
+<blockquote>
+<p>筆記：葉高緯 Wei the Shinobi</p>
+<p>學習資料：<a href="https://www.youtube.com/watch?v=h2-S2B9tRk0&amp;list=PLS0SUwlYe8cyln89Srqmmlw42CiCBT6Zn&amp;ab_channel=NTHUOCW">吳尚鴻資料庫系統概論</a></p>
+</blockquote>
+<h2 id="java-多線程">Java 多線程</h2>
+<p>在 Java 中，物件會放在 heap 中，heap是所有 threads 共享的</p>
+<p>這代表兩個 thread 可以存取同一個 object</p>
+<p>在寫 database code 的時候要對多線程非常了解</p>
+<p>畢竟都在操作同一份資料</p>
+<ul>
+<li>並不是把方法都寫上 synchronized 就能避免 concurrency issue</li>
+</ul>
+<p>重點是你要 synchronized 在對的地方</p>
+<p>例如包覆整個完整的步驟</p>
+<ul>
+<li>在 call <code>wait()</code>時，通常會放在 loop 中。<strong>不要使用<code>if</code>代替 loop</strong></li>
+</ul>
+<h2 id="chapter-2-3">Chapter 2, 3</h2>
+<ul>
+<li><code>DBMS != Database</code></li>
+</ul>
+<p>database 指的是存在 DBMS 中的資料，</p>
+<p>DBMS(DataBase Management System) 是管理 databases 的軟體。</p>
+<ul>
+<li>
+<p>常見的 data model：ER model 與 relational model</p>
+</li>
+<li>
+<p>ER model  = Entity Relationship model</p>
+</li>
+</ul>
+<p>Enitity：object</p>
+<p>Relationship：has-a，可能是1-1、1-many、many-many</p>
+<ul>
+<li>思考好 ER model 後轉換成 relational model</li>
+</ul>
+<p>你可以把 relational model 想成 tabel model</p>
+<p>將 enitity 轉成 tabel</p>
+<p>會有一個 primary key</p>
+<p>Foreign Key：指向別的 table，只出現在 1-1 或 1-many</p>
+<p>Schema：一個 database 的結構</p>
+<h2 id="chapter-4-5">Chapter 4, 5</h2>
+<ul>
+<li>How is a query answered?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">blog_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">FROM</span><span class="w"> </span><span class="n">blog_pages</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">u</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">WHERE</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">author_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">user_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">AND</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;dog&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">AND</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">created</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">2011</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li><code>FROM blog_pages b, users u</code></li>
+</ul>
+<p><code>p = product(b,u)</code>：先試著把兩個 table 合併成一個大的 table p</p>
+<ul>
+<li><code>WHERE b.author_id = u.user_id AND u.name = 'dog' AND b.created &gt;= 2011/1/1;</code></li>
+</ul>
+<p><code>s = select(p, where...)</code>：根據條件查詢，得到 table s</p>
+<ul>
+<li><code>SELECT b.blog_id</code></li>
+</ul>
+<p><code>project(s, select...)</code>：從 table s 挑出 column b.blog_id</p>
+<ul>
+<li>query algebra 在運行時就是輸入 table，輸出 table。</li>
+</ul>
+<p>tree 並不一定是照上面這個順序，database 會尋找最好的方法。</p>
+<h2 id="chapter-19">Chapter 19</h2>
+<p>如何把資料存得比較好？</p>
+<ul>
+<li>Normalization</li>
+</ul>
+<p>將一個大表拆分來避免 anomaly</p>
+<ul>
+<li>符合 3rd normal form</li>
+</ul>
+<h2 id="architecture-and-interfaces">Architecture and Interfaces</h2>
+<ul>
+<li>SQL</li>
+<li>JDBC interface</li>
+</ul>
+<p>透過 driver 取得 connection，</p>
+<p>execute，</p>
+<p>使用完 close connection，</p>
+<p>不然會占用 cache，或是 lock 資料。</p>
+<ul>
+<li>native interface</li>
+</ul>
+<p>在伺服器端執行</p>
+<p>類似JDBC</p>
+<ul>
+<li>
+<p>storage interface ：block 是讀取的最小單位，存進 page 中</p>
+<ul>
+<li>RecordFile</li>
+<li>metedata</li>
+</ul>
+<p>一些使用者不需要知道，但系統需要知道的資料</p>
+</li>
+<li>
+<p>How are the database/tables/records stored in a file ststem?</p>
+<ul>
+<li>Database: directory</li>
+<li>Table: file</li>
+<li>Record: bytes</li>
+</ul>
+</li>
+</ul>
+<h2 id="server-and-threads">Server and Threads</h2>
+<p>在講 Engine 前，需要先了解 system 會怎麼去 run request</p>
+<h3 id="process-vs-thread">Process vs. Thread</h3>
+<p>Thread：a unit of CPU execution + local resources</p>
+<p>Process：threads (at least one) + grobal resourses</p>
+<ul>
+<li>
+<p>如何 mapping user thread 和 kernal thread？</p>
+<ul>
+<li>many-to-one</li>
+<li>one-to-one (主流：避免 blocking problem)</li>
+<li>many-to-many (動態的選擇 many-to-one 或 one-to-one)</li>
+</ul>
+</li>
+<li>
+<p>how about java threads?</p>
+</li>
+</ul>
+<p>取決於 JVM，通常是 one-to-one</p>
+<p>還有一個好處是 system independent (if there&rsquo;s a JVM)</p>
+<h3 id="supporting-concurrent-clients">Supporting concurrent clients</h3>
+<ul>
+<li>同時執行還是單一執行？</li>
+</ul>
+<p>同時執行可以更快，也避免浪費運算資源</p>
+<ul>
+<li>在 threads 中共享資源</li>
+</ul>
+<p>可以使用 <strong>static</strong> 或是<strong>傳入參數</strong>來共享。</p>
+<h3 id="embedded-client">Embedded client</h3>
+<p>操作本地端的資料庫</p>
+<p>通常是單執行續</p>
+<p>但就算在本地端還是用 remote client 的方式</p>
+<p>不用 native interface</p>
+<p>remote 也不一定要真的 remote</p>
+<h3 id="remote-clients">Remote clients</h3>
+<p>client 傳送 request 給 server，</p>
+<p>server 創建 worker thread 執行請求。</p>
+<ul>
+<li>What is request?</li>
+</ul>
+<p>需要設計一個 request 要怎樣的規模</p>
+<p>一個 I/O 還是 conn ?</p>
+<p>以 VanillaDB 是 connection</p>
+<p>conn 可以確保順序</p>
+<ul>
+<li>thread pool
+<ul>
+<li>預先創建好 worker thread，收到 request 後再挑一個執行，其他的先睡覺</li>
+<li>grace performance degradation：user 太多會讓 server 品質下降，這可以讓後來的 user 不影響先來的 user 的品質</li>
+</ul>
+</li>
+</ul>
+<h2 id="query-processing">Query Processing</h2>
+<p>native interface 中會讓 planner 來執行</p>
+<ul>
+<li>What does a Planner do?</li>
+</ul>
+<ol>
+<li>解析 SQL</li>
+<li>驗證 SQL</li>
+<li>尋找合適的 plan 給 SQL</li>
+<li>看 SQL 是 query 還是 update，回傳查詢結果或是受影響的資料數</li>
+</ol>
+<ul>
+<li>Lexer, parser, SQL data</li>
+</ul>
+<p>解析</p>
+<ul>
+<li>Predicates</li>
+<li>Verifier</li>
+</ul>
+<p>語法對不一定可以執行，所以需要額外驗證</p>
+<ul>
+<li>plan and scan</li>
+</ul>
+<p>解析完尋找最好的 plan</p>
+<ul>
+<li>Operators</li>
+</ul>
+<p>實作 operator 讓 plan 去尋找執行</p>
+<p>scan 代表一個 operator 的 output</p>
+<p>可以設計 scan tree，</p>
+<p>每個 scan output 都可以在傳入下個 sacn</p>
+<h2 id="data-access--file-management">Data Access &amp; File Management</h2>
+<ul>
+<li>Data Access Layer</li>
+<li>Disk access</li>
+</ul>
+<p>為什麼要存在 Disk？持久化</p>
+<p>在 Disk 需要 I/O 操作，比較慢但 Disk 價格便宜</p>
+<p>HDDs 比 RAMs 慢十萬倍</p>
+<p>SSDs 比 RAMs 慢一千倍</p>
+<p>Disk <strong>連續資料</strong>比<strong>隨機資料</strong>快</p>
+<p>SSDs 不管讀取大小，最小單位都是 block</p>
+<ul>
+<li>OS 提供兩個 disk access APIs</li>
+</ul>
+<ol>
+<li>
+<p>block-level</p>
+</li>
+<li>
+<p>file-level</p>
+</li>
+</ol>
+<p>比較高階</p>
+<ul>
+<li>
+<p>Contuinuous Allocation：把資料連續放</p>
+<ul>
+<li>internal fragmentation：資料小於 block 造成空間浪費</li>
+<li>external fragmentaion：連續的資料太長，雖然有很多空間，但所有空間都短於資料導致無處存放</li>
+</ul>
+</li>
+<li>
+<p>Indexed Allocation：一個 index block 來記憶 logical block 的地址，取出的數值叫 physical block</p>
+</li>
+<li>
+<p>when <strong>seek</strong> is called</p>
+</li>
+</ul>
+<p>byte position -&gt; logical block -&gt; physical block -&gt; sectors</p>
+<h3 id="file-management-in-vanvillacore">File Management in VanvillaCore</h3>
+<ul>
+<li>
+<p>希望存取速度越快越好</p>
+</li>
+<li>
+<p>Block-Level Based</p>
+</li>
+</ul>
+<p>好處：</p>
+<ol>
+<li>完全控制資料的物理位置，決定放置位置可以更快</li>
+<li>避免 OS 的限制</li>
+</ol>
+<p>缺點：</p>
+<ol>
+<li>完全控制代表實作複雜</li>
+<li>&ldquo;Raw disk&rdquo; 通常是每個 OS 特別的，導致傷害了跨平台的能力</li>
+</ol>
+<ul>
+<li>File-Level Based</li>
+</ul>
+<p>好處：簡單方便</p>
+<p>壞處：</p>
+<ol>
+<li>無法完全控制</li>
+<li>某些實作傷害了<strong>正確性</strong>，可能優化作了某些不想要的事</li>
+<li>承2，DBMS必須自行控制 flush 來確保 ACID</li>
+</ol>
+<h4 id="vanvillacores-choice">VanvillaCore&rsquo;s Choice</h4>
+<p>file-level，但存取直接 logical block</p>
+<p>好處：簡單、能管理 flush、能管理 block 裡面</p>
+<p>壞處：總是需要預設硬碟是<strong>隨機存取</strong>，包括連續資料</p>
+<p>這種方法也被很多 DBMS 採用</p>
+<ul>
+<li>Files</li>
+</ul>
+<ol>
+<li>一個檔案一個 table 和 index。 E.g., xxx.tbl</li>
+<li>Log files。 E.g., vanilladb.log</li>
+</ol>
+<h2 id="memory-management">Memory Management</h2>
+<p>為了減少 I/O</p>
+<p>使用一些 cache 就可以大幅加速</p>
+<ul>
+<li>為什麼不用 OS 提供的 virtual memory?</li>
+</ul>
+<ol>
+<li>讓 OS 控制 cache 缺乏操控性，可能做出我們不想要的事情</li>
+<li>不能控制 delayed writes，在 DBMS 中我們需要精確控制</li>
+</ol>
+<h2 id="transaction">Transaction</h2>
+<ul>
+<li>Concurrency manager for C and I</li>
+</ul>
+<p>釋放 locks</p>
+<ul>
+<li>Recovery manager for A and D</li>
+</ul>
+<p>flush 後會有 log，讓你可以 rollback</p>
+<ul>
+<li>transaction manager：管理 transaction</li>
+<li>lifecycle</li>
+</ul>
+<ol>
+<li>Begin</li>
+<li>End statement</li>
+<li>Commit or rollbacl</li>
+</ol>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<h2 id="indexing">Indexing</h2>
+<p>為什麼需要 index ?</p>
+<p>沒有 index 需要把整個 table 掃一次，很慢</p>
+<p><strong>index</strong>：定義特定 fields 的資料結構，用來提升速度</p>
+<p>index 是 file base 的，與 in memory 的資料結構不同</p>
+<p>所以要考慮到 block 與 IO</p>
+<p><strong>search key</strong> 有兩種 primary Index 和 secondary index</p>
+<p><strong>primary Index</strong>：index 定義的那些 fields，剛好就是 fields 的 table 的 primary key</p>
+<p>當你把 field 設成 primary key，database 會自動把 primary key 建立 index</p>
+<p><strong>index 讓讀取加速，寫入變慢。</strong></p>
+<h3 id="hash-based-indexes">Hash-Based Indexes</h3>
+<p>設計來特定搜尋(equality)而不是範圍搜尋</p>
+<p>透過 hash 到某個 bucket 中</p>
+<p>又可以分成 static hash 和 dynamic hash</p>
+<p>static hash：bucket 的數量不會隨資料量改變</p>
+<p>search cost： B/N</p>
+<p>如何擴充？</p>
+<p>直接雙倍 bucket 的數量是不實際的</p>
+<p>因為要重新取拿 rehash，很多IO</p>
+<p>可以讓他邏輯上擴充</p>
+<p>記下 pointer，pointer 指向 bucket</p>
+<h3 id="b-tree-indexes">B-Tree Indexes</h3>
+<p>因為 hash-based indexes 無法支援 range searches</p>
+<p>樹有排序，有排序可以使用二分搜尋法</p>
+<p>那為什麼要用 tree 而不是 list 就好？</p>
+<p>為了加快寫入速度，不然速度是 O(n)</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Sidharth R.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://hba.sid.one/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>
