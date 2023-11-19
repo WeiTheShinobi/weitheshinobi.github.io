@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手把手帶你使用狀態機！以 LeetCode 65. Valid Number 示範</title>
-      <link>/posts/my-study-note/article/2023/08leetcode65-with-state-machine/</link>
+      <link>/posts/my-study-note/article/2023/08-leetcode65-with-state-machine/</link>
       <pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/my-study-note/article/2023/08leetcode65-with-state-machine/</guid>
+      <guid>/posts/my-study-note/article/2023/08-leetcode65-with-state-machine/</guid>
       <description>手把手帶你使用狀態機！以 LeetCode 65. Valid Number 示範 狀態機！啟動！LeetCode 第 65 題，合法的數字：今天選的這個題目還蠻有趣的，可以用一堆 if else 來判斷得到答案，但這個作法會有一堆 edge case 難以處理，而且也很醜、寫起來更是難受，但也可以使用狀態機：就是這次的主題，也許你會在編譯器或 AWS step function 中聽過。我希望帶大家用簡單的方式和類比，來了解這些有趣的事物，只需要懂一點程式就能看懂。探索未知總是令人興奮！
 簡單講解題目 Valid Number - LeetCode
 輸入一個字串，判斷是否是一個 number，輸出布林值。
