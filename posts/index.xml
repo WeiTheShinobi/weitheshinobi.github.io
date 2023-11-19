@@ -6,7 +6,24 @@
     <description>Recent content in Posts on WeiTheShinobi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手把手帶你使用狀態機！以 LeetCode 65. Valid Number 示範</title>
+      <link>/posts/my-study-note/article/2023/08leetcode65-with-state-machine/</link>
+      <pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-study-note/article/2023/08leetcode65-with-state-machine/</guid>
+      <description>手把手帶你使用狀態機！以 LeetCode 65. Valid Number 示範 狀態機！啟動！LeetCode 第 65 題，合法的數字：今天選的這個題目還蠻有趣的，可以用一堆 if else 來判斷得到答案，但這個作法會有一堆 edge case 難以處理，而且也很醜、寫起來更是難受，但也可以使用狀態機：就是這次的主題，也許你會在編譯器或 AWS step function 中聽過。我希望帶大家用簡單的方式和類比，來了解這些有趣的事物，只需要懂一點程式就能看懂。探索未知總是令人興奮！
+簡單講解題目 Valid Number - LeetCode
+輸入一個字串，判斷是否是一個 number，輸出布林值。
+number 可以是一個 decimal 或一個 integer，後面可以選擇要不要加 e。
+decimal 可以是選擇加上 +/-，且會是以下三擇一：
+一個或以上的 digits + . 一個或以上的 digits + . + 一個以上的 digits . + 一個或以上的 digits integer 可以選擇加上 +/-：
+一個或以上的 digits 正規表示式 如果英文字母 A 到 Z 是一個英文字母的集合，那單字就是英文字母的排列組合，像是 apple 是英文字母組合成的，接續著說，一個句子就是單字集合照著某些規則組合而成的排列組合，可以想像我們從一本字典中選出一些單字，然後組合起來，像是I like duck，可能有一些主詞、受詞、動詞啊這些從小學到大的觀念，如果能夠照著規則，我們就能很輕鬆的表達出這題，我們只要照著規則把程式碼寫下來就好了。先用簡單的方式，試著用符號來表達題目的意思，這裡使用正規表達式。
+可以把正規表示式當成一個方便又實用的工具，用來判斷輸入的字串是否有按照規則，所以我們可以用正規表示式來判斷輸入的字串是不是一個 number。
+在方便的今天，如果想知道某些規則的正規表示式怎麼寫（像是合法的 email），只要問 LLM 就能輕鬆得到想要的答案。以下節錄至 ChatGPT 的回答：</description>
+    </item>
+    
     <item>
       <title>也許程式交易不是你想找的那個印鈔機</title>
       <link>/posts/my-study-note/article/2023/program-trade/</link>
@@ -31,12 +48,12 @@ WeiTheShinobi
     </item>
     
     <item>
-      <title>如何在 Steam 上玩接電線？《Turing Complete》</title>
+      <title>讓這個 Steam 上的遊戲教你做出 CPU：《Turing Complete》</title>
       <link>/posts/my-study-note/article/2023/turing-complete/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>/posts/my-study-note/article/2023/turing-complete/</guid>
-      <description>如何在 Steam 上玩接電線？《Turing Complete》 作為一個 Steam 重度用戶，我平時沒事就是逛逛商店，某次意外的發現這個超讚的遊戲，就被這樸實的畫面所吸引，又因為我本就喜歡建造經營類的遊戲，舉例像是《Rimworld》就是個超讚的遊戲，我十分推薦。而這次發現的遊戲就是《Turing Complete》，就是常常聽到的那個圖靈完備，在遊戲中玩家扮演一個實驗體，作為一個被外星人抓來研究的地球生物，將為了保住小命而做出圖靈完備的計算機。
+      <description>讓這個 Steam 上的遊戲教你做出 CPU：《Turing Complete》 作為一個 Steam 重度用戶，我平時沒事就是逛逛商店，某次意外的發現這個超讚的遊戲，就被這樸實的畫面所吸引，又因為我本就喜歡建造經營類的遊戲，舉例像是《Rimworld》就是個超讚的遊戲，我十分推薦。而這次發現的遊戲就是《Turing Complete》，就是常常聽到的那個圖靈完備，在遊戲中玩家扮演一個實驗體，作為一個被外星人抓來研究的地球生物，將為了保住小命而做出圖靈完備的計算機。
 一個接電線的遊戲 說起來遊戲在幹嘛？這就是一個接電線的遊戲。玩家會從一開始的邏輯閘關卡，一步一步領導你，組合不同的邏輯閘變成小元件，不同的小元件組合後，成為一台計算機，你會了解到二進制、二補數、解碼、一堆錯綜復雜的線路、寄存器等等，你也會知道什麼是 opcode、地址、組合語言、stack，你會在遊戲中遇上不同的難關，而你也需要不斷擴充自己的機器才能過關，如果你本來就對程式有點概念，在過關後，就會有種昇華的感覺，非常得愉快，就像是得到了不得了的東西的愉快感。
 這遊戲在做什麼 遊戲中並沒有太多的引導，只有任務說明和簡單的術語解釋，玩家需要大量的試錯和思考來完成關卡，如果你本身對於寫程式沒有什麼概念，玩家可以會在中途某些關卡卡住一段時間。玩家需要寫下「對應機器」的組合語言，所謂的「對應機器」就是玩家造好的那台電腦，這可不像在 2023 寫程式那麼方便，因為一切都是玩家設計的，在開始寫邏輯之前需要對照指令集定義一大堆有的沒的，這些做完才能開始用彆扭的方式寫程式。
 隨著遊戲深入，玩家會需要更好的處理器架構，同時也要能加上記憶體，才能夠完成後面更加艱難的關卡。
